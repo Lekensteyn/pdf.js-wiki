@@ -14,9 +14,9 @@ From issue [#560](https://github.com/andreasgal/pdf.js/issues/560):
 
 From issue [#577](https://github.com/andreasgal/pdf.js/issues/577):
 
-* <u>FONT(no spaces): https://docs.rice.edu/confluence/download/attachments/4588376/unix01.pdf?version=1</u>
+* <del>FONT(no spaces): https://docs.rice.edu/confluence/download/attachments/4588376/unix01.pdf?version=1</del>
 * INVALID(RGBT content command instead of 'RG BT'): www-csag.ucsd.edu/~jburke/Vesta/Vesta_Overview.pdf
-* <u>FONT(no spaces): http://www.csb.yale.edu/userguides/graphics/rasmol/rasmol.pdf</u>
+* <del>FONT(no spaces): http://www.csb.yale.edu/userguides/graphics/rasmol/rasmol.pdf</del>
 * FONT(Type3 [#502](https://github.com/andreasgal/pdf.js/issues/502)): people.csail.mit.edu/ledlie/papers/tr-03-02.pdf
 * RENDERING(JPX [#286](https://github.com/andreasgal/pdf.js/issues/286)): www.nsa.gov/ia/_files/app/pdf_risks.pdf
 * INVALID: www.mit.edu/~6.033/writing-samples/usmanm_dp1.pdf
