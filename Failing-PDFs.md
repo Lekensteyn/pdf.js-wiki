@@ -1,5 +1,7 @@
 This is a list of files that are reported to be broken.
 
+Issues reporting breakage should be labeled **not-working**. 
+
 The following tags are used to specify why they break:
 
 * ???: Not specified yet (help!)
