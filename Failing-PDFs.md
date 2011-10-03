@@ -22,3 +22,8 @@ From issue [#577](https://github.com/andreasgal/pdf.js/issues/577):
 * FONT(Type3 [#502](https://github.com/andreasgal/pdf.js/issues/502)): people.csail.mit.edu/ledlie/papers/tr-03-02.pdf
 * RENDERING(JPX [#268](https://github.com/andreasgal/pdf.js/issues/268)): www.nsa.gov/ia/_files/app/pdf_risks.pdf
 * INVALID(junk at start [#345](https://github.com/andreasgal/pdf.js/issues/345)): www.mit.edu/~6.033/writing-samples/usmanm_dp1.pdf
+
+From issue [#600](https://github.com/andreasgal/pdf.js/issues/600):
+
+* FONT: http://dl.dropbox.com/u/2541471/Test-deg.pdf
+* FONT: http://dl.dropbox.com/u/2541471/Test-plusminus.pdf
