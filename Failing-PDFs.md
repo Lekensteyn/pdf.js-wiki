@@ -25,5 +25,5 @@ From issue [#577](https://github.com/andreasgal/pdf.js/issues/577):
 
 From issue [#600](https://github.com/andreasgal/pdf.js/issues/600):
 
-* FONT: http://dl.dropbox.com/u/2541471/Test-deg.pdf
-* FONT: http://dl.dropbox.com/u/2541471/Test-plusminus.pdf
+* <del>FONT: http://dl.dropbox.com/u/2541471/Test-deg.pdf</del>
+* <del>FONT: http://dl.dropbox.com/u/2541471/Test-plusminus.pdf</del>
