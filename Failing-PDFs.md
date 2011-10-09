@@ -12,7 +12,7 @@ The following tags are used to specify why they break:
 
 From issue [#560](https://github.com/andreasgal/pdf.js/issues/560):
 
-* FONT: http://pdfkit.org/example.pdf
+* INVALID: http://pdfkit.org/example.pdf
 
 From issue [#577](https://github.com/andreasgal/pdf.js/issues/577):
 
