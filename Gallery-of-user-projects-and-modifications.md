@@ -1,10 +1,10 @@
-## Alternative UI
+### Alternative UI
 
 + Transparent-floating toolbar (@gigaherz): 
 
     https://github.com/gigaherz/pdf.js
 
-## Cool projects
+### Cool projects
 
 + Justin Bieber + Popcorn.js + pdf.js (@humphd)
 
