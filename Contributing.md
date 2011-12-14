@@ -50,6 +50,7 @@ To ensure your changes didn't introduce any regressions you'll need to run the t
 * load - just checks if the pdf file can be loaded without crashing
 * eq - a reference test which takes correctly rendered snapshots and compares them to the snapshots created by the current code
 * fbf - a forward back forward test
+
 **Generating Reference Images**
 The reference tests require you to generate the original snapshots for comparison.  The snapshots should be generated before you make any changes to the code.  For my development I have two pdf.js folders one that is checkout from the mozilla master and one from my own fork.  I never modify the mozilla master folder except for updating and use it to generate snapshots and then move them over to my forked pdf.js folder.  If you are diligent you can just use one folder and always update the snapshots before you make code changes.  To generate these snapshots:
 
