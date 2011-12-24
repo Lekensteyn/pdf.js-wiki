@@ -1,4 +1,3 @@
-
 The simplest way to setup the development environment for the pdf.js project:
 
 * Git for Windows (http://code.google.com/p/msysgit/);
@@ -7,4 +6,4 @@ The simplest way to setup the development environment for the pdf.js project:
 
 If the Visual Studio is not installed or to avoid switching between the git bash and the Mozilla build environment, modify any startXXX.cmd file in the c:\mozilla-build to look like https://gist.github.com/1518181 .
 
-See also [[Contributing]]. 
+See also [[Contributing]] and https://github.com/mozilla/pdf.js. 
