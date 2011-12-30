@@ -64,6 +64,8 @@ That will create the references files in pdf.js/test/tmp so you'll then need to 
 make test
 ```
 
+To run unit tests, the web server has to be setup to host the pdf.js files. Tests will be executed by opening the <url-to-pdf.js>/test/unit/unit_test.html page. If the web server is created by using `make server` command, the URL will be http://localhost:8888/test/unit/unit_test.html.
+
 ### 5) Push Changes
 After lint and all tests pass, push changes to your fork/branch on github.
 
