@@ -19,7 +19,7 @@ An overview how to contribute code to the pdf.js project.  The basic workflow:
 * make
 * jslint
 
-Before you make any changes to the code you'll probably want jump down to the section on "Generating Reference Images" to create the reference snapshot images so you can run the test framework and check for regressions.
+**Before you make any changes to the code you'll probably want jump down to the section on "Generating Reference Images" to create the reference snapshot images so you can run the test framework and check for regressions.**
  
 If you're familiar with github and doing feature branches you can skip down to "4) Run Lint and Testing"...
 
@@ -53,13 +53,18 @@ To ensure your changes didn't introduce any regressions you'll need to run the t
 
 **Generating Reference Images**
 
-The reference tests require you to generate the original snapshots for comparison.  The snapshots should be generated before you make any changes to the code.  If you are diligent you can just use one folder and always update the snapshots before you make code changes.  For my development, I have two pdf.js folders one that is checkout from the mozilla master and one from my own fork.  I never modify the mozilla master folder except for updating and use it to generate snapshots and then move them over to my forked pdf.js folder.  To generate these snapshots:
-
+The reference tests require you to generate the original snapshots for comparison.  The snapshots should be generated before you make any changes. If you have already made some changes `git stash` your work. Then make sure you have setup a browser_manifest file.  There are templates located in `test/resources/browser_manifests/`.  Copy one of the templates (replace `<your os>` with mac, linux, or win).
 ```
-cd pdf.js/test/
+cp test/resources/browser_manifests/browser_manifest.json.<your os> test/resources/browser_manifests/browser_manifest.json
+```
+Then edit the manifest in your favorite editor and make sure it points to the browser(s) you want to use for generating the reference images.
+
+Now we can generate the reference images:
+```
+cd test/
 python test.py -m --browserManifestFile=resources/browser_manifests/browser_manifest.json
 ```
-That will create the references files in pdf.js/test/tmp so you'll then need to rename "tmp" to "ref" or move it to your branch and rename. Now to run the tests from the pdf.js folder:
+You can then run the test suite from the pdf.js root folder:
 ```
 make test
 ```
