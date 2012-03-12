@@ -1,5 +1,6 @@
 For getting started please see the README.
 
++ [FAQ](wiki/Frequently-Asked-Questions) - Frequently Asked Questions
 + [Gallery of user projects and modifications](wiki/Gallery-of-user-projects-and-modifications)
 + [Contributing/Workflow](wiki/Contributing) - How to contribute to the pdf.js project.
 + [Style Guide](wiki/Style-Guide) - Coding style guide.
