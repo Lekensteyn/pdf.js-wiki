@@ -25,7 +25,7 @@ if (someVar) {
 ## White Space
 * Space after control statements (if, else, while, for, ...)
 ```
-if (somevar)
+if (someVar)
 ```
 
 ## Classes
