@@ -7,6 +7,10 @@ pdf.js has several special url parameters to alter how pdf.js works and enable d
 
 ## PDFBug Tools
 To enable see above.
+
+Note: As a safety precaution the debugger stuff for the extension will require the user to set a pref in `about:config`: `extensions.uriloader@pdf.js.pdfBugEnabled` setting (boolean `true`)
+
+
 ### Font Inspector
 `id: FontInspector`
 
