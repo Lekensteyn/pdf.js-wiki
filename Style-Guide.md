@@ -10,12 +10,14 @@
 
 ## Braces
 * No braces for single line control statements
-```
+
+```javascript
 if (someVar)
   return true;
 ```
 * Opening brace on the same line
-```
+
+```javascript
 if (someVar) {
   someVar += 2;
   return someVar;
@@ -24,20 +26,24 @@ if (someVar) {
 
 ## White Space
 * Space after control statements (if, else, while, for, ...)
-```
+
+```javascript
 if (someVar)
 ```
 
 ## Classes
-The standard way of creating classes in pdf.js is the following. Please note that by class we mean an object that is class-like.
-```
+The standard way of creating classes in pdf.js is the following. Please note that by class we mean an object that is class-like. Also, note the naming of all anonymous functions.
+
+```javascript
 var Name = (function NameClosure() {
   function Name(name) {
     this.name = name;
   }
 
   Name.prototype = {
-    ...
+    functionName: function Name_FunctionName(argOne, argTwo) {
+      ...
+    }
   };
 
   return Name;
