@@ -35,17 +35,17 @@ if (someVar)
 The standard way of creating classes in pdf.js is the following. Please note that by class we mean an object that is class-like. Also, note the naming of all anonymous functions.
 
 ```javascript
-var Name = (function NameClosure() {
-  function Name(name) {
-    this.name = name;
+var ClassName = (function ClassNameClosure() {
+  function ClassName(...) {
+    ...
   }
 
-  Name.prototype = {
-    functionName: function Name_FunctionName(argOne, argTwo) {
+  ClassName.prototype = {
+    functionName: function ClassName_functionName(...) {
       ...
     }
   };
 
-  return Name;
+  return ClassName;
 })();
 ```
