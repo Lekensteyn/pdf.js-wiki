@@ -5,6 +5,9 @@
     https://github.com/gigaherz/pdf.js
 
 ### Cool projects
++ Touch Reader with Storage
+
+    https://github.com/digitarald/pdf-reader.js
 
 + Justin Bieber + Popcorn.js + pdf.js (@humphd)
 
