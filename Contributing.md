@@ -17,7 +17,7 @@ An overview how to contribute code to the pdf.js project.  The basic workflow:
 * git hub account
 * python
 * make
-* jslint
+* gjslint
 
 **Before you make any changes to the code you'll probably want jump down to the section on "Generating Reference Images" to create the reference snapshot images so you can run the test framework and check for regressions.**
  
@@ -40,36 +40,46 @@ Now that you have you're branch you can edit/add/delete files.  You'll then want
 **Run Lint**
 
 Make sure your code follows our style guides, run from the pdf.js folder:
+
 ```
-make lint
+node make lint
 ```
 **Run Testing**
 
-To ensure your changes didn't introduce any regressions you'll need to run the testing framework. There are three basic types of tests:
+To ensure your changes didn't introduce any regressions you'll need to run the testing framework. There are four basic types of tests:
 
 * load - just checks if the pdf file can be loaded without crashing
 * eq - a reference test which takes correctly rendered snapshots and compares them to the snapshots created by the current code
 * fbf - a forward back forward test
+* unit tests - jasmine unit tests that are run separately from the above tests
 
 **Generating Reference Images**
 
 The reference tests require you to generate the original snapshots for comparison.  The snapshots should be generated before you make any changes. If you have already made some changes `git stash` your work. Then make sure you have setup a browser_manifest file.  There are templates located in `test/resources/browser_manifests/`.  Copy one of the templates (replace `<your os>` with mac, linux, or win).
+
 ```
 cp test/resources/browser_manifests/browser_manifest.json.<your os> test/resources/browser_manifests/browser_manifest.json
 ```
 Then edit the manifest in your favorite editor and make sure it points to the browser(s) you want to use for generating the reference images.
 
 Now we can generate the reference images:
+
 ```
 cd test/
 python test.py -m --browserManifestFile=resources/browser_manifests/browser_manifest.json
 ```
 You can then run the test suite from the pdf.js root folder:
+
 ```
-make test
+node make test
 ```
 
-To run unit tests, the web server has to be setup to host the pdf.js files. Tests will be executed by opening the <url-to-pdf.js>/test/unit/unit_test.html page. If the web server is created by using `make server` command, the URL will be http://localhost:8888/test/unit/unit_test.html.
+**Running Unit Tests Separately**
+
+Unit tests are run when `node make test` is run but they can also be run separately two different ways:
+
+1. In browser - A web server has to be setup to host the pdf.js files. Tests will be executed by opening the _\<url-to-pdf.js\>_/test/unit/unit_test.html page. If the web server is created by using `node make server` command, the URL will be http://localhost:8888/test/unit/unit_test.html.
+2. Command Line - `node make unittest` which will run all the test using the regression test framework.
 
 ### 5) Push Changes
 After lint and all tests pass, push changes to your fork/branch on github.
