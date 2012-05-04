@@ -18,10 +18,11 @@ Download the latest 'setup.exe' file from Cygwins website, and follow the instal
   * [Devel] -> make
   * [Interpreters] -> python
 
-You should now be able to fork/push your repositories. To build the project you'll also need "gjslint", which can be installed as an [easy_install](http://peak.telecommunity.com/DevCenter/EasyInstall#installing-easy-install) package using:
+You should now be able to fork/push your repositories. To build the project you'll need to install node.js from http://nodejs.org/. Also, you will need "gjslint", which can be installed as an [easy_install](http://peak.telecommunity.com/DevCenter/EasyInstall#installing-easy-install) package using:
 
 ```> easy_install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz```
 
 from your new shell (Cygwin Bash Shell). With these tools you should be able to build/hack/etc. the rep.
+
 
 See also [[Contributing]] and https://github.com/mozilla/pdf.js. 
