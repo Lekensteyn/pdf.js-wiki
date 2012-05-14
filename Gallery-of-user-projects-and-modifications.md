@@ -8,4 +8,5 @@
 + [Justin Bieber + Popcorn.js + pdf.js](http://scotland.proximity.on.ca/dxr/tmp/popcorn-js/plugins/pdf/bieber-demo.html) (@humphd)
 + [Cubic VR, 3D Pdfs!](http://scotland.proximity.on.ca/dxr/tmp/CubicVR.js/samples/pdf/) (@humphd)
 + [Coverflow Pdfs](http://cjcliffe.github.com/CubicVR.js/cubicvr/samples/pdf/pdf_gallery.html) (@humphd)
++ [Page flip effect - based on www.turnjs.com jQuery plugin](http://www.maxims6n.bget.ru/pdf_books/demo_21.html) (@MaximS)
 
