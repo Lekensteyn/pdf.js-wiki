@@ -1,3 +1,9 @@
+## Enabling
+As a safety precaution the debugging tools for the extension and the version of pdf.js bundled with firefox will require the user to set a pref in `about:config`:
+
+* Extension Version: `extensions.uriloader@pdf.js.pdfBugEnabled` setting (boolean `true`)
+* Mozilla Central(Firefox) Version: `pdfjs.pdfBugEnabled` setting (boolean `true`)
+
 ## URL Parameters
 pdf.js has several special url parameters to alter how pdf.js works and enable debugging tools.  All of these parameters go into the hash section of the url (after the # symbol) and follow a query string syntax (e.g. #param1=value1&param2=value2). Note: since all of these parameters are in the hash section you have to refresh the page after adding them.
 
@@ -7,9 +13,6 @@ pdf.js has several special url parameters to alter how pdf.js works and enable d
 
 ## PDFBug Tools
 To enable see above.
-
-Note: As a safety precaution the debugger stuff for the extension will require the user to set a pref in `about:config`: `extensions.uriloader@pdf.js.pdfBugEnabled` setting (boolean `true`)
-
 
 ### Font Inspector
 `id: FontInspector`
