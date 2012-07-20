@@ -22,7 +22,7 @@ You should now be able to fork/push your repositories. To build the project you'
 
 ```> easy_install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz```
 
-(Note: version 2.3.6 is bad, use https://closure-linter.googlecode.com/files/closure_linter-2.3.5.tar.gz instead)
+(Note: version 2.3.6 is bad, use ```> easy_install https://closure-linter.googlecode.com/files/closure_linter-2.3.5.tar.gz``` instead)
 
 from your new shell (Cygwin Bash Shell). With these tools you should be able to build/hack/etc. the rep.
 
