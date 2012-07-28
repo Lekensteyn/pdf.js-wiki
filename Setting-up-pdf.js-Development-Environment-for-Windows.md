@@ -2,7 +2,7 @@
 
 The simplest way to setup the development environment for the pdf.js project:
 
-* Git for Windows (http://code.google.com/p/msysgit/);
+* Git for Windows (http://code.google.com/p/msysgit/, the Unix line endings must be set);
 
 * Mozilla build environment (http://ftp.mozilla.org/pub/mozilla.org/mozilla/libraries/win32/MozillaBuildSetup-Latest.exe);
 
