@@ -32,6 +32,11 @@ Host hg.mozilla.org
 
 ### Updating Steps
 
++ make sure all patches are popped off your queue
+```
+hg qpop -a
+```
+
 + update moz central
 ```
 hg pull -u
@@ -59,9 +64,7 @@ hg qrefresh
 
 + Add Try Stuff
 ```
-hg qnew patch.try
-hg qpush patch.try
-hg qref --message "try: -b do -p macosx,macosx64,win32,linux,linux32 -u all -t none"
+hg qnew try --message "try: -b do -p macosx,macosx64,win32,linux,linux32 -u all -t none"
 ```
 
 + Double Check What Your Sending
@@ -74,13 +77,12 @@ hg outgoing
 hg push -f try
 ```
 
-+ Pop off the try patch
++ Pop off the try patch (if you can't pop the patch see https://wiki.mozilla.org/ReleaseEngineering/TryServer#Disable_hg_phases_with_a_post-push_hook )
 ```
-hg qpop patch.try
-// Maybe just hg qpop
+hg qpop
 ```
 
 + Generate Patch (after successful try run, replace bug number)
 ```
-hg export qtip >~/projects/mine/pdf.js/patches~/bug-743264-fix.patch
+hg export qtip > ~/projects/mine/pdf.js/patches~/bug-743264-fix.patch
 ```
