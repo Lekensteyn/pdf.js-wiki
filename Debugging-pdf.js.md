@@ -9,7 +9,7 @@ pdf.js has several special url parameters to alter how pdf.js works and enable d
 
 * `pdfBug=all` - Enables all the debugging tools.  You can optionally enable specific tools by specifying them by their id e.g. pdfBug=FontInspector or pdfBug=Stepper,FontInspector. More about PDFBug below.
 * `disableWorker=true` - Disables the worker which makes it easier to use debugging tools like firebug where workers aren't supported yet.
-* `disableTextLayer=true` - Disables the text layer that is used for text selection.
+* `textLayer=[off|visible|shadow|hover]` - Disables or reveal the text layer that is used for text selection.
 
 ## PDFBug Tools
 To enable see above.
