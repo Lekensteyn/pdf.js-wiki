@@ -2,6 +2,7 @@
 
 + [Transparent-floating toolbar](https://github.com/gigaherz/pdf.js) (@gigaherz)
 + [PDF Viewer Panel for the Ext JS 4.1 Framework](https://github.com/SunboX/ext_ux_pdf_panel) (@sonnenkiste)
++ [PDF Viewer Panel for the Sencha Touch 2 Framework](https://github.com/SunboX/ST2_ImageViewer) (@sonnenkiste)
 
 ### Cool projects
 + [Touch Reader with Storage](https://github.com/digitarald/pdf-reader.js) (@digitarald)
