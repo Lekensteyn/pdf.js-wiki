@@ -31,8 +31,8 @@ git checkout -B super-feature
 git commit -e
 ```
 
-1. Or, you can use rebase. Let's say you have 5 commits to merge and you don't have merge commits:
+1. Or, you can use rebase. Let's say you have 5 commits to squash and you don't have merge commits:
 ```
 git rebase -i HEAD~5
 ```
-Change `pick` to `squash` for last four and update the commit message.
+Change `pick` to `squash` for last four and update the commit message in the editor.
