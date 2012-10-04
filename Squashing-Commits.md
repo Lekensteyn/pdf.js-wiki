@@ -31,7 +31,7 @@ git checkout -B super-feature
 git commit -e
 ```
 
-1. Or, you can use rebase. Let's say you have 5 commits to merge:
+1. Or, you can use rebase. Let's say you have 5 commits to merge and you don't have merge commits:
 ```
 git rebase -i HEAD~5
 ```
