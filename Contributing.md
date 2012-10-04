@@ -99,9 +99,11 @@ git push origin type3fontsupport
 ```
 
 ### 6) Pull Request
-Create a pull request on github for your feature branch.  The code will then be reviewed and tested further by our pdfbot.
+Create a pull request on github for your feature branch. The code will then be reviewed and tested further by our pdfbot.
 
 ### 7) Code Review & Further Testing
+In addition to the github pull request workflow, it's highly recommended that you setup some form of communication with pdf.js team via #pdfjs IRC channel at irc.mozilla.org or e-mail. That will help to find a reviewer for your patch and speed up the review process.
+
 A collaborator will kick off further testing and do a code review.
 
 ### 8) Merging to Master
