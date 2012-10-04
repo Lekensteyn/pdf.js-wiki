@@ -30,7 +30,7 @@ Also, you will need "gjslint", which can be installed as an [easy_install](http:
 
 (Note: version 2.3.6 is [[bad|http://code.google.com/p/closure-linter/issues/detail?id=50&thanks=50&ts=1342745700]], use ```> easy_install https://closure-linter.googlecode.com/files/closure_linter-2.3.5.tar.gz``` instead)
 
-from your new shell (Cygwin Bash Shell). With these tools you should be able to build/hack/etc. the rep.
+from your new shell (MSYS, Cygwin Bash Shell). With these tools you should be able to build/hack/etc. the rep.
 
 
 See also [[Contributing]] and https://github.com/mozilla/pdf.js. 
