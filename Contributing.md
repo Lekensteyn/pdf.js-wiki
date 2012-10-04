@@ -29,13 +29,23 @@ To fork the repository you'll need to sign up for a github account. Once you hav
 ```
 git clone git://github.com/<YOUR USERNAME>/pdf.js.git
 ```
+
+It's useful to have the upstream repository registered as well
+```
+git remote add upstream git://github.com/mozilla/pdf.js.git
+```
+and periodically fetch it using `git fetch upstream`.
+
 ### 2) Branch
 We try to do everything in feature branches. For example, to create and switch to a type 3 font branch use:
 ```
-git checkout -b type3fontsupport
+git checkout -b type3fontsupport upstream/master
 ```
+
 ### 3) Changes
-Now that you have you're branch you can edit/add/delete files.  You'll then want to stage and locally commit your changes.  I won't go into this since there are lots of guides that explain git.
+Now that you have new branch created you can edit/add/delete files. Follow the standard git workflow to stage and locally commit your changes -- there are lots of guides that explain git.
+
+If the branch contains lot of small commits, you might be asked to squash the commits. You can use git rebase option or follow the [[Squashing Commits]] instructions.
 
 ### 4) Run Lint and Testing
 **Run Lint**
@@ -83,7 +93,10 @@ Unit tests are run when `node make test` is run but they can also be run separat
 2. Command Line - `node make unittest` which will run all the test using the regression test framework.
 
 ### 5) Push Changes
-After lint and all tests pass, push changes to your fork/branch on github.
+After lint and all tests pass, push changes to your fork/branch on github:
+```
+git push origin type3fontsupport
+```
 
 ### 6) Pull Request
 Create a pull request on github for your feature branch.  The code will then be reviewed and tested further by our pdfbot.
