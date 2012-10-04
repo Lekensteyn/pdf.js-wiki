@@ -31,8 +31,8 @@ git checkout -B super-feature
 git commit -e
 ```
 
-1. Or, you just use rebase (let's say you have 5 commits to merge)
+1. Or, you can use rebase. Let's say you have 5 commits to merge:
 ```
 git rebase -i HEAD~5
 ```
-Change pick to squash for last four and update the commit message.
+Change `pick` to `squash` for last four and update the commit message.
