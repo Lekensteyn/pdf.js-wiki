@@ -12,7 +12,7 @@ These directions assume that you named the Mozilla pdf.js repo (not your fork) `
 ```bash
 git squash super-feature
 ```
-1. That will bring up your editor allow you to put in the commit message you want.
+1. That will bring up your editor to allow you to put in the commit message you want. After entering a commit message, press Esc and type `:wq` to exit the editor.
 1. Then update the pull request:
 ```bash
 git push --force origin super-feature
