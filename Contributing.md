@@ -17,7 +17,7 @@ An overview how to contribute code to the pdf.js project.  The basic workflow:
 * git hub account
 * python - http://www.python.org/download/
 * node - http://nodejs.org/
-* gjslint - https://developers.google.com/closure/utilities/docs/linter_howto
+* gjslint - _Use version 2.3.5_ https://developers.google.com/closure/utilities/docs/linter_howto
 * (for Windows, see [[Setting up pdf.js Development Environment for Windows]])
 
 **Before you make any changes to the code you'll probably want jump down to the section on "Generating Reference Images" to create the reference snapshot images so you can run the test framework and check for regressions.**
