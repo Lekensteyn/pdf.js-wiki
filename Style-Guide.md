@@ -2,6 +2,7 @@
 ## General
 * Indentation - 2 spaces
 * Line Length - 80 characters
+* [Required License in File Header](https://github.com/mozilla/pdf.js/wiki/License-Headers)
 
 ## Naming
 * variables and functions - lowerCamelCase
