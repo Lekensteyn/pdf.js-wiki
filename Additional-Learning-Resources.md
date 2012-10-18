@@ -1,4 +1,5 @@
-# Publications
+
+## Publications
 
 You can read more about PDF.js here:
 + http://andreasgal.com/2011/06/15/pdf-js/
@@ -7,7 +8,7 @@ You can read more about PDF.js here:
 Listen:
 + http://www.aminutewithbrendan.com/pages/20110616
 
-# Presentations
+## Presentations
 
 Videos:
 + Julian Viereck – Zurich GTUG 2011, http://blog.mozilla.org/labs/2011/10/video-what-is-pdf-js/
@@ -18,7 +19,7 @@ Slides:
 + https://people.mozilla.com/~cjones/PDF.js-mozilla-vision-japan-2012.pdf
 + https://people.mozilla.com/~ydelendik/pdfjs-ttf-2012.pdf
 
-# PDF-related resources
+## PDF-related resources
 
 A really basic overview of PDF is described here:
 + http://partners.adobe.com/public/developer/en/livecycle/lc_pdf_overview_format.pdf
