@@ -17,7 +17,6 @@ Slides:
 + http://jviereck.github.com/slides/2012_07_berlinjs/index.html
 + https://people.mozilla.com/~cjones/PDF.js-mozilla-vision-japan-2012.pdf
 + https://people.mozilla.com/~ydelendik/pdfjs-ttf-2012.pdf
-+ http://labs.appligent.com/presentations/recognizing_malformed_pdf_f.pdf
 
 ## PDF-related resources
 
@@ -30,6 +29,9 @@ A more detailed file example:
 The PDF specification itself:
 + http://www.adobe.com/devnet/acrobat/pdfs/PDF32000_2008.pdf
 + http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/pdf_reference_1-7.pdf
+
+Presentations:
++ http://labs.appligent.com/presentations/recognizing_malformed_pdf_f.pdf
 
 ## Related projects
 
