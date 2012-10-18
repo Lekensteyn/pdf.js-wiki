@@ -13,6 +13,6 @@ FireFox is widely supported and installation procedures are described in the REA
 
 <a name="faq-contrib"></a>
 ## I know JavaScript and want to contribute to the project. How do I start?
-First, you would need to prepare your [fork](https://help.github.com/articles/fork-a-repo) and setup the development environment. Don't forget to read the [Contributing](wiki/Contributing) page.
+First, you would need to prepare your [fork](https://help.github.com/articles/fork-a-repo) and setup the development environment. Don't forget to read the [[Contributing]] page.
 
 Second, make yourself familiar with the [PDF format and PDF.js internals](wiki/Additional-Learning-Resources). Choose an issue from the [open issues list](https://github.com/mozilla/pdf.js/issues?state=open) and submit a [pull request](https://help.github.com/articles/using-pull-requests) for the review. We recommend to communicate with the PDF.js team on #pdfjs IRC channel at irc.mozilla.org if you have questions or to find a reviewer.
