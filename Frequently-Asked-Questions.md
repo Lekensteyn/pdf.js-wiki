@@ -1,5 +1,6 @@
 * [Can I load a pdf from another server (cross domain request)?](#faq-xhr)
 * [What browsers are supported (and where can I find install procedures)?](#faq-yis)
+* [I know JavaScript and want to contribute to the project. How do I start?](#faq-contrib)
 
 
 <a name="faq-xhr"></a>
@@ -10,3 +11,8 @@ Not by default, but it is possible.  Pdf.js runs with the same permissions as an
 ## What browsers are supported (and where can I find install procedures)?
 FireFox is widely supported and installation procedures are described in the README.md at the PDF.js GitHub landing page [https://github.com/mozilla/pdf.js]. 
 
+<a name="faq-contrib"></a>
+## I know JavaScript and want to contribute to the project. How do I start?
+First, you would need to prepare your [fork](https://help.github.com/articles/fork-a-repo) and setup the development environment. Don't forget to read the [Contributing](wiki/Contributing) page.
+
+Second, make yourself familiar with the [PDF format and PDF.js internals](wiki/Additional-Learning-Resources). Choose an issue from the [open issues list](https://github.com/mozilla/pdf.js/issues?state=open) and submit a [pull request](https://help.github.com/articles/using-pull-requests) for the review. We recommend to communicate with the PDF.js team on #pdfjs IRC channel at irc.mozilla.org if you have questions or to find a reviewer.
