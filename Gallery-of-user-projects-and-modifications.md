@@ -12,3 +12,7 @@
 + [Coverflow Pdfs](http://cjcliffe.github.com/CubicVR.js/cubicvr/samples/pdf/pdf_gallery.html) (@humphd)
 + [Page flip effect - based on www.turnjs.com jQuery plugin](http://www.maxims6n.bget.ru/pdf_books/demo_21.html) (@MaximS)
 + [jQuery-pdfdoc - Simple jQuery PDF Viewer plugin](http://dev.funkynerd.com/projects/jquery-pdfdoc) (@JAZ-013)
+
+### Deployments
+
+The deployments can be tracked via ['intitle:"PDF.js viewer" next' search query](https://www.google.com/search?q=intitle%3A"PDF.js+viewer"+next)
