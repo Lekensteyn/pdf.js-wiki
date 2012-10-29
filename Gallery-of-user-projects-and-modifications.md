@@ -16,4 +16,4 @@
 
 ### Current Deployments
 
-The deployments can be tracked via ['intitle:"PDF.js viewer" next'](https://www.google.com/search?q=intitle%3A"PDF.js+viewer"+next) search query
+The deployments can be tracked via ['intitle:"PDF.js viewer" next'](https://www.google.com/search?q=intitle%3A"PDF.js+viewer"+next) or ['"Toggle Sidebar" "Automatic Zoom"'](https://www.google.com/search?q="Toggle+Sidebar"+"Automatic+Zoom") search queries
