@@ -13,6 +13,7 @@
 + [Page flip effect - based on www.turnjs.com jQuery plugin](http://www.maxims6n.bget.ru/pdf_books/demo_21.html) (@MaximS)
 + [jQuery-pdfdoc - Simple jQuery PDF Viewer plugin](http://dev.funkynerd.com/projects/jquery-pdfdoc) (@JAZ-013)
 + [Alfresco Share add-on component](http://code.google.com/p/share-extras/wiki/MediaViewers)
++ [Plone integration](https://github.com/collective/collective.pdfjs)
 
 ### Current Deployments
 
