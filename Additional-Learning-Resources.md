@@ -30,6 +30,9 @@ The PDF specification itself:
 + http://www.adobe.com/devnet/acrobat/pdfs/PDF32000_2008.pdf
 + http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/pdf_reference_1-7.pdf
 
+Test files:
++ http://acroeng.adobe.com/
+
 Presentations:
 + http://labs.appligent.com/presentations/recognizing_malformed_pdf_f.pdf
 
