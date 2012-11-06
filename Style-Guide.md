@@ -10,26 +10,22 @@
 * constants - ALL_UPPER_CASE_WITH_UNDERSCORES
 
 ## Braces
-* No braces for single line control statements
-
-```javascript
-if (someVar)
-  return true;
-```
-* Opening brace on the same line
+* Always use braces and put them on same line even for single line control statements
 
 ```javascript
 if (someVar) {
-  someVar += 2;
-  return someVar;
+  return true;
+} else {
+  return null;
 }
 ```
+_Note: This wasn't always followed, but any new code should do this._
 
 ## White Space
 * Space after control statements (if, else, while, for, ...)
 
 ```javascript
-if (someVar)
+if (someVar) {
 ```
 
 ## Classes
