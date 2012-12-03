@@ -100,7 +100,7 @@ The `bind` method will be added to the `Function.prototype`, if the browser does
 ## <a id="dataset"></a>dataset is present for HTML element
 
 The `dataset` property will be added to the `HTMLElement.prototype`, if the browser does not support it.
-This is important for specifying addition information (e.g. for test selection layer)
+This is important for specifying addition information (e.g. for text selection layer)
 attached to specific HTML DOM element.
 
 
@@ -113,12 +113,12 @@ This is important to simplify the viewer implementation.
 ## <a id="console"></a>console object is present
 
 The `console` object will be added to the window object with empty `log` and `error` methods,
-if the browser does not support it. This is important for output of the error message.
+if the browser does not support it. This is important for output of the error message and diagnostic information.
 
 
 ## <a id="console-log-bind"></a>console.log is a bind-able function
 
-The `console.log` and `.error` functions will be replaced, if the browser does not allow to use
+The `console.log` and `console.error` functions will be replaced, if the browser does not allow to use
 the bind method with these functions.
 
 ## <a id="apply-typed-array"></a>Function.prototype.apply accepts typed array
@@ -134,12 +134,12 @@ The language getter will be added to the window.navigator object, if the browser
 ## <a id="fillRule-evenodd"></a>evenodd fill rule is supported
 
 Some PDF content is using "even-odd" fill rule/method. The content will not be displayed
-properly if this function is not supported.
+properly if this feature is not supported.
 
 ## <a id="dash-array"></a>dashed line style is supported
 
 Some PDF content is using custom dash line styles. The content will not be displayed
-properly if this function is not supported.
+properly if this feature is not supported.
 
 
 ## <a id="font-face"></a>@font-face is supported/enabled
@@ -162,5 +162,5 @@ if the browser does not support web workers.
 ## <a id="Worker-Uint8Array"></a>Worker can receive/send typed arrays
 
 The PDF.js will execute all code on the main thread,
-if the browser cannot send (large) typed arrayed to web workers. 
+if the browser cannot send (large) typed arrays to web workers. 
 
