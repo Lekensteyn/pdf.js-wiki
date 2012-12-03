@@ -123,7 +123,7 @@ the bind method with these functions.
 
 ## <a id="apply-typed-array"></a>Function.prototype.apply accepts typed array
 
-The core code relies on the `Function.prototype.apply' method to accept the typed array as the second argument.
+The core code relies on the `Function.prototype.apply` method to accept the typed array as the second argument.
 No emulation is provided in browsers that do not support it.
 
 ## <a id="navigator-language"></a>navigator.language is present
