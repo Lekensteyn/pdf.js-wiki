@@ -34,7 +34,7 @@ No emulation of the `addEventListener` method is provided in browsers that do no
 The `Uint8Array`, `Uint16Array`, `Int32Array`, `Float32Array` and `Float64Array` will be replaced
 by the artificial TypedArray object if those types are not implemented natively.
 
-The emulated typed arrays are slower, don't truncate the items to specific data types and they are memory inefficient. Only `subarray`, `buffer`, `set` and `byteLength` are similated. The `subarray` just clones the array. The `set` method is provided to emulate the `Uint8Array` the method.
+Only `subarray`, `buffer`, `set` and `byteLength` are similated. The `subarray` just clones the array. The `set` method is provided to emulate the `Uint8Array`'s `set` method. The emulated typed arrays are slower, don't truncate the items to specific data types and they are memory inefficient.
 
 If the `Float32Array` native implementation exists and the `Float64Array` is absent, then the `Float32Array` will be used instead of `Float64Array`.
 
