@@ -2,6 +2,8 @@
 
 The page describes the features that are required for a web browser to have to PDF.js function properly. Some of the features are critical and does not let PDF.js function properly if they are not supported or disabled. Some of them can be emulated if absent, however the PDF.js performance and memory usage will be worse than when the feature if present.
 
+The features tests can be run at http://107.22.172.223:8877/de552aeeb332884/features/
+
 ## <a id="canvas"></a>CANVAS element is present
 
 Support of the CANVAS element and "2d" context is required feature for PDF.js.
