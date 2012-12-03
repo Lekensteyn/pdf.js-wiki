@@ -40,13 +40,13 @@ If the `Float32Array` native implementation exists and the `Float64Array` is abs
 
 ## <a id="Object-create"></a>Object.create() is present
 
-The `Object.create` method will be added to the `Object` function if native implementation is absent.
+The `Object.create` method will be added to the `Object` function if the native implementation is absent.
 
 
 ## <a id="Object-defineProperty"></a>Object.defineProperty() is present
 
 
-The `Object.defineProperty` method will be added to the `Object` function if native implementation is absent. The `__defineGetter__` / `__defineSetter__` will be used instead.
+The `Object.defineProperty` method will be added to the `Object` function if the native implementation is absent. The `__defineGetter__` / `__defineSetter__` will be used instead.
 
 
 ## <a id="Object-defineProperty-DOM"></a>Object.defineProperty() can be used with DOM objects
