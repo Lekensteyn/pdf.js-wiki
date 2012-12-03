@@ -132,7 +132,7 @@ The language getter will be added to the window.navigator object, if the browser
 Some PDF content is using "even-odd" fill rule/method. The content will not be displayed
 properly if this function is not supported.
 
-## <a id="dash-array"></a>dashed lined is supported
+## <a id="dash-array"></a>dashed line is supported
 
 Some PDF content is using custom dash line styles. The content will not be displayed
 properly if this function is not supported.
