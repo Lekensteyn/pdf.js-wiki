@@ -10,7 +10,7 @@ Not by default, but it is possible.  Pdf.js runs with the same permissions as an
 
 <a name="faq-support"></a>
 ## What browsers are supported?
-The goal is to support all HTML5 compliant browsers, but since feature support varies per browser/version our support for all PDF features varies as well. If you want to support more browsers than Firefox you'll need to include [compatibility.js](https://github.com/mozilla/pdf.js/blob/master/web/compatibility.js) which has polyfills for missing features.  In general, the support is below:
+The goal is to support all HTML5 compliant browsers, but since feature support varies per browser/version our support for all PDF features varies as well. If you want to support more browsers than Firefox you'll need to include [compatibility.js](https://github.com/mozilla/pdf.js/blob/master/web/compatibility.js) which has polyfills for missing features. Find list of the features needed for PDF.js properly work at [[Required Browser Features]]. In general, the support is below:
 
 <table>
   <tr><th>Browser</th><th>Supported</th><th>Automated Testing</th><th>Notes</th></tr>
