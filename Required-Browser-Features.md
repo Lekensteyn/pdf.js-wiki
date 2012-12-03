@@ -1,13 +1,13 @@
 # Required Browser Features
 
-The page describes the features that are required for a web browser to have to PDF.js function properly. Some of the features are critical and does not let PDF.js function properly if they are not supported or disabled. Some of them can be emulated if absent (e.g. in the [compatibility.js](https://github.com/mozilla/pdf.js/blob/master/web/compatibility.js) file), however the PDF.js performance and memory usage will be worse than when the feature is present.
+The page describes the features that are a required for a web browser to have to PDF.js function properly. Some of the features are critical and does not let PDF.js function properly if they are not supported or disabled. Some of them can be emulated if absent (e.g. in the [compatibility.js](https://github.com/mozilla/pdf.js/blob/master/web/compatibility.js) file), however the PDF.js performance and memory usage will be worse than when the feature is present.
 
 The required features tests can be run at http://mozilla.github.com/pdf.js/features/
 
 ## <a id="canvas"></a>CANVAS element is present
 
 Support of the CANVAS element and 2D context is required feature for PDF.js.
-No emulation of the CANVAS element is provided in browsers that do not support it.
+No emulation of the CANVAS element is provided for the browsers that do not support it.
 
 
 ## <a id="get-literal"></a>get-literal properties
@@ -20,13 +20,13 @@ var obj = {
 };
 ```
 
-Browsers that don't understand this syntax will not be able to execute the code.
+The browsers that don't understand this syntax will not be able to execute the code.
 
 
 ## <a id="addEventListener"></a>addEventListener is present
 
 The `addEventListener` method is used to bind event listeners for DOM elements.
-No emulation of the `addEventListener` method is provided in browsers that do not support it.
+No emulation of the `addEventListener` method is provided in the browsers that do not support it.
 
 
 ## <a id="Uint8Array"></a><a id="Uint16Array"></a><a id="Int32Array"></a><a id="Float32Array"></a><a id="Float64Array"></a>Typed arrays are present
