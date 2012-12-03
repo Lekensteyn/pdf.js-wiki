@@ -1,5 +1,7 @@
 # Required Browser Features
 
+The page describes the features that are required for a web browser to have to PDF.js function properly. Some of the features are critical and does not let PDF.js function properly if they are not supported or disabled. Some of them can be emulated if absent, however the PDF.js performance and memory usage will be worse than when the feature if present.
+
 ## <a id="canvas"></a>CANVAS element is present
 
 Support of the CANVAS element and "2d" context is required feature for PDF.js.
@@ -8,13 +10,20 @@ No emulation of the CANVAS element is provided in browsers that do not support i
 
 ## <a id="get-literal"></a>get-literal properties
 
-The core library defines property using 'get' literal.
+The core library defines object properties using object 'get' literal:
+
+```
+var obj = {
+  get prop() { return 1; }
+};
+```
+
 Browsers that don't understand this syntax will not be able to execute the code.
 
 
 ## <a id="addEventListener"></a>addEventListener is present
 
-The `addEventListener` method for DOM elements is used to bind event listeners.
+The `addEventListener` method is used to bind event listeners for DOM elements.
 No emulation of the `addEventListener` method is provided in browsers that do not support it.
 
 
@@ -22,12 +31,10 @@ No emulation of the `addEventListener` method is provided in browsers that do no
 
 The `Uint8Array`, `Uint16Array`, `Int32Array`, `Float32Array` and `Float64Array` will be replaced
 by the artificial TypedArray object if those types are not implemented natively.
-Only `subarray`, `buffer` and `byteLength` are similated. The `subarray` just clones the array.
-The Uint8Array also has the `set` method.
 
+The emulated typed arrays are slower, don't truncate the items to specific data types and they are memory inefficient. Only `subarray`, `buffer`, `set` and `byteLength` are similated. The `subarray` just clones the array. The `set` method is provided to emulate the `Uint8Array` the method.
 
-If the `Float32Array` native implementation exists, then it will be used instead of `Float64Array`.
-
+If the `Float32Array` native implementation exists and the `Float64Array` is absent, then the `Float32Array` will be used instead of `Float64Array`.
 
 ## <a id="Object-create"></a>Object.create() is present
 
@@ -43,13 +50,13 @@ The `Object.defineProperty` method will be added to the `Object` function if nat
 ## <a id="Object-defineProperty-DOM"></a>Object.defineProperty() can be used with DOM objects
 
 Some browsers do not allow using the `Object.defineProperty` with DOM objects.
-In this case, the `Object.defineProperty` be replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty)".
+In this case, the `Object.defineProperty` be replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty).
 
 
 ## <a id="get-literal-redefine"></a>Defined via get-literal properties can be redefined
 
 Some browsers does not allow redefine properties defined with get literal by the `Object.defineProperty`.
-In this case, the `Object.defineProperty` be replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty)".
+In this case, the `Object.defineProperty` be replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty).
 
 
 ## <a id="Object-keys"></a>Object.keys() is present
@@ -59,12 +66,12 @@ The `Object.keys` method will be added to the `Object` function if the native im
 
 ## <a id="FileReader"></a>FileReader is present
 
-The live PDF.js demo will not be able to read local file.
+The `FileReader` allows PDF.js read the file data provided in the input[type=file] HTML element. The live PDF.js demo will not be able to read local file, if the `FileReader` object is not supported.
 
 
 ## <a id="FileReader-readAsArrayBuffer"></a>FileReader.prototype.readAsArrayBuffer() is present
 
-Older browsers has no `readAsArrayBuffer` method implementation: the `readAsBinaryString` will be used instead.
+Older browsers has no `readAsArrayBuffer` method implementation: the `readAsBinaryString` will be used to emulate its functionality.
 
 
 ## <a id="XMLHttpRequest-overrideMimeType"></a>XMLHttpRequest.prototype.overrideMimeType() is present
@@ -138,7 +145,7 @@ style rule, the document will not be displayed property.
 ## <a id="font-face-sync"></a>@font-face data URLs are loaded synchronously
 
 The PDF.js shall wait some time before using fonts with CANVAS,
-if the browser cannot load custom fonts via `@font-face`, that are specified as data URLs, synchronously.
+if the browser cannot load custom fonts  synchronously via `@font-face` that are specified as data URLs.
 
 
 ## <a id="Worker"></a>Worker is supported/enabled
