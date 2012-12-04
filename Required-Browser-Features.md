@@ -147,10 +147,10 @@ Most of PDF documents are using embedded fonts. If the browser does not support 
 style rule, the document will not be displayed property.
 
 
-## <a id="font-face-sync"></a>@font-face data URLs are loaded synchronously
+## <a id="font-face-sync"></a>@font-face loading completion detection
 
 The PDF.js shall wait some time before using fonts with CANVAS,
-if the browser cannot load custom fonts  synchronously via `@font-face` that are specified as data URLs.
+if the browser cannot tell if fonts are loaded and can be used.
 
 
 ## <a id="Worker"></a>Worker is supported/enabled
