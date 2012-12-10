@@ -13,6 +13,7 @@
 + [Cubic VR, 3D Pdfs!](http://scotland.proximity.on.ca/dxr/tmp/CubicVR.js/samples/pdf/) (@humphd)
 + [Coverflow Pdfs](http://cjcliffe.github.com/CubicVR.js/cubicvr/samples/pdf/pdf_gallery.html) (@humphd)
 + [Page flip effect - based on www.turnjs.com jQuery plugin](http://www.maxims6n.bget.ru/pdf_books/demo_21.html) (@MaximS)
++ [OwnCloud uses pdfjs as document viewer] (http://www.webupd8.org/2012/01/owncloud-3-gets-built-in-text-editor.html)
 
 ### Current Deployments
 
