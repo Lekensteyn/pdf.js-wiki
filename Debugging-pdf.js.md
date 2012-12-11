@@ -17,7 +17,7 @@ To enable see above.
 ### Font Inspector
 `id: FontInspector`
 
-The font inspector allows you to view what fonts are used within page.  It also allows you to download the base64 version of the font which can be copied into the online font sanitizer that provides more information about why a font is being rejected (see http://async5.org/ots/ots.html). Further, you can download the font and use the `base64` command on most unix systems to decode the font and save it as a true type font file.  The decoded font file can then be checked with more programs such as [FontForge](http://fontforge.sourceforge.net/), [Microsoft Font Validator](http://www.microsoft.com/typography/FontValidator.mspx), [Adobe FDK](http://www.adobe.com/devnet/opentype/afdko.html), or [ttx](http://www.letterror.com/code/ttx/).
+The font inspector allows you to view what fonts are used within page.  It also allows you to download the base64 version of the font which can be copied into the online font sanitizer that provides more information about why a font is being rejected (see http://async5.org/ots-95/ots.html). Further, you can download the font and use the `base64` command on most unix systems to decode the font and save it as a true type font file.  The decoded font file can then be checked with more programs such as [FontForge](http://fontforge.sourceforge.net/), [Microsoft Font Validator](http://www.microsoft.com/typography/FontValidator.mspx), [Adobe FDK](http://www.adobe.com/devnet/opentype/afdko.html), or [ttx](http://www.letterror.com/code/ttx/).
 
 ### Stepper
 `id: Stepper`
