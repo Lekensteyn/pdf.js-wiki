@@ -133,7 +133,7 @@ The language getter will be added to the window.navigator object, if the browser
 ## <a id="fillRule-evenodd"></a>evenodd fill rule is supported
 
 Some PDF content is using "even-odd" fill rule/method. The content will not be displayed
-properly if this feature is not supported.
+properly (example: [#2351](https://github.com/mozilla/pdf.js/issues/2351)) if this feature is not supported.  
 
 ## <a id="dash-array"></a>dashed line style is supported
 
@@ -162,4 +162,3 @@ if the browser does not support web workers.
 
 The PDF.js will execute all code on the main thread,
 if the browser cannot send (large) typed arrays to web workers. 
-
