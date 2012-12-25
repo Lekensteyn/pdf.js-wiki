@@ -14,15 +14,16 @@ An overview how to contribute code to the pdf.js project.  The basic workflow:
 
 ### The Bare Necessities
 * git client
-* git hub account
-* python - http://www.python.org/download/
-* node - http://nodejs.org/
-* gjslint - _Use version 2.3.5_ https://developers.google.com/closure/utilities/docs/linter_howto
+* github account
+* [python](http://www.python.org/download/)
+* [node](http://nodejs.org/)
+* [gjslint](https://developers.google.com/closure/utilities/docs/linter_howto) - _Use version 2.3.5_ 
+    * [easy_install on Ubuntu](http://www.hacksparrow.com/ubuntu-how-to-install-easy_install.html)
 * (for Windows, see [[Setting up pdf.js Development Environment for Windows]])
 
-**Before you make any changes to the code you'll probably want jump down to the section on "Generating Reference Images" to create the reference snapshot images so you can run the test framework and check for regressions.**
+**Before you make any changes to the code you'll probably want jump down to [Generating Reference Images](#ref-images) to create the reference snapshot images so you can run the test framework and check for regressions.**
  
-If you're familiar with github and doing feature branches you can skip down to "4) Run Lint and Testing"...
+If you're familiar with github and doing feature branches you can skip down to [Run Lint and Testing](#lint)...
 
 ### 1) Fork
 To fork the repository you'll need to sign up for a github account. Once you have an account just click the little fork button up top. Now that you have your fork you'll need to clone it (replace `<YOUR USERNAME>`):
@@ -47,7 +48,7 @@ Now that you have new branch created you can edit/add/delete files. Follow the s
 
 If the branch contains lot of small commits, you might be asked to squash the commits. You can use git rebase option or follow the [[Squashing Commits]] instructions.
 
-### 4) Run Lint and Testing
+### <a id="lint"></a> 4) Run Lint and Testing
 **Run Lint**
 
 Make sure your code follows our style guides, run from the pdf.js folder:
@@ -64,7 +65,7 @@ To ensure your changes didn't introduce any regressions you'll need to run the t
 * fbf - a forward back forward test
 * unit tests - jasmine unit tests that are run separately from the above tests
 
-**Generating Reference Images**
+<a id="ref-images"></a>**Generating Reference Images**
 
 The reference tests require you to generate the original snapshots for comparison.  The snapshots should be generated before you make any changes. If you have already made some changes `git stash` your work. Then make sure you have setup a browser_manifest file.  There are templates located in `test/resources/browser_manifests/`.  Copy one of the templates (replace `<your os>` with mac, linux, or win).
 
