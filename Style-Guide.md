@@ -28,6 +28,19 @@ _Note: This wasn't always followed, but any new code should do this._
 if (someVar) {
 ```
 
+## Equalities
+* Use only strict equalities (and inequalities) in control statements, e.g.
+
+```javascript
+if (someVar === conditionA) {
+  return true;
+} else if (someVar !== conditionB) {
+  return false;
+}
+```
+
+_Note: This wasn't always followed, but any new code should do this._
+
 ## Classes
 The standard way of creating classes in pdf.js is the following. Please note that by class we mean an object that is class-like. Also, note the naming of all anonymous functions.
 
