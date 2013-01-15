@@ -56,6 +56,15 @@ Make sure your code follows our style guides, run from the pdf.js folder:
 ```
 node make lint
 ```
+
+***Protip***: If you are a Vim user, then install [syntastic](http://www.vim.org/scripts/script.php?script_id=2736) and add the following line to your `.vimrc`:
+
+```
+let g:syntastic_javascript_checker = "gjslint"
+```
+
+Now you have automatic linting of your changes to javascript files whenever you save.
+
 **Run Testing**
 
 To ensure your changes didn't introduce any regressions you'll need to run the testing framework. There are four basic types of tests:
