@@ -17,9 +17,43 @@ To enable see above.
 ### Font Inspector
 `id: FontInspector`
 
-The font inspector allows you to view what fonts are used within page.  It also allows you to download the base64 version of the font which can be copied into the online font sanitizer that provides more information about why a font is being rejected (see http://async5.org/ots-95/ots.html). Further, you can download the font and use the `base64` command on most unix systems to decode the font and save it as a true type font file.  The decoded font file can then be checked with more programs such as [FontForge](http://fontforge.sourceforge.net/), [Microsoft Font Validator](http://www.microsoft.com/typography/FontValidator.mspx), [Adobe FDK](http://www.adobe.com/devnet/opentype/afdko.html), or [ttx](http://www.letterror.com/code/ttx/).
+The font inspector allows you to view what fonts are used within page.  It also allows you to download the font using `Save Link As..` and naming it with a `.otf` extension.  See the section below on debugging fonts.
 
 ### Stepper
 `id: Stepper`
 
 The stepper tool makes it so you can step through the drawing commands one at a time and hopefully find where a possible issue is coming from. It is also useful for learning how a PDF is structured and the order of its operations.  To walk through the drawing commands first add a break point, refresh the page and then use the keys `s` to step one command at a time or `c` to continue until the next breakpoint(line that is checked).
+
+## Debugging Font Issues
+To get the problematic font out of the PDF, first download it using the font inspector mentioned above.
+
+### Fonts Failing Sanitizer
+If the font is failing the open type sanitizer(ots) Firefox should show a message in the console about the rejected font.  Take base64 version of the font and paste it into the online font sanitizer that provides more information about why the font is being rejected (see http://async5.org/ots-95/ots.html).  You can then look the ots source code linked there to find further information. 
+
+### Helpful Font Tools
+If the font isn't failing the sanitizer or the sanitizer error doesn't lead you to the font issue it is often helpful to use other font tools to try and find the source of the problem.
+
+**[TTX](http://www.letterror.com/code/ttx/)**
+
+TTX is probably the most useful tool for debugging fonts.  It provides a way to convert fonts to xml and then back to the open type format from the xml. A helpful test is to first convert the font to xml, then back to otf, then test if the font works using a test html page.  
+
+```
+% ttx font.otf && ttx font.ttx
+```
+
+If the font works after running through ttx you can then do a binary diff of the to font files to try and track down the problematic portion.  If the font still isn't working after conversion, you can then start removing parts of the xml file and converting it back to otf to see if which section may be causing issues.
+
+**[Adobe FDK](http://www.adobe.com/devnet/opentype/afdko.html)**
+
+Adobe font development kit includes the above TTX program and several other programs such as tx and sfntedit.  Running the font through tx can provide warnings an useful information.  TX can be used to do a round-trip conversion to look for problems in a similar fashion as ttx can be used. For example converting a CID font:
+
+```
+ % tx -t1 font.otf font.cid
+ % tx -cff font.cid font.cff
+ % sfntedit -a CFF=font.cff font.otf
+ % sfntedit -f font.otf
+```
+
+**Other Font Tools**
+* [FontForge](http://fontforge.sourceforge.net/)
+* [Microsoft Font Validator](http://www.microsoft.com/typography/FontValidator.mspx)
