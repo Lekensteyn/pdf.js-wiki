@@ -162,3 +162,8 @@ if the browser does not support web workers.
 
 The PDF.js will execute all code on the main thread,
 if the browser cannot send (large) typed arrays to web workers. 
+
+## <a id="Worker-xhr-response"</a>XMLHttpRequest supports the response property in web workers
+
+The PDF.js will execute all code on the main thread,
+if the browser cannot request network binary data from web workers. 
