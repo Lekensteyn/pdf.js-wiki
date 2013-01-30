@@ -23,7 +23,7 @@ The goal is to support all HTML5 compliant browsers, but since feature support v
   <tr>
     <td>Chrome Stable</td>
     <td>yes</td>
-    <td>Linux</td>
+    <td>Windows and Linux</td>
     <td></td>
   </tr>
   <tr>
