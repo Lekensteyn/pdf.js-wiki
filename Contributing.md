@@ -17,8 +17,6 @@ An overview how to contribute code to the pdf.js project.  The basic workflow:
 * github account
 * [python](http://www.python.org/download/)
 * [node](http://nodejs.org/)
-* [gjslint](https://developers.google.com/closure/utilities/docs/linter_howto) - _Use version 2.3.5_ 
-    * [easy_install on Ubuntu](http://www.hacksparrow.com/ubuntu-how-to-install-easy_install.html)
 * (for Windows, see [[Setting up pdf.js Development Environment for Windows]])
 
 **Before you make any changes to the code you'll probably want jump down to [Generating Reference Images](#ref-images) to create the reference snapshot images so you can run the test framework and check for regressions.**
@@ -56,11 +54,12 @@ Make sure your code follows our style guides, run from the pdf.js folder:
 ```
 node make lint
 ```
+First time you run the command above, the jshint will be automatically installed in the pdf.js folder.
 
 ***Protip***: If you are a Vim user, then install [syntastic](http://www.vim.org/scripts/script.php?script_id=2736) and add the following line to your `.vimrc`:
 
 ```
-let g:syntastic_javascript_checker = "gjslint"
+let g:syntastic_javascript_checker = "jshint"
 ```
 
 Now you have automatic linting of your changes to javascript files whenever you save.
