@@ -8,3 +8,4 @@ For getting started please see the README.
 + [Learning Resources](wiki/Additional-Learning-Resources) - Additional reading material, presentations, videos;
 + [Required Browser Features](wiki/Required-Browser-Features);
 + [Glossary](wiki/Glossary) - Commonly used terms.
++ [Subscripe Bugzilla Component](wiki/Subscripe-Mozilla%27s-Bugzilla-Firefox-PDF-Viewer-component) - How to get updates for changes done in the Mozilla Bugzilla Firefox PDF Viewer component
