@@ -23,7 +23,7 @@ No emulation of the CANVAS element is provided for the browsers that do not supp
     <tr>
       <td>Yes (v.25)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (V.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -56,7 +56,7 @@ The browsers that don't understand this syntax will not be able to execute the c
     <tr>
       <td>Yes (v.25)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (V.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -82,7 +82,7 @@ No emulation of the `addEventListener` method is provided in the browsers that d
     <tr>
       <td>Yes (v.25)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (V.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -572,7 +572,7 @@ properly (example: [#2351](https://github.com/mozilla/pdf.js/issues/2351)) if th
     <tr>
       <td>No (v.25)</td>
       <td>?</td>
-      <td>?</td>
+      <td>No (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -598,7 +598,7 @@ properly if this feature is not supported.
     <tr>
       <td>Yes (v.25)</td>
       <td>?</td>
-      <td>?</td>
+      <td>No (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
