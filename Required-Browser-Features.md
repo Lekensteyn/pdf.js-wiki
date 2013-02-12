@@ -21,7 +21,7 @@ No emulation of the CANVAS element is provided for the browsers that do not supp
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -54,7 +54,7 @@ The browsers that don't understand this syntax will not be able to execute the c
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -80,7 +80,7 @@ No emulation of the `addEventListener` method is provided in the browsers that d
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -109,7 +109,7 @@ If the `Float32Array` native implementation exists and the `Float64Array` is abs
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -134,7 +134,7 @@ The `Object.create` method will be added to the `Object` function if the native 
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -160,7 +160,7 @@ The `Object.defineProperty` method will be added to the `Object` function if the
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -186,7 +186,7 @@ In this case, the `Object.defineProperty` be replaced by the artificial one. See
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -212,7 +212,7 @@ In this case, the `Object.defineProperty` be replaced by the artificial one. See
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -237,7 +237,7 @@ The `Object.keys` method will be added to the `Object` function if the native im
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -262,7 +262,7 @@ The `FileReader` allows PDF.js read the file data provided in the input[type=fil
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -287,7 +287,7 @@ Older browsers has no `readAsArrayBuffer` method implementation: the `readAsBina
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -312,7 +312,7 @@ The empty `overrideMimeType` method will be added to the `XMLHttpRequest.prototy
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -338,7 +338,7 @@ This is important for retrieving the binary PDF data using XHR.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -363,7 +363,7 @@ The `btoa` will be added to the window object, if the browser does not support i
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -388,7 +388,7 @@ The `bind` method will be added to the `Function.prototype`, if the browser does
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -415,7 +415,7 @@ attached to specific HTML DOM element.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -441,7 +441,7 @@ This is important to simplify the viewer implementation.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -467,7 +467,7 @@ if the browser does not support it. This is important for output of the error me
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -493,7 +493,7 @@ the bind method with these functions.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -519,7 +519,7 @@ No emulation is provided in browsers that do not support it.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -544,7 +544,7 @@ The language getter will be added to the window.navigator object, if the browser
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -570,7 +570,7 @@ properly (example: [#2351](https://github.com/mozilla/pdf.js/issues/2351)) if th
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>No (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -596,7 +596,7 @@ properly if this feature is not supported.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -622,7 +622,7 @@ style rule, the document will not be displayed property.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -648,7 +648,7 @@ if the browser cannot tell if fonts are loaded and can be used.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Emulated (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -674,7 +674,7 @@ if the browser does not support web workers.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -700,7 +700,7 @@ if the browser cannot send (large) typed arrays to web workers.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -726,7 +726,7 @@ if the browser cannot request network binary data from web workers.
   </thead>
   <tbody>
     <tr>
-      <td>?</td>
+      <td>Yes (v.25)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
