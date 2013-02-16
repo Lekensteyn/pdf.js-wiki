@@ -21,7 +21,7 @@ No emulation of the CANVAS element is provided for the browsers that do not supp
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
       <td>Yes (V.9)</td>
       <td>?</td>
@@ -54,7 +54,7 @@ The browsers that don't understand this syntax will not be able to execute the c
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
       <td>Yes (V.9)</td>
       <td>?</td>
@@ -80,7 +80,7 @@ No emulation of the `addEventListener` method is provided in the browsers that d
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
       <td>Yes (V.9)</td>
       <td>?</td>
@@ -109,9 +109,9 @@ If the `Float32Array` native implementation exists and the `Float64Array` is abs
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -134,9 +134,9 @@ The `Object.create` method will be added to the `Object` function if the native 
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -160,9 +160,9 @@ The `Object.defineProperty` method will be added to the `Object` function if the
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -186,9 +186,9 @@ In this case, the `Object.defineProperty` be replaced by the artificial one. See
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -212,9 +212,9 @@ In this case, the `Object.defineProperty` be replaced by the artificial one. See
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -237,9 +237,9 @@ The `Object.keys` method will be added to the `Object` function if the native im
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -262,9 +262,9 @@ The `FileReader` allows PDF.js read the file data provided in the input[type=fil
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -287,9 +287,9 @@ Older browsers has no `readAsArrayBuffer` method implementation: the `readAsBina
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -312,9 +312,9 @@ The empty `overrideMimeType` method will be added to the `XMLHttpRequest.prototy
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Emulated (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -338,9 +338,9 @@ This is important for retrieving the binary PDF data using XHR.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -363,9 +363,9 @@ The `btoa` will be added to the window object, if the browser does not support i
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -388,9 +388,9 @@ The `bind` method will be added to the `Function.prototype`, if the browser does
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -415,9 +415,9 @@ attached to specific HTML DOM element.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Emulated (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -441,9 +441,9 @@ This is important to simplify the viewer implementation.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -467,9 +467,9 @@ if the browser does not support it. This is important for output of the error me
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -493,9 +493,9 @@ the bind method with these functions.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -519,7 +519,7 @@ No emulation is provided in browsers that do not support it.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -544,9 +544,9 @@ The language getter will be added to the window.navigator object, if the browser
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Emulated (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -596,7 +596,7 @@ properly if this feature is not supported.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
       <td>No (v.10)</td>
       <td>?</td>
@@ -622,9 +622,9 @@ style rule, the document will not be displayed property.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -650,7 +650,7 @@ if the browser cannot tell if fonts are loaded and can be used.
     <tr>
       <td>Emulated (v.25)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -699,9 +699,9 @@ if the browser does not support web workers.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -725,9 +725,9 @@ if the browser cannot send (large) typed arrays to web workers.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
@@ -751,9 +751,9 @@ if the browser cannot request network binary data from web workers.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.25)</td>
+      <td>Yes (v.24)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.10)</td>
       <td>?</td>
       <td>?</td>
     </tr>
