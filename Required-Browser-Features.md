@@ -659,7 +659,7 @@ if the browser cannot tell if fonts are loaded and can be used.
 
 ## <a id="TextDecoder"></a>TextDecoder is supported
 
-Some East Asian PDFs will be completely garbled, if the browser does not support TextDecoder. 
+Some East Asian PDFs will be completely garbled, if the browser does not support the `TextDecoder`. 
 
 <table>
   <thead>
@@ -762,7 +762,7 @@ if the browser cannot request network binary data from web workers.
 
 ## <a id="Worker-TextDecoder"></a>TextDecoder is supported in web workers
 
-Texts will not be copied properly on some East Asian PDFs, if the browser does not support TextDecoder in web workers.
+Texts will not be copied properly on some East Asian PDFs. If the browser does not support the `TextDecoder` in web workers, the `FileReaderSync` will be used instead.
 
 <table>
   <thead>
