@@ -657,6 +657,31 @@ if the browser cannot tell if fonts are loaded and can be used.
   </tbody>
 </table>
 
+## <a id="TextDecoder"></a>TextDecoder is supported
+
+Some East Asian PDFs will be completely garbled, if the browser does not support TextDecoder. 
+
+<table>
+  <thead>
+    <tr>
+      <th>Chrome</th>
+      <th>Firefox (Gecko)</th>
+      <th>Internet Explorer</th>
+      <th>Opera</th>
+      <th>Safari</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No (v.24)</td>
+      <td>Yes (v.18)</td>
+      <td>No (v.10)</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+  </tbody>
+</table>
+
 ## <a id="Worker"></a>Worker is supported/enabled
 
 The PDF.js will execute all code (even long running) on the main thread,
@@ -731,6 +756,31 @@ if the browser cannot request network binary data from web workers.
       <td>?</td>
       <td>?</td>
       <td>?</td>
+    </tr>
+  </tbody>
+</table>
+
+## <a id="Worker-TextDecoder"></a>TextDecoder is supported in web workers
+
+Texts will not be copied properly on some East Asian PDFs, if the browser does not support TextDecoder in web workers.
+
+<table>
+  <thead>
+    <tr>
+      <th>Chrome</th>
+      <th>Firefox (Gecko)</th>
+      <th>Internet Explorer</th>
+      <th>Opera</th>
+      <th>Safari</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Emulated (v.24)</td>
+      <td>Yes (v.20)</td>
+      <td>Emulated (v.10)</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
   </tbody>
 </table>
