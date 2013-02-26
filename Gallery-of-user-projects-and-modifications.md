@@ -15,6 +15,7 @@
 + [Page flip effect - based on www.turnjs.com jQuery plugin](http://www.maxims6n.bget.ru/pdf_books/demo_21.html) (@MaximS)
 + [OwnCloud uses pdfjs as document viewer] (http://www.webupd8.org/2012/01/owncloud-3-gets-built-in-text-editor.html)
 + [doctape - store & view PDFs, office formats and vector graphics. Includes alternative UI & Flexpaper (Flash) fallback.] (http://www.doctape.com)
++ [SpanDeX.io - write, share, collaborate on LaTeX documents with live-updating side-by-side PDF preview] (http://www.spandex.io)
 
 ### Current Deployments
 
