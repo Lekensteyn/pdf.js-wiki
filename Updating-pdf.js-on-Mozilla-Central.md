@@ -86,3 +86,26 @@ hg qpop
 ```
 hg export qtip > ~/projects/mine/pdf.js/patches~/bug-743264-fix.patch
 ```
+
+### If Uplift is Needed
++ Find what version of pdf.js is in the branch by looking at the pdf.js file and PDFJS.build variable e.g. PDFJS.build = 'f8e70dc';
+
++ Check out that version
+```
+git checkout -b tt-aurora-fix <baseLineCommit>
+```
+
++ Cherry Pick the commit you need to uplift
+```
+git cherry-pick <someCommit>
+```
+
++ Build the patch
+```
+BASELINE=<baseLineCommit> node make mozcentralbaseline; node make mozcentraldiff
+```
+
++ Apply that to the branch
+```
+qimport -n cherry-pick <pdf.js build folder>/mozcentral.diff; qpush;
+```
