@@ -3,6 +3,7 @@
 * [What browsers are supported?](#faq-support)
 * [What browsers have extensions (and where can I find install procedures)?](#faq-extensions)
 * [I know JavaScript and want to contribute to the project. How do I start?](#faq-contrib)
+* [Is it possible to add annotations to a PDF?](#faq-annotations)
 
 <a name="file"></a>
 ## Can I specify different PDF in the default viewer?
@@ -57,3 +58,7 @@ There is currently a Firefox and Chrome extension.  The Firefox extension is wel
 <a name="faq-contrib"></a>
 ## I know JavaScript and want to contribute to the project. How do I start?
 First, you need to prepare your [fork](https://help.github.com/articles/fork-a-repo) and setup the development environment. Don't forget to read the [[Contributing]] page. Second, make yourself familiar with the [PDF format and PDF.js internals](Additional-Learning-Resources). Third, if you don't already have a certain issue you want to fix, choose one from the [open issues labeled 5-good-beginner-bug](https://github.com/mozilla/pdf.js/issues?direction=desc&labels=5-good-beginner-bug&page=1&sort=created&state=open).  Last, submit a [pull request](https://help.github.com/articles/using-pull-requests) for the review. _During any part of the process we recommend to communicate with the PDF.js team on #pdfjs IRC channel at irc.mozilla.org if you have questions or need to find a reviewer._
+
+<a name="faq-annotations"></a>
+## Is it possible to add annotations to a PDF?
+PDF.js is mainly written for *reading* PDF files, not editing them. Because of that we don't yet support adding any kind of annotations. We do however support rendering a number of annotation types.
