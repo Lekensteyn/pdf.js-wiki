@@ -1,5 +1,5 @@
 ## Enabling
-As a safety precaution the debugging tools for the extension and the version of pdf.js bundled with firefox will require the user to set a pref in `about:config`:
+As a safety precaution the debugging tools for the extension and the version of pdf.js bundled with firefox will require the user to set/create a pref in `about:config`:
 
 * Extension Version: `extensions.uriloader@pdf.js.pdfBugEnabled` setting (boolean `true`)
 * Mozilla Central(Firefox) Version: `pdfjs.pdfBugEnabled` setting (boolean `true`)
