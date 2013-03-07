@@ -4,6 +4,7 @@
 * [What browsers have extensions (and where can I find install procedures)?](#faq-extensions)
 * [I know JavaScript and want to contribute to the project. How do I start?](#faq-contrib)
 * [Is it possible to add annotations to a PDF?](#faq-annotations)
+* [What are the pdf.js keyboard shortcuts?](#faq-shortcuts)
 
 <a name="file"></a>
 ## Can I specify different PDF in the default viewer?
@@ -62,3 +63,21 @@ First, you need to prepare your [fork](https://help.github.com/articles/fork-a-r
 <a name="faq-annotations"></a>
 ## Is it possible to add annotations to a PDF?
 PDF.js is mainly written for *reading* PDF files, not editing them. Because of that we don't yet support adding any kind of annotations. We do however support rendering a number of annotation types.
+
+<a name="faq-shortcuts"></a>
+## What are the pdf.js keyboard shortcuts?
+(warning, the following list may be incomplete)
+### Navigation
+* **next page:** n, k, right arrow key
+* **previous page:** p, j, left arrow key
+
+In full screen mode, the home, end, page up, page down, and all arrow keys can be used to navigate the document.
+### Zoom and rotate
+User interface buttons or ctrl + mouse wheel can be used to change the zooming level, but keyboard shortcuts are also available:
+* **zoom in:** ctrl + "+", ctrl + = 
+* **zoom out:** ctrl + -
+* **restore normal zoom:** ctrl + 0 (in full screen mode)
+* **rotate the document clockwise:** r
+* **rotate counterclockwise:** shift + r
+
+(replace ctrl with meta on some configurations)
