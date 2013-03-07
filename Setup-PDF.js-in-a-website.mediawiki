@@ -1,0 +1,50 @@
+== Setup testing environnement ==
+
+ sudo apt-get install nodejs npm
+ cd <pleade-entreprise>/src/webapp/theme/js/
+ git clone git://github.com/mozilla/pdf.js.git pdfjs
+
+=== Start Test Server ===
+
+ cd ./pdfjs/
+ nodejs make server
+
+Then you can reach this {{value|nodejs}} server via the following url : http://localhost:8888/web/viewer.html
+
+  http://localhost:8888/web/viewer.html
+
+You can test your own document by placing them into the {{path|test/}} directory and using URL such as :
+
+  http://localhost:8888/test/your-test-file.pdf
+
+=== Opening PDF from your website ===
+
+You need to use the {{attr|file}} parameter in the URL whom value is a full [https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/encodeURI encodedURI]:
+
+  http://mozilla.github.com/pdf.js/web/viewer.html?file=http%3A%2F%2Fasync5.org%2Fmoz%2Fpdfjs.pdf
+
+== Compile the PDF.js ==
+
+=== For Linux ===
+Linux user need to create a symlink from {{cmd|nodejs}} to {{cmd|node}} otherwise the build will stall on:
+
+  ### Getting extension build number
+
+On {{value|Debian}}/{{value|Ubuntu}} you can do :
+
+ sudo ln -s $(which nodejs) /usr/local/bin/node
+ . $HOME/."$(basename "$SHELL")"rc # recharge le shell
+
+=== Build ===
+
+ node make generic
+ 
+ ### Getting extension build number
+ Extension build number: 331
+ 
+ ### Bundling files into build/pdf.js
+ 
+ ### Building localization files
+ 
+ ### Creating generic viewer
+
