@@ -41,3 +41,12 @@ You should get this output:
  
  ### Creating generic viewer
 
+=== Compressing PDF.js ===
+You can do minify PDF.js by approximatively 30% with [http://yui.github.com/yuicompressor yui-compressor] or others [http://stackoverflow.com/questions/28932/best-javascript-compressor minification tools].
+
+==== Ubuntu ====
+There is a package on Ubuntu 12.10/Linux Mint 14 :
+
+ sudo apt-get install yui-compressor
+ cd <pdfjs>
+ yui-compressor ./build/pdf.js -o pdf-min.js
