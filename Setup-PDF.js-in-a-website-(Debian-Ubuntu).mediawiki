@@ -25,20 +25,13 @@ You need to use the {{attr|file}} parameter in the URL whom value is a full [htt
 
 == Compile the PDF.js ==
 
-=== For Linux ===
-Linux user need to create a symlink from {{cmd|nodejs}} to {{cmd|node}} otherwise the build will stall on:
-
-  ### Getting extension build number
-
-On {{value|Debian}}/{{value|Ubuntu}} you can do :
-
- sudo ln -s $(which nodejs) /usr/local/bin/node
- . $HOME/."$(basename "$SHELL")"rc # recharge le shell
-
 === Build ===
+You need to run this command
 
  node make generic
- 
+
+You should get this output:
+
  ### Getting extension build number
  Extension build number: 331
  
