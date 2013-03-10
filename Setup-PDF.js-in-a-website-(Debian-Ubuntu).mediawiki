@@ -42,15 +42,19 @@ You should get this output:
  ### Creating generic viewer
 
 === Compressing PDF.js ===
+
+'''Minification is NOT supported''' by the developer of the project. First start testing with the full build, then use the minified version. From my test, the '''minified version did NOT''' work while the normal version was.
+
 You can do minify PDF.js by approximatively 30% with [http://yui.github.com/yuicompressor yui-compressor] or others [http://stackoverflow.com/questions/28932/best-javascript-compressor minification tools].
 
 ==== Ubuntu ====
+
 There is a package on Ubuntu 12.10/Linux Mint 14 :
 
  sudo apt-get install yui-compressor
  cd <pdfjs>
  mkdir ./production/
- yui-compressor ./build/pdf.js -o ./production/pdf-min.js
+ # yui-compressor ./build/pdf.js -o ./production/pdf-min.js
 
 == From Build to Production ==
 Now that your build is done, you can copy the viewer and its resources to your production directory:
