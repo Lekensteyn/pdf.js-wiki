@@ -49,4 +49,24 @@ There is a package on Ubuntu 12.10/Linux Mint 14 :
 
  sudo apt-get install yui-compressor
  cd <pdfjs>
- yui-compressor ./build/pdf.js -o pdf-min.js
+ mkdir ./production/
+ yui-compressor ./build/pdf.js -o ./production/pdf-min.js
+
+== From Build to Production ==
+Now that your build is done, you can copy the viewer and its resources to your production directory:
+
+ # directory holding image and i18n
+ cp -R ./build/generic/web/{images,locale}/ ./production
+ # compatibility.js is needed to support IE8+, Opera, etc.
+ # l10n.js is for localization (translation's files are in locale/)
+ cp ./build/generic/web/{viewer.{js,html,css},{compatibility,l10n}.js} ./production
+
+=== Use the Minified File ===
+
+Be sure to edit `viewer.html` and `viewer.js` to use the correct file, the default it to use `pdf.js`. Here we want to use the minified version:
+
+ <!-- viewer.html -->
+ <script type="text/javascript" src="./pdf-min.js"></script>
+
+ // viewer.js
+ PDFJS.workerSrc = './pdf-min.js';
