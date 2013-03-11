@@ -41,7 +41,7 @@ You should get this output:
  
  ### Creating generic viewer
 
-=== Compressing PDF.js ===
+=== Compressing PDF.js (unsupported!) ===
 
 '''Minification is NOT supported''' by the developer of the project. First start testing with the full build, then use the minified version. From my test, the '''minified version did NOT''' work while the normal version was.
 
@@ -54,7 +54,21 @@ There is a package on Ubuntu 12.10/Linux Mint 14 :
  sudo apt-get install yui-compressor
  cd <pdfjs>
  mkdir ./production/
- # yui-compressor ./build/pdf.js -o ./production/pdf-min.js
+ # yui-compressor ./build/pdf.js -o ./production/pdf-min.js # BEWARE UNSUPPORTED BEHAVIOR
+
+==== Use the Minified File ====
+
+'''Minification break the libs''' using yui-compressor and PDF.js v0.7.339 (build: 0ebe91c). Try at your own risk.
+
+Be sure to edit `viewer.html` and `viewer.js` to use the correct file, the default it to use `pdf.js`. Here we want to use the minified version:
+
+ <!-- viewer.html -->
+ <script type="text/javascript" src="./pdf-min.js"></script>
+
+ // viewer.js
+ PDFJS.workerSrc = './pdf-min.js';
+
+
 
 == From Build to Production ==
 Now that your build is done, you can copy the viewer and its resources to your production directory:
@@ -64,13 +78,3 @@ Now that your build is done, you can copy the viewer and its resources to your p
  # compatibility.js is needed to support IE8+, Opera, etc.
  # l10n.js is for localization (translation's files are in locale/)
  cp ./build/generic/web/{viewer.{js,html,css},{compatibility,l10n}.js} ./production
-
-=== Use the Minified File ===
-
-Be sure to edit `viewer.html` and `viewer.js` to use the correct file, the default it to use `pdf.js`. Here we want to use the minified version:
-
- <!-- viewer.html -->
- <script type="text/javascript" src="./pdf-min.js"></script>
-
- // viewer.js
- PDFJS.workerSrc = './pdf-min.js';
