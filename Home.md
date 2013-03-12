@@ -1,6 +1,6 @@
 For getting started please see the README.
 
-+ [Setup pdf.js in a website](Setup pdf.js in a website) ([Linux](Setup-PDF.js-in-a-website-(Debian-Ubuntu\))/Windows/Mac)
++ [Setup pdf.js in a website](Setup-pdf.js-in-a-website) ([Linux](Setup-PDF.js-in-a-website-%28Debian-Ubuntu%29)/Windows/Mac)
 + [FAQ](wiki/Frequently-Asked-Questions) - Frequently Asked Questions;
 + [Gallery of user projects and modifications](wiki/Gallery-of-user-projects-and-modifications);
 + [Contributing/Workflow](wiki/Contributing) - How to contribute to the pdf.js project. Also, contains more information on setting up testing;
