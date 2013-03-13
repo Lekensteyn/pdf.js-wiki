@@ -27,7 +27,7 @@ try = ssh://hg.mozilla.org/try
 ```
 Host hg.mozilla.org
         User YOUR_HANDLE@mozilla.com
-        IdentityFile ~/.ssh/id_rsa.pub
+        IdentityFile ~/.ssh/id_rsa
 ```
 
 ### Updating Steps
