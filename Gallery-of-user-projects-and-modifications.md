@@ -1,3 +1,7 @@
+### Unofficial builds
+
++ [Chrome extension](https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm) (@Rob--W)
+
 ### Alternative UI
 
 + [PDF Viewer Panel for the Ext JS 4.1 Framework](https://github.com/SunboX/ext_ux_pdf_panel) (@sonnenkiste)
