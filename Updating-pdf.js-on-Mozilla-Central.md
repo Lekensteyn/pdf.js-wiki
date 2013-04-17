@@ -30,6 +30,18 @@ Host hg.mozilla.org
         IdentityFile ~/.ssh/id_rsa
 ```
 
++ Setup Git
+	+ Make sure your account's default identity is set.
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+	+ On Windows, make sure automatic line endings conversion is turned off.
+```
+git config --global core.autocrlf false
+```
+
 ### Updating Steps
 
 + make sure all patches are popped off your queue
