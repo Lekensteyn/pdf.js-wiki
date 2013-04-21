@@ -9,4 +9,4 @@ For getting started please see the README.
 + [Glossary](wiki/Glossary) - Commonly used terms.
 + [Gallery of user projects and modifications](wiki/Gallery-of-user-projects-and-modifications).
 + [Setup pdf.js in a website](wiki/Setup-pdf.js-in-a-website) ([Linux](wiki/Setup-PDF.js-in-a-website-%28Debian-Ubuntu%29)/Windows/Mac)
-+ [Viewer options] - Options for pdf.js's viewer that can be given at the URL level
++ [Viewer options](wiki/Viewer-options) - Options for pdf.js's viewer that can be given at the URL level
