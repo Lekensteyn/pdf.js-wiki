@@ -1,6 +1,6 @@
 # Required Browser Features
 
-The page describes the features that are a required for a web browser to have to PDF.js function properly. Some of the features are critical and does not let PDF.js function properly if they are not supported or disabled. Some of them can be emulated if absent (e.g. in the [compatibility.js](https://github.com/mozilla/pdf.js/blob/master/web/compatibility.js) file), however the PDF.js performance and memory usage will be worse than when the feature is present.
+The page describes the features that are required for a web browser to have PDF.js function properly. Some of the features are critical and does not let PDF.js function properly if they are not supported or disabled. Some of them can be emulated if absent (e.g. in the [compatibility.js](https://github.com/mozilla/pdf.js/blob/master/web/compatibility.js) file), however the PDF.js performance and memory usage will be worse than when the feature is present.
 
 The required features tests can be run at http://mozilla.github.com/pdf.js/features/
 
@@ -93,7 +93,7 @@ No emulation of the `addEventListener` method is provided in the browsers that d
 
 The `Uint8Array`, `Uint16Array`, `Int32Array`, `Uint32Array`, `Float32Array` and `Float64Array` will be replaced by the artificial TypedArray object if those types are not implemented natively.
 
-Only `subarray`, `buffer`, `set` and `byteLength` are similated. The `subarray` just clones the array. The `set` method is provided to emulate the `Uint8Array`'s `set` method. The emulated typed arrays are slower, don't truncate the items to specific data types and they are memory inefficient.
+Only `subarray`, `buffer`, `set` and `byteLength` are similated. The `subarray` just clones the array. The `set` method is provided to emulate the `Uint8Array`'s `set` method. The emulated typed arrays are slower, don't truncate the items to specific data types and are memory inefficient.
 
 If the `Float32Array` native implementation exists and the `Float64Array` is absent, then the `Float32Array` will be used instead of `Float64Array`.
 
@@ -172,7 +172,7 @@ The `Object.defineProperty` method will be added to the `Object` function if the
 ## <a id="Object-defineProperty-DOM"></a>Object.defineProperty() can be used with DOM objects
 
 Some browsers do not allow using the `Object.defineProperty` with DOM objects.
-In this case, the `Object.defineProperty` be replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty).
+In this case, the `Object.defineProperty` is replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty).
 
 <table>
   <thead>
@@ -198,7 +198,7 @@ In this case, the `Object.defineProperty` be replaced by the artificial one. See
 ## <a id="get-literal-redefine"></a>Defined via get-literal properties can be redefined
 
 Some browsers does not allow redefine properties defined with get literal by the `Object.defineProperty`.
-In this case, the `Object.defineProperty` be replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty).
+In this case, the `Object.defineProperty` is replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty).
 
 <table>
   <thead>
@@ -248,7 +248,7 @@ The `Object.keys` method will be added to the `Object` function if the native im
 
 ## <a id="FileReader"></a>FileReader is present
 
-The `FileReader` allows PDF.js read the file data provided in the input[type=file] HTML element. The live PDF.js demo will not be able to read local file, if the `FileReader` object is not supported.
+The `FileReader` allows PDF.js read the file data provided in the input[type=file] HTML element. The live PDF.js demo will not be able to read a local file, if the `FileReader` object is not supported.
 
 <table>
   <thead>
@@ -273,7 +273,7 @@ The `FileReader` allows PDF.js read the file data provided in the input[type=fil
 
 ## <a id="FileReader-readAsArrayBuffer"></a>FileReader.prototype.readAsArrayBuffer() is present
 
-Older browsers has no `readAsArrayBuffer` method implementation: the `readAsBinaryString` will be used to emulate its functionality.
+Older browsers that have no `readAsArrayBuffer` method implementation: the `readAsBinaryString` will be used to emulate its functionality.
 
 <table>
   <thead>
@@ -453,7 +453,7 @@ This is important to simplify the viewer implementation.
 ## <a id="console"></a>console object is present
 
 The `console` object will be added to the window object with empty `log` and `error` methods,
-if the browser does not support it. This is important for output of the error message and diagnostic information.
+if the browser does not support it. This is important for the output of error messages and diagnostic information.
 
 <table>
   <thead>
@@ -478,7 +478,7 @@ if the browser does not support it. This is important for output of the error me
 
 ## <a id="console-log-bind"></a>console.log is a bind-able function
 
-The `console.log` and `console.error` functions will be replaced, if the browser does not allow to use
+The `console.log` and `console.error` functions will be replaced, if the browser does not allow using
 the bind method with these functions.
 
 <table>
@@ -607,7 +607,7 @@ properly if this feature is not supported.
 
 ## <a id="font-face"></a>@font-face is supported/enabled
 
-Most of PDF documents are using embedded fonts. If the browser does not support `@font-face`
+Most of PDF documents use embedded fonts. If the browser does not support `@font-face`
 style rule, the document will not be displayed property.
 
 <table>
