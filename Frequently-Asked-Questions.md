@@ -12,7 +12,7 @@ You can modify DEFAULT_URL variable in the web/viewer.js file. Or, you can appen
 
 <a name="faq-xhr"></a>
 ## Can I load a PDF from another server (cross domain request)?
-Not by default, but it is possible.  PDF.js runs with the same permissions as any other javascript, which means it cannot do cross origin requests (see [Same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) and [example](https://gist.github.com/3452072)).  There are some possible ways to get around this such as using [CORS](http://enable-cors.org/) or setting up a proxy on your server that will feed pdf.js the pdf.  Both workarounds are out of the scope of the pdf.js project and we will not provide code to do either.
+Not by default, but it is possible.  PDF.js runs with the same permissions as any other javascript, which means it cannot do cross origin requests (see [Same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) and [example](https://gist.github.com/3452072)).  There are some possible ways to get around this such as using [CORS](http://enable-cors.org/) (and [unsafe headers issue](https://github.com/mozilla/pdf.js/issues/3150#issuecomment-17582371)) or setting up a proxy on your server that will feed pdf.js the pdf.  Both workarounds are out of the scope of the pdf.js project and we will not provide code to do either.
 
 <a name="faq-support"></a>
 ## What browsers are supported?
