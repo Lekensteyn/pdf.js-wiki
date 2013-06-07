@@ -36,6 +36,10 @@ Test files:
 Presentations:
 + http://labs.appligent.com/presentations/recognizing_malformed_pdf_f.pdf
 
+Examples:
++ [Minimal example that showcases PDF rendering with text selection enabled](http://github.com/mozilla/pdf.js/wiki/Minimal-example-that-showcases-PDF-rendering-with-text-selection-enabled)
+
+
 ## Related projects
 
 Open source projects:
