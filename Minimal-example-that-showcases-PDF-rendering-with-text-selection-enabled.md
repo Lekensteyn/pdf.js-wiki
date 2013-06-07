@@ -1,6 +1,6 @@
 This page shows you how to render a PDF with text-selection enabled. To get the minimal example working, I extracted the parts relevant to text-selection from viewer.js. The text-selection code in viewer.js supports operations like text-search and match, but this minimal example does not. The reason is that the text-search and match operations depend on some view-specific components (like the find bar) in viewer.js and will not work in this minimal example. At some point in the future, the text-selection, search, and match operations can be pulled out of viewer.js into their own class. Then all these operations can be abstracted and exposed via an API. This example is also available in the examples directory. 
 
-For this example, we are going to be using a sample PDF that is available [here](http://vivin.net/pub/pdfjs/TestDocument.pdf) However, we will not be loading up this document directly in this example. Instead, we will be starting with the base64 representation of the PDF.
+For this example, we are going to be using a sample PDF that is available [here](http://vivin.net/pub/pdfjs/TestDocument.pdf) However, we will not be loading up this document directly in this example. Instead, we will be starting with the base64 representation of the PDF. Of course, if you have the PDF file at your disposal you can simply do `PDFJS.getDocument('mypdf.pdf').then(...)` instead of using the base64-encoded data.
 
 First, let's take a look at the HTML file that we're going to use. It's very simple and looks like this:
 
