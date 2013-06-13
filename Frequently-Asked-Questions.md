@@ -4,7 +4,8 @@
 * [What browsers have extensions (and where can I find install procedures)?](#faq-extensions)
 * [I know JavaScript and want to contribute to the project. How do I start?](#faq-contrib)
 * [Is it possible to add annotations to a PDF?](#faq-annotations)
-* [What are the pdf.js keyboard shortcuts?](#faq-shortcuts)
+* [What are the PDF.js keyboard shortcuts?](#faq-shortcuts)
+* [PDF.js files are too big. Can you provide minified versions of CSS and JS files?](#minified)
 
 <a name="file"></a>
 ## Can I specify different PDF in the default viewer?
@@ -81,3 +82,10 @@ User interface buttons or ctrl + mouse wheel can be used to change the zooming l
 * **rotate counterclockwise:** shift + r
 
 (replace ctrl with meta on some configurations)
+
+<a name="minified"></a>
+## PDF.js files are too big. Can you provide minified versions of CSS and JS files?
+
+Not at the moment. The PDF.js is not automatically tested with any of minifiers. We are keeping it up to the web site administrators to choose which minifier they want to use.
+
+It is known that minifiers break PDF.js code if advanced options are used (see [#710](https://github.com/mozilla/pdf.js/issues/710) or [#2479](https://github.com/mozilla/pdf.js/issues/2479)). It's safe to use minifiers in whitespace/comments-removal mode.
