@@ -55,7 +55,7 @@ The goal is to support all HTML5 compliant browsers, but since feature support v
 
 <a name="faq-extensions"></a>
 ## What browsers have extensions(and where can I find install procedures)?
-There is currently a Firefox and Chrome extension.  The Firefox extension is well supported and actively worked on.  The Chrome extension is less active and more experimental. For installing either see the [readme](https://github.com/mozilla/pdf.js/blob/master/README.md).
+There is currently a Firefox and Chrome extension.  The Firefox extension is well supported and actively worked on.  The Chrome extension is maintained by a PDF.js contributor. For installing either see the [readme](https://github.com/mozilla/pdf.js/blob/master/README.md).
 
 <a name="faq-contrib"></a>
 ## I know JavaScript and want to contribute to the project. How do I start?
