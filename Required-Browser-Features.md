@@ -23,9 +23,9 @@ No emulation of the CANVAS element is provided for the browsers that do not supp
     <tr>
       <td>Yes (v.24)</td>
       <td>Yes (v.6)</td>
-      <td>Yes (V.9)</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -56,9 +56,9 @@ The browsers that don't understand this syntax will not be able to execute the c
     <tr>
       <td>Yes (v.24)</td>
       <td>Yes (v.6)</td>
-      <td>Yes (V.9)</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -82,9 +82,9 @@ No emulation of the `addEventListener` method is provided in the browsers that d
     <tr>
       <td>Yes (v.24)</td>
       <td>Yes (v.6)</td>
-      <td>Yes (V.9)</td>
+      <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -113,7 +113,7 @@ If the `Float32Array` native implementation exists and the `Float64Array` is abs
       <td>Yes (v.6)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5.1)</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ The `Object.create` method will be added to the `Object` function if the native 
       <td>Yes (v.6)</td>
       <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -164,7 +164,7 @@ The `Object.defineProperty` method will be added to the `Object` function if the
       <td>Yes (v.6)</td>
       <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5.1)</td>
     </tr>
   </tbody>
 </table>
@@ -190,7 +190,7 @@ In this case, the `Object.defineProperty` is replaced by the artificial one. See
       <td>Yes (v.6)</td>
       <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5.1)</td>
     </tr>
   </tbody>
 </table>
@@ -216,7 +216,7 @@ In this case, the `Object.defineProperty` is replaced by the artificial one. See
       <td>Yes (v.6)</td>
       <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -241,7 +241,7 @@ The `Object.keys` method will be added to the `Object` function if the native im
       <td>Yes (v.6)</td>
       <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -266,7 +266,7 @@ The `FileReader` allows PDF.js read the file data provided in the input[type=fil
       <td>Yes (v.6)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.6.0)</td>
     </tr>
   </tbody>
 </table>
@@ -291,7 +291,7 @@ Older browsers that have no `readAsArrayBuffer` method implementation: the `read
       <td>Yes (v.7)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.6.0)</td>
     </tr>
   </tbody>
 </table>
@@ -316,7 +316,7 @@ The empty `overrideMimeType` method will be added to the `XMLHttpRequest.prototy
       <td>Yes (v.6)</td>
       <td>Emulated (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -342,7 +342,7 @@ This is important for retrieving the binary PDF data using XHR.
       <td>Yes (v.6)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5.1)</td>
     </tr>
   </tbody>
 </table>
@@ -367,7 +367,7 @@ The `btoa` will be added to the window object, if the browser does not support i
       <td>Yes (v.6)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -392,7 +392,7 @@ The `bind` method will be added to the `Function.prototype`, if the browser does
       <td>Yes (v.6)</td>
       <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -417,9 +417,10 @@ attached to specific HTML DOM element.
     <tr>
       <td>Yes (v.24)</td>
       <td>Yes (v.6)</td>
-      <td>Emulated (v.10)</td>
+      <td>Emulated (v.10)<br>
+          Yes (v.11)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5.1)</td>
     </tr>
   </tbody>
 </table>
@@ -445,7 +446,7 @@ This is important to simplify the viewer implementation.
       <td>Yes (v.6)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5.1)</td>
     </tr>
   </tbody>
 </table>
@@ -471,7 +472,7 @@ if the browser does not support it. This is important for the output of error me
       <td>Yes (v.6)</td>
       <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -497,7 +498,7 @@ the bind method with these functions.
       <td>Yes (v.6)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -546,9 +547,10 @@ The language getter will be added to the window.navigator object, if the browser
     <tr>
       <td>Yes (v.24)</td>
       <td>Yes (v.6)</td>
-      <td>Emulated (v.10)</td>
+      <td>Emulated (v.10)<br>
+          Yes (v.11)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -574,7 +576,7 @@ properly (example: [#2351](https://github.com/mozilla/pdf.js/issues/2351)) if th
       <td>Yes (v.7)</td>
       <td>No (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>No (v.6.0)</td>
     </tr>
   </tbody>
 </table>
@@ -600,7 +602,7 @@ properly if this feature is not supported.
       <td>Yes (v.7)</td>
       <td>No (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>No (v.6.0)</td>
     </tr>
   </tbody>
 </table>
@@ -626,7 +628,7 @@ style rule, the document will not be displayed property.
       <td>Yes (v.6)</td>
       <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -652,7 +654,7 @@ if the browser cannot tell if fonts are loaded and can be used.
       <td>Yes (v.14)</td>
       <td>Yes (v.9)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.6)</td>
     </tr>
   </tbody>
 </table>
@@ -677,7 +679,7 @@ Some East Asian PDFs will be completely garbled, if the browser does not support
       <td>Yes (v.18)</td>
       <td>No (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>No (v.6)</td>
     </tr>
   </tbody>
 </table>
@@ -703,7 +705,7 @@ if the browser does not support web workers.
       <td>Yes (v.6)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5)</td>
     </tr>
   </tbody>
 </table>
@@ -729,7 +731,7 @@ if the browser cannot send (large) typed arrays to web workers.
       <td>Yes (v.6)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.6.0)</td>
     </tr>
   </tbody>
 </table>
@@ -755,7 +757,7 @@ if the browser cannot request network binary data from web workers.
       <td>Yes (v.10)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>?</td>
+      <td>Yes (v.5.1)</td>
     </tr>
   </tbody>
 </table>
@@ -779,8 +781,8 @@ Texts will not be copied properly on some East Asian PDFs. If the browser does n
       <td>Emulated (v.24)</td>
       <td>Yes (v.20)</td>
       <td>Emulated (v.10)</td>
-      <td>No</td>
-      <td>No</td>
+      <td>?</td>
+      <td>No (v.6)</td>
     </tr>
   </tbody>
 </table>
