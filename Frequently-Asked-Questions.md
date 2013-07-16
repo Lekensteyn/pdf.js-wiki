@@ -66,7 +66,7 @@ First, you need to prepare your [fork](https://help.github.com/articles/fork-a-r
 PDF.js is mainly written for *reading* PDF files, not editing them. Because of that we don't yet support adding any kind of annotations. We do however support rendering a number of annotation types.
 
 <a name="faq-shortcuts"></a>
-## What are the pdf.js keyboard shortcuts?
+## What are the PDF.js keyboard shortcuts?
 (warning, the following list may be incomplete)
 ### Navigation
 * **next page:** n, k, right arrow key
