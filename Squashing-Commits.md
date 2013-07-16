@@ -21,7 +21,7 @@ git push --force origin super-feature
 ## Alternatives
 1. Step-by-step commands
 ```
-# fetch the current upstream repository
+# fetches the current upstream repository
 git fetch upstream
 # resets HEAD to the current upstream
 git checkout upstream/master
@@ -31,7 +31,7 @@ git merge --no-commit --squash super-feature
 git checkout -B super-feature
 # lets you edit the commit and checks in the changes (you can also use git commit -m "message")
 git commit -e
-# push the changes (in general, be careful with the --force parameter)
+# pushes the changes (in general, be careful with the --force parameter)
 git push --force origin super-feature
 ```
 
