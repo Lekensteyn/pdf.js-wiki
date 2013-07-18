@@ -80,6 +80,7 @@ User interface buttons or ctrl + mouse wheel can be used to change the zooming l
 * **restore normal zoom:** ctrl + 0 (in full screen mode)
 * **rotate the document clockwise:** r
 * **rotate counterclockwise:** shift + r
+* **presentation mode:** ctrl + alt + p
 
 (replace ctrl with meta on some configurations)
 
