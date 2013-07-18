@@ -661,7 +661,7 @@ if the browser cannot tell if fonts are loaded and can be used.
 
 ## <a id="TextDecoder"></a>TextDecoder is supported
 
-Some East Asian PDFs will be completely garbled, if the browser does not support the `TextDecoder`. 
+Some East Asian PDFs will be completely garbled, if the browser does not support the `TextDecoder`. See http://encoding.spec.whatwg.org/
 
 <table>
   <thead>
