@@ -5,6 +5,7 @@ For getting started please see the README.
 + [Style Guide](wiki/Style-Guide) - Coding style guide.
 + [Debugging pdf.js](wiki/Debugging-pdf.js) - Tips for debugging and ways to enable debugging tools.
 + [Learning Resources](wiki/Additional-Learning-Resources) - Additional reading material, presentations, videos.
++ [Weekly Public Meetings](wiki/Weekly-Public-Meetings).
 + [Required Browser Features](wiki/Required-Browser-Features).
 + [Glossary](wiki/Glossary) - Commonly used terms.
 + [Gallery of user projects and modifications](wiki/Gallery-of-user-projects-and-modifications).
