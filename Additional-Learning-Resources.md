@@ -28,7 +28,7 @@ The PDF specification itself:
 + http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/pdf_reference_1-7.pdf
 
 Test files:
-+ http://acroeng.adobe.com/
++ http://acroeng.adobe.com/wp/
 
 Presentations:
 + http://labs.appligent.com/presentations/recognizing_malformed_pdf_f.pdf
