@@ -93,6 +93,6 @@ Not at the moment. The PDF.js is not automatically tested with any of minifiers.
 It is known that minifiers break PDF.js code if advanced options are used (see [#710](https://github.com/mozilla/pdf.js/issues/710) or [#2479](https://github.com/mozilla/pdf.js/issues/2479)). It's safe to use minifiers in whitespace/comments-removal mode.
 
 <a name="gh-pages"></a>
-## I'm lazy to follow the instruction to build it. Can I get built PDF.js from somewhere?
+## Is there a pre-built version PDF.js available?
 
 Yes. The code for the web site at http://mozilla.github.com/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages`
