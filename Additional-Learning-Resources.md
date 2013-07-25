@@ -31,7 +31,7 @@ Test files:
 + http://acroeng.adobe.com/wp/
 
 Presentations:
-+ http://labs.appligent.com/presentations/recognizing_malformed_pdf_f.pdf
++ http://labs.appligent.com/files/2013/03/recognizing_malformed_pdf_f.pdf
 
 ## Examples
 
