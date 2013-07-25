@@ -1,36 +1,36 @@
-== Setup testing environnement ==
+== Setup the testing environment ==
 
  sudo apt-get install nodejs npm
  cd <website-js-dir>/
  git clone git://github.com/mozilla/pdf.js.git pdfjs
 
-=== Start Test Server ===
+=== Start the test server ===
 
  cd ./pdfjs/
  nodejs make server
 
-Then you can reach this {{value|nodejs}} server via the following url : http://localhost:8888/web/viewer.html
+Then you can reach this {{value|nodejs}} server via the following URL:
 
   http://localhost:8888/web/viewer.html
 
-You can test your own document by placing them into the {{path|test/}} directory and using URL such as :
+You can test your own documents by placing them into the {{path|test/}} directory and using an URL such as:
 
   http://localhost:8888/test/your-test-file.pdf
 
-=== Opening PDF from your website ===
+=== Opening PDF files from your website ===
 
-You need to use the {{attr|file}} parameter in the URL whom value is a full [https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/encodeURI encodedURI]:
+You need to use the {{attr|file}} parameter in the URL whose value is a full [https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/encodeURI encoded URI]:
 
   http://mozilla.github.com/pdf.js/web/viewer.html?file=http%3A%2F%2Fasync5.org%2Fmoz%2Fpdfjs.pdf
 
-== Compile the PDF.js ==
+== Compile PDF.js ==
 
 === Build ===
-You need to run this command
+You need to run this command:
 
  node make generic
 
-You should get this output:
+and you should get the following output (or something similar):
 
  ### Getting extension build number
  Extension build number: 331
@@ -43,38 +43,44 @@ You should get this output:
 
 === Compressing PDF.js (unsupported!) ===
 
-'''Minification is NOT supported''' by the developer of the project. First start testing with the full build, then use the minified version. From my test, the '''minified version did NOT''' work while the normal version was.
+'''Minification is NOT supported''' by the developers of the project. First start testing with the full build and then use the minified version. From my test, the '''minified version did NOT''' work while the normal version did.
 
-You can do minify PDF.js by approximatively 30% with [http://yui.github.com/yuicompressor yui-compressor] or others [http://stackoverflow.com/questions/28932/best-javascript-compressor minification tools].
+You can minify PDF.js by approximately 30% with [http://yui.github.com/yuicompressor yui-compressor] or other [http://stackoverflow.com/questions/28932/best-javascript-compressor minification tools].
 
-==== Ubuntu ====
+==== yui-compressor Ubuntu ====
 
-There is a package on Ubuntu 12.10/Linux Mint 14 :
+There is a package for yui-compressor on Ubuntu 12.10/Linux Mint 14:
 
  sudo apt-get install yui-compressor
- cd <pdfjs>
+ cd <pdfjs-dir>
  mkdir ./production/
- # yui-compressor ./build/pdf.js -o ./production/pdf-min.js # BEWARE UNSUPPORTED BEHAVIOR
+ # yui-compressor ./build/pdf.js -o ./production/pdf-min.js # BEWARE OF UNSUPPORTED BEHAVIOR
 
-==== Use the Minified File ====
+==== Use the minified file ====
 
-'''Minification break the libs''' using yui-compressor and PDF.js v0.7.339 (build: 0ebe91c). Try at your own risk.
+'''Minification might break the libs''' using yui-compressor. Use at your own risk.
 
-Be sure to edit `viewer.html` and `viewer.js` to use the correct file, the default it to use `pdf.js`. Here we want to use the minified version:
+Be sure to edit `viewer.html` and `viewer.js` to use the correct file and default it to use `pdf.js`. Here we want to use the minified version:
 
  <!-- viewer.html -->
  <script type="text/javascript" src="./pdf-min.js"></script>
 
- // viewer.js
+ <!-- viewer.js -->
  PDFJS.workerSrc = './pdf-min.js';
 
+== From build to production ==
 
+Now that your build is done, you can copy the viewer and its resources (core files) to your production directory and upload the contents of that directory to your web server:
 
-== From Build to Production ==
-Now that your build is done, you can copy the viewer and its resources to your production directory:
+ # make a production directory if you haven't done so already
+ mkdir ./production/
+
+ # copy the viewer and its resources to the production folder
+ cp -R ./build/generic ./production
 
  # directory holding image and i18n
  cp -R ./build/generic/web/{images,locale}/ ./production
- # compatibility.js is needed to support IE8+, Opera, etc.
- # l10n.js is for localization (translation's files are in locale/)
- cp ./build/generic/web/{viewer.{js,html,css},{compatibility,l10n}.js} ./production
+
+== Compatibility ==
+
+Note that you must include `compatibility.js` in order to support browsers like IE8+.
