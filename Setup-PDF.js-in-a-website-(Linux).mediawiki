@@ -15,7 +15,7 @@ Then you can reach this nodejs server via the following URL:
 
   http://localhost:8888/web/viewer.html
 
-You can test your own documents by placing them into the {{path|test/}} directory and using an URL such as:
+You can test your own documents by placing them into the <tt>test</tt> directory and using an URL such as:
 
   http://localhost:8888/test/your-test-file.pdf
 
