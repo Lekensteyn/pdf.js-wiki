@@ -9,7 +9,7 @@
  cd ./pdfjs/
  nodejs make server
 
-Then you can reach this {{value|nodejs}} server via the following URL:
+Then you can reach this nodejs server via the following URL:
 
   http://localhost:8888/web/viewer.html
 
@@ -83,4 +83,4 @@ Now that your build is done, you can copy the viewer and its resources (core fil
 
 === Compatibility ===
 
-Note that you must include `compatibility.js` in order to support browsers like IE8+.
+Note that you must include ''compatibility.js'' in order to support browsers like IE8+.
