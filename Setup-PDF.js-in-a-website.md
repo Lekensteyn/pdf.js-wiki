@@ -1,10 +1,11 @@
 ## Linux
 
-* [Focussed on Debian/Ubuntu/Linux Mint](/mozilla/pdf.js/wiki/Setup-PDF.js-in-a-website-%28Debian-Ubuntu%29)
+* [Focussed on Debian, Ubuntu and Linux Mint](Setup-PDF.js-in-a-website-(Debian,-Ubuntu-and-Linux-Mint%29)
 
 ## Windows
-* todo
+
+* To-do
 
 ## Mac
 
-* todo
+* To-do
