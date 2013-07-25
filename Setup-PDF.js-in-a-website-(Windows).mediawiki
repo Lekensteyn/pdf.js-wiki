@@ -1,0 +1,89 @@
+== Setup the testing environment ==
+
+The easiest way to setup your testing environment is to follow the instructions posted [https://github.com/mozilla/pdf.js/wiki/Setting-up-pdf.js-Development-Environment-for-Windows here]. You'll need Git, the Mozilla build environment and Node.js if you choose the recommended MSYS environment. After that, execute the following commands in Git Bash:
+
+ cd <website-js-dir>/
+ git clone git://github.com/mozilla/pdf.js.git pdfjs
+
+=== Start the test server ===
+
+ cd ./pdfjs/
+ node make server
+
+If Node.js complains about not recognizing <tt>python2.7</tt> as an intenal or external command ([https://github.com/mozilla/pdf.js/issues/2016#issuecomment-8008140 more information here]), then go to your Python installation directory (in my case, <tt>C:\Python27</tt>), copy the file <tt>python.exe</tt> and rename the copy to <tt>python2.7.exe</tt>. After that, run the command again.
+
+Then you can reach your Node.js server using the following URL:
+
+  http://localhost:8888/web/viewer.html
+
+You can test your own documents by placing them into the <tt>test</tt> directory and using an URL such as:
+
+  http://localhost:8888/test/your-test-file.pdf
+
+
+DRAFT FROM HERE
+
+
+=== Opening PDF files from your website ===
+
+You need to use the {{attr|file}} parameter in the URL whose value is a full [https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/encodeURI encoded URI]. For example:
+
+  http://mozilla.github.com/pdf.js/web/viewer.html?file=http%3A%2F%2Fasync5.org%2Fmoz%2Fpdfjs.pdf
+
+== Compile PDF.js ==
+
+=== Build ===
+You need to run this command:
+
+ node make generic
+
+and you should get the following output (or something similar):
+ 
+ ### Getting extension build number
+ Extension build number: 331
+ 
+ ### Bundling files into build/pdf.js
+ 
+ ### Building localization files
+ 
+ ### Creating generic viewer
+
+=== Compressing PDF.js (unsupported!) ===
+
+'''Minification is NOT supported''' by the developers of the project. First start testing with the full build and then use the minified version. From my test, the '''minified version did NOT''' work while the normal version did.
+
+You can minify PDF.js by approximately 30% with [http://yui.github.com/yuicompressor yui-compressor] or other [http://stackoverflow.com/questions/28932/best-javascript-compressor minification tools].
+
+==== yui-compressor Ubuntu ====
+
+There is a package for yui-compressor on Ubuntu 12.10 or Linux Mint 14:
+
+ sudo apt-get install yui-compressor
+ cd <pdfjs-dir>
+ mkdir ./production/
+ # yui-compressor ./build/pdf.js -o ./production/pdf-min.js # BEWARE OF UNSUPPORTED BEHAVIOR
+
+==== Use the minified file ====
+
+'''Minification might break the libs''' using yui-compressor. Use at your own risk.
+
+Be sure to edit <tt>viewer.html</tt> and <tt>viewer.js</tt> to use the correct file. In this case, we want to use the minified version:
+
+ # viewer.html
+ <script type="text/javascript" src="./pdf-min.js"></script>
+
+ # viewer.js
+ PDFJS.workerSrc = './pdf-min.js';
+
+== From build to production ==
+
+Now that your build is done, you can copy the viewer and its resources (core files) to your production directory and upload the contents of that directory to your web server:
+
+ # make a production directory if you haven't done so already
+ mkdir ./production/
+ # copy the viewer and its resources to the production folder
+ cp -R ./build/generic ./production
+
+=== Compatibility ===
+
+Note that you must include <tt>compatibility.js</tt> in order to support browsers like IE8+.
