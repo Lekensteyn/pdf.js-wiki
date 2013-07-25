@@ -60,7 +60,7 @@ There is a package for yui-compressor on Ubuntu 12.10 or Linux Mint 14:
 
 '''Minification might break the libs''' using yui-compressor. Use at your own risk.
 
-Be sure to edit <tt>viewer.html</tt> and <tt>viewer.js</tt> to use the correct file and default it to use <tt>pdf.js</tt>. In this case, we want to use the minified version:
+Be sure to edit <tt>viewer.html</tt> and <tt>viewer.js</tt> to use the correct file. In this case, we want to use the minified version:
 
  <!-- viewer.html -->
  <script type="text/javascript" src="./pdf-min.js"></script>
