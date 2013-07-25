@@ -6,6 +6,7 @@
 * [Is it possible to add annotations to a PDF?](#faq-annotations)
 * [What are the PDF.js keyboard shortcuts?](#faq-shortcuts)
 * [PDF.js files are too big. Can you provide minified versions of CSS and JS files?](#minified)
+* [I'm lazy to follow the instruction to build it. Can I get built PDF.js from somewhere?](#gh-pages)
 
 <a name="file"></a>
 ## Can I specify different PDF in the default viewer?
@@ -90,3 +91,8 @@ User interface buttons or ctrl + mouse wheel can be used to change the zooming l
 Not at the moment. The PDF.js is not automatically tested with any of minifiers. We are keeping it up to the web site administrators to choose which minifier they want to use.
 
 It is known that minifiers break PDF.js code if advanced options are used (see [#710](https://github.com/mozilla/pdf.js/issues/710) or [#2479](https://github.com/mozilla/pdf.js/issues/2479)). It's safe to use minifiers in whitespace/comments-removal mode.
+
+<a name="gh-pages"></a>
+## I'm lazy to follow the instruction to build it. Can I get built PDF.js from somewhere?
+
+Yes. The code for the web site at http://mozilla.github.com/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages`
