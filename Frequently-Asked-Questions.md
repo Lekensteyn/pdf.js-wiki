@@ -6,7 +6,7 @@
 * [Is it possible to add annotations to a PDF?](#faq-annotations)
 * [What are the PDF.js keyboard shortcuts?](#faq-shortcuts)
 * [PDF.js files are too big. Can you provide minified versions of CSS and JS files?](#minified)
-* [I'm lazy to follow the instruction to build it. Can I get built PDF.js from somewhere?](#gh-pages)
+* [Is there a pre-built version PDF.js available?](#gh-pages)
 
 <a name="file"></a>
 ## Can I specify different PDF in the default viewer?
