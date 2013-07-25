@@ -74,7 +74,7 @@ Now that your build is done, you can copy the viewer and its resources (core fil
 
  # make a production directory if you haven't done so already
  mkdir ./production/
- 
+
  # copy the viewer and its resources to the production folder
  cp -R ./build/generic ./production
 
