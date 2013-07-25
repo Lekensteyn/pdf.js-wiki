@@ -11,7 +11,7 @@ Note that the instructions on this page are focussed on Debian, Ubuntu and Linux
  cd ./pdfjs/
  nodejs make server
 
-Then you can reach this nodejs server via the following URL:
+Then you can reach your Node.js server using the following URL:
 
   http://localhost:8888/web/viewer.html
 
