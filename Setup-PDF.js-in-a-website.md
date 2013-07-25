@@ -1,10 +1,10 @@
 ## Linux
 
-* [Instructions can be found here](Setup-PDF.js-in-a-website-(Linux%29)
+* [Instructions for Linux can be found here.](Setup-PDF.js-in-a-website-(Linux%29)
 
 ## Windows
 
-* To-do
+* [Instructions for Windows can be found here.](Setup-PDF.js-in-a-website-(Windows%29)
 
 ## Mac
 
