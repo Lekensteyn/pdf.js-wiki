@@ -49,7 +49,7 @@ You can minify PDF.js by approximately 30% with [http://yui.github.com/yuicompre
 
 ==== yui-compressor Ubuntu ====
 
-There is a package for yui-compressor on Ubuntu 12.10/Linux Mint 14:
+There is a package for yui-compressor on Ubuntu 12.10 or Linux Mint 14:
 
  sudo apt-get install yui-compressor
  cd <pdfjs-dir>
@@ -60,7 +60,7 @@ There is a package for yui-compressor on Ubuntu 12.10/Linux Mint 14:
 
 '''Minification might break the libs''' using yui-compressor. Use at your own risk.
 
-Be sure to edit `viewer.html` and `viewer.js` to use the correct file and default it to use `pdf.js`. Here we want to use the minified version:
+Be sure to edit <tt>viewer.html</tt> and <tt>viewer.js</tt> to use the correct file and default it to use <tt>pdf.js</tt>. In this case, we want to use the minified version:
 
  <!-- viewer.html -->
  <script type="text/javascript" src="./pdf-min.js"></script>
@@ -83,4 +83,4 @@ Now that your build is done, you can copy the viewer and its resources (core fil
 
 === Compatibility ===
 
-Note that you must include ''compatibility.js'' in order to support browsers like IE8+.
+Note that you must include <tt>compatibility.js</tt> in order to support browsers like IE8+.
