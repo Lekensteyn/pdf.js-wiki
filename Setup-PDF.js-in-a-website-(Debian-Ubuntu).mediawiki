@@ -81,6 +81,6 @@ Now that your build is done, you can copy the viewer and its resources (core fil
  # directory holding image and i18n
  cp -R ./build/generic/web/{images,locale}/ ./production
 
-== Compatibility ==
+=== Compatibility ===
 
 Note that you must include `compatibility.js` in order to support browsers like IE8+.
