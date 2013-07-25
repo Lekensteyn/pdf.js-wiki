@@ -9,5 +9,5 @@ For getting started please see the README.
 + [Required Browser Features](wiki/Required-Browser-Features).
 + [Glossary](wiki/Glossary) - Commonly used terms.
 + [Gallery of user projects and modifications](wiki/Gallery-of-user-projects-and-modifications).
-+ [Setup pdf.js in a website](wiki/Setup-pdf.js-in-a-website) ([Linux](wiki/Setup-PDF.js-in-a-website-%28Debian-Ubuntu%29)/Windows/Mac)
++ [Setup pdf.js in a website](wiki/Setup-pdf.js-in-a-website) ([Linux](Setup-PDF.js-in-a-website-(Debian,-Ubuntu-and-Linux-Mint%29)/Windows/Mac)
 + [Viewer options](wiki/Viewer-options) - Options for pdf.js's viewer that can be given at the URL level
