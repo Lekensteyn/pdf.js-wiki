@@ -21,7 +21,7 @@ You can test your own documents by placing them into the {{path|test/}} director
 
 === Opening PDF files from your website ===
 
-You need to use the {{attr|file}} parameter in the URL whose value is a full [https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/encodeURI encoded URI]:
+You need to use the {{attr|file}} parameter in the URL whose value is a full [https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/encodeURI encoded URI]. For example:
 
   http://mozilla.github.com/pdf.js/web/viewer.html?file=http%3A%2F%2Fasync5.org%2Fmoz%2Fpdfjs.pdf
 
@@ -33,7 +33,7 @@ You need to run this command:
  node make generic
 
 and you should get the following output (or something similar):
-
+ 
  ### Getting extension build number
  Extension build number: 331
  
@@ -64,10 +64,10 @@ There is a package for yui-compressor on Ubuntu 12.10 or Linux Mint 14:
 
 Be sure to edit <tt>viewer.html</tt> and <tt>viewer.js</tt> to use the correct file. In this case, we want to use the minified version:
 
- <!-- viewer.html -->
+ # viewer.html
  <script type="text/javascript" src="./pdf-min.js"></script>
 
- <!-- viewer.js -->
+ # viewer.js
  PDFJS.workerSrc = './pdf-min.js';
 
 == From build to production ==
@@ -76,7 +76,6 @@ Now that your build is done, you can copy the viewer and its resources (core fil
 
  # make a production directory if you haven't done so already
  mkdir ./production/
-
  # copy the viewer and its resources to the production folder
  cp -R ./build/generic ./production
 
