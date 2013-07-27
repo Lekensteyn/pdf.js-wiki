@@ -10,7 +10,7 @@ Example: http://www.example.com/pdf.js#page=2
 
 * page: page number. Example: page=2
 ** zoom: zoom level. Example: zoom=200
-* nameddest: go to a named destionation
+* nameddest: go to a named destination
 * pagemode: either "thumbs" or "bookmarks".  Example: pagemode=thumbs
 * disableWorker: set to true to disable web workers. Example: disableWorker=true
 * disableRange: set to true to disable range requests. Example: disableRange=true
