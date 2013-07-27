@@ -14,9 +14,9 @@ Example: http://www.example.com/pdf.js#page=2
 * pagemode: either "thumbs" or "bookmarks".  Example: pagemode=thumbs
 * disableWorker: set to true to disable web workers. Example: disableWorker=true
 * disableRange: set to true to disable range requests. Example: disableRange=true
-* disableAutoFetch
+* disableAutoFetch: set to true to disable autofetching. Example: disableAutoFetch=true
 * locale: use another locale than the default. Example: locale=nl
 * textLayer: set to one of the following. Example: textLayer=off
 ** off: disable textLayer generation
-** visible, shadow, hover: apply the CSS class <tt>textlayer-<value></tt> to all text layers
+** visible, shadow, hover: apply the CSS class <tt>textlayer-{value}</tt> to all text layers
 * pdfBug: handle PDF bugs
