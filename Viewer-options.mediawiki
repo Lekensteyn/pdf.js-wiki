@@ -1,0 +1,22 @@
+Options for PDF.js's viewer that can be given at the URL level. Multiple values of either type can be combined by separating with an ampersand (&) after the hash (example: #page=2&textLayer=off).
+
+===Options after the ?===
+Example: http://www.example.com/pdf.js?file=myfile.pdf
+
+* file: the filename of the PDF file to use (must be on the same server due to JavaScript limitations).  Example: file=myfile.pdf
+
+===Options after the #===
+Example: http://www.example.com/pdf.js#page=2
+
+* page: page number. Example: page=2
+** zoom: zoom level. Example: zoom=200
+* nameddest: go to a named destionation
+* pagemode: either "thumbs" or "bookmarks".  Example: pagemode=thumbs
+* disableWorker: set to true to disable web workers. Example: disableWorker=true
+* disableRange: set to true to disable range requests. Example: disableRange=true
+* disableAutoFetch
+* locale: use another locale than the default. Example: locale=nl
+* textLayer: set to one of the following. Example: textLayer=off
+** off: disable textLayer generation
+** visible, shadow, hover: apply the CSS class <tt>textlayer-<value></tt> to all text layers
+* pdfBug: handle PDF bugs
