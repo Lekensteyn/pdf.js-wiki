@@ -1,5 +1,5 @@
 Schedule:
-+ Bug Triage - Every Monday 1:00PM PDT\*
++ Bug Triage - Every Monday 1:30PM PDT\*
 + Engineering - Every Thursday 10:00AM PDT\*
 
 \*Meeting times can vary a bit, so check on IRC first if you plan to attend.
