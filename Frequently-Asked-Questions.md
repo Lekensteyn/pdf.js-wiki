@@ -7,6 +7,8 @@
 * [What are the PDF.js keyboard shortcuts?](#faq-shortcuts)
 * [PDF.js files are too big. Can you provide minified versions of CSS and JS files?](#minified)
 * [Is there a pre-built version PDF.js available?](#gh-pages)
+* [PDF.js does not render my files right. Can I report an issue?](#issue)
+* [I know that my PDFs are corrupted. Will PDF.js attempt to display it?](#corrupted-pdf)
 
 <a name="file"></a>
 ## Can I specify different PDF in the default viewer?
@@ -96,3 +98,15 @@ It is known that minifiers break PDF.js code if advanced options are used (see [
 ## Is there a pre-built version PDF.js available?
 
 Yes. The code for the web site at http://mozilla.github.com/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages`
+
+<a name="issue"></a>
+## PDF.js does not render my files right. Can I report an issue?
+
+Yes. The issues are used to track both bugs filed by users and specific work items for developers. Try to file one issue per problem observed.
+
+Please specify valid title (e.g. "Glyph spacing is incorrect" instead of "PDF.js does not work") and provide more details about the issue: link to the PDF, location in the PDF, screenshot, browser version, operating system, PDF.js version and JavaScript console warning/error messages.
+
+<a name="corrupted-pdf"></a>
+## I know that my PDFs are corrupted. Will PDF.js attempt to display it?
+
+Yes. The PDF.js will attempt to recover usable PDF data (pages, content, or fonts) and display the document. Please report the issue (see above) and we will take a look.
