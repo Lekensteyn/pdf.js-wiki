@@ -117,4 +117,4 @@ Yes. The PDF.js will attempt to recover usable PDF data (pages, content, or font
 
 The best place is our dev-pdf-js@lists.mozilla.org mailing list. You can subscribe to it using [lists.mozilla.org](https://lists.mozilla.org/listinfo/dev-pdf-js) or [Google Groups](https://groups.google.com/group/mozilla.dev.pdf-js/topics). This way you will reach not only developers.
 
-The issue tracking system is designed to record a single technical problem. The bug report is something where a developer/contributor can work on. And [github issues](https://github.com/mozilla/pdf.js/issues?state=open) is not a good place for general or unworkable ideas. Most likely a discussion-type issue will not be addressed for long time or closed as invalid.
+The issue tracking system is designed to record a single technical problem. A bug report is something where a developer/contributor can work on. And [github issues](https://github.com/mozilla/pdf.js/issues?state=open) is not a good place for general, not well thought out, or unworkable ideas. Most likely a discussion-type issue will not be addressed for long time or closed as invalid.
