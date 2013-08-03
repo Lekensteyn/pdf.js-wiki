@@ -9,6 +9,7 @@
 * [Is there a pre-built version PDF.js available?](#gh-pages)
 * [PDF.js does not render my files right. Can I report an issue?](#issue)
 * [I know that my PDFs are corrupted. Will PDF.js attempt to display it?](#corrupted-pdf)
+* [I have a really great idea. Where is the best place to record it?](#idea)
 
 <a name="file"></a>
 ## Can I specify different PDF in the default viewer?
@@ -104,9 +105,16 @@ Yes. The code for the web site at http://mozilla.github.com/pdf.js is located in
 
 Yes. The issues are used to track both bugs filed by users and specific work items for developers. Try to file one issue per problem observed.
 
-Please specify valid title (e.g. "Glyph spacing is incorrect" instead of "PDF.js does not work") and provide more details about the issue: link to the PDF, location in the PDF, screenshot, browser version, operating system, PDF.js version and JavaScript console warning/error messages.
+Please specify valid title (e.g. "Glyph spacing is incorrect" instead of "PDF.js does not work") and provide more details about the issue: link to the PDF, location in the PDF, screenshot, browser version, operating system, PDF.js version and JavaScript console warning/error messages. The issues that does not have enough details provided will be closed as invalid/incomplete.
 
 <a name="corrupted-pdf"></a>
 ## I know that my PDFs are corrupted. Will PDF.js attempt to display it?
 
 Yes. The PDF.js will attempt to recover usable PDF data (pages, content, or fonts) and display the document. Please report the issue (see above) and we will take a look.
+
+<a name="idea"></a>
+## I have a really great idea. Where is the best place to record it?
+
+The best place is our dev-pdf-js@lists.mozilla.org mailing list. You can subscribe to it using [lists.mozilla.org](https://lists.mozilla.org/listinfo/dev-pdf-js) or [Google Groups](https://groups.google.com/group/mozilla.dev.pdf-js/topics). This way you will reach not only developers.
+
+The issue tracking system is designed to record a single technical problem. The bug report is something where a developer/contributor can work on. And [github issues](https://github.com/mozilla/pdf.js/issues?state=open) is not a good place for general or unworkable ideas. Most likely a discussion-type issue will not be addressed for long time or closed as invalid.
