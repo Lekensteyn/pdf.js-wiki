@@ -67,11 +67,12 @@ First, you need to prepare your [fork](https://help.github.com/articles/fork-a-r
 
 <a name="faq-annotations"></a>
 ## Is it possible to add annotations to a PDF?
-PDF.js is mainly written for *reading* PDF files, not editing them. Because of that we don't yet support adding any kind of annotations. We do however support rendering a number of annotation types.
+PDF.js is mainly written for *reading* PDF files, not editing them. Because of that we don't yet support adding any kind of annotations. We do however support rendering a number of annotation types for viewing.
 
 <a name="faq-shortcuts"></a>
 ## What are the PDF.js keyboard shortcuts?
 (warning, the following list may be incomplete)
+
 ### Navigation
 * **next page:** n, k, right arrow key
 * **previous page:** p, j, left arrow key
@@ -91,21 +92,21 @@ User interface buttons or ctrl + mouse wheel can be used to change the zooming l
 <a name="minified"></a>
 ## PDF.js files are too big. Can you provide minified versions of CSS and JS files?
 
-Not at the moment. The PDF.js is not automatically tested with any of minifiers. We are keeping it up to the web site administrators to choose which minifier they want to use.
+Not at the moment. The PDF.js is not automatically tested with any of minifiers. We are keeping it up to the website administrators to choose which minifier they want to use.
 
 It is known that minifiers break PDF.js code if advanced options are used (see [#710](https://github.com/mozilla/pdf.js/issues/710) or [#2479](https://github.com/mozilla/pdf.js/issues/2479)). It's safe to use minifiers in whitespace/comments-removal mode.
 
 <a name="gh-pages"></a>
 ## Is there a pre-built version PDF.js available?
 
-Yes. The code for the web site at http://mozilla.github.com/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages`
+Yes. The code for the website at http://mozilla.github.com/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages`
 
 <a name="issue"></a>
 ## PDF.js does not render my files right. Can I report an issue?
 
 Yes. The issues are used to track both bugs filed by users and specific work items for developers. Try to file one issue per problem observed.
 
-Please specify valid title (e.g. "Glyph spacing is incorrect" instead of "PDF.js does not work") and provide more details about the issue: link to the PDF, location in the PDF, screenshot, browser version, operating system, PDF.js version and JavaScript console warning/error messages. The issues that does not have enough details provided will be closed as invalid/incomplete.
+Please specify valid title (e.g. "Glyph spacing is incorrect" instead of "PDF.js does not work") and provide more details about the issue: link to the PDF, location in the PDF, screenshot, browser version, operating system, PDF.js version and JavaScript console warning/error messages. The issues that do not have enough details provided will be closed as invalid/incomplete.
 
 <a name="corrupted-pdf"></a>
 ## I know that my PDFs are corrupted. Will PDF.js attempt to display it?
@@ -115,6 +116,6 @@ Yes. The PDF.js will attempt to recover usable PDF data (pages, content, or font
 <a name="idea"></a>
 ## I have a really great idea. Where is the best place to record it?
 
-The best place is our dev-pdf-js@lists.mozilla.org mailing list. You can subscribe to it using [lists.mozilla.org](https://lists.mozilla.org/listinfo/dev-pdf-js) or [Google Groups](https://groups.google.com/group/mozilla.dev.pdf-js/topics). This way you will reach not only developers. As alternative, you can join our [weekly engineering meeting](https://github.com/mozilla/pdf.js/wiki/Weekly-Public-Meetings) to discuss new ideas for the project.
+The best place is our dev-pdf-js@lists.mozilla.org mailing list. You can subscribe to it using [lists.mozilla.org](https://lists.mozilla.org/listinfo/dev-pdf-js) or [Google Groups](https://groups.google.com/group/mozilla.dev.pdf-js/topics). This way you will reach not only developers. As an alternative, you can join our [weekly engineering meeting](https://github.com/mozilla/pdf.js/wiki/Weekly-Public-Meetings) to discuss new ideas for the project.
 
-The issue tracking system is designed to record a single technical problem. A bug report is something where a developer/contributor can work on. And [github issues](https://github.com/mozilla/pdf.js/issues?state=open) is not a good place for general, not well thought out, or unworkable ideas. Most likely a discussion-type issue will not be addressed for long time or closed as invalid.
+The issue tracking system is designed to record a single technical problem. A bug report is something where a developer/contributor can work on. The [GitHub issue tracker](https://github.com/mozilla/pdf.js/issues?state=open) is not a good place for general, not well thought out or unworkable ideas. Most likely a discussion-type issue will not be addressed for a long time or closed as invalid.
