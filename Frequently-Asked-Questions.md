@@ -10,6 +10,7 @@
 * [PDF.js does not render my files right. Can I report an issue?](#issue)
 * [I know that my PDFs are corrupted. Will PDF.js attempt to display it?](#corrupted-pdf)
 * [I have a really great idea. Where is the best place to record it?](#idea)
+* [I'm developing a custom solution based on PDF.js core library. Can you help me?](#custom)
 
 <a name="file"></a>
 ## Can I specify different PDF in the default viewer?
@@ -119,3 +120,10 @@ Yes. The PDF.js will attempt to recover usable PDF data (pages, content, or font
 The best place is our dev-pdf-js@lists.mozilla.org mailing list. You can subscribe to it using [lists.mozilla.org](https://lists.mozilla.org/listinfo/dev-pdf-js) or [Google Groups](https://groups.google.com/group/mozilla.dev.pdf-js/topics). This way you will reach not only developers. As an alternative, you can join our [weekly engineering meeting](https://github.com/mozilla/pdf.js/wiki/Weekly-Public-Meetings) to discuss new ideas for the project.
 
 The issue tracking system is designed to record a single technical problem. A bug report is something where a developer/contributor can work on. The [GitHub issue tracker](https://github.com/mozilla/pdf.js/issues?state=open) is not a good place for general, not well thought out or unworkable ideas. Most likely a discussion-type issue will not be addressed for a long time or closed as invalid.
+
+<a name="custom"></a>
+## I'm developing a custom solution based on PDF.js core library. Can you help me?
+
+We are glad to hear that and will try to help you, but first check examples at https://github.com/mozilla/pdf.js#learning and search existing [issues](https://github.com/mozilla/pdf.js/search?q=keyword&type=Issues). If this does not help, please prepare short well-documented example that demonstrate the problem and make it accessible online on your website, jsbin, etc. before opening a new issue or contacting us on the IRC channel -- keep in mind that just code snippets won't help us troubleshoot the problem. The issues that do not provide enough details will be closed as invalid/incomplete (see [report issue](#issue) above).
+
+Please periodically check or subscribe to our dev-pdf-js@lists.mozilla.org mailing list to be informed about changes in the PDF.js architecture/design or security announcements.
