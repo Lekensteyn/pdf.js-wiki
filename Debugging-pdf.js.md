@@ -24,6 +24,9 @@ The font inspector allows you to view what fonts are used within page.  It also 
 
 The stepper tool makes it so you can step through the drawing commands one at a time and hopefully find where a possible issue is coming from. It is also useful for learning how a PDF is structured and the order of its operations.  To walk through the drawing commands first add a break point, refresh the page and then use the keys `s` to step one command at a time or `c` to continue until the next breakpoint(line that is checked).
 
+## PDF Object Browser
+Inspect the internal object structure and view raw values of a pdf http://brendandahl.github.io/pdf.js.utils/browser.
+
 ## Debugging Font Issues
 To get the problematic font out of the PDF, first download it using the font inspector mentioned above.
 
