@@ -3,7 +3,7 @@ To get started, please read the README file.
 + [FAQ](wiki/Frequently-Asked-Questions) - Frequently asked questions.
 + [Contributing/Workflow](wiki/Contributing) - How to contribute to the pdf.js project. Also, contains more information on setting up testing.
 + [Style Guide](wiki/Style-Guide) - Coding style guide.
-+ [Debugging PDF.js](wiki/Debugging-pdf.js) - Tips for debugging and ways to enable debugging tools.
++ [Debugging PDF.js](wiki/Debugging-PDF.js) - Tips for debugging and ways to enable debugging tools.
 + [Learning Resources](wiki/Additional-Learning-Resources) - Additional reading material, presentations, videos.
 + [Weekly Public Meetings](wiki/Weekly-Public-Meetings).
 + [Required Browser Features](wiki/Required-Browser-Features).
