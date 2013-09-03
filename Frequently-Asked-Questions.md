@@ -45,6 +45,12 @@ The goal is to support all HTML5 compliant browsers, but since feature support v
     <td></td>
   </tr>
   <tr>
+    <td>Android (3.2 or below)</td>
+    <td>limited</td>
+    <td>none</td>
+    <td>Android's Web Browser lacks a number of features or has defects, e.g. in typed arrays or HTTP range requests</td>
+  </tr>
+  <tr>
     <td>IE9</td>
     <td>limited</td>
     <td>none</td>
