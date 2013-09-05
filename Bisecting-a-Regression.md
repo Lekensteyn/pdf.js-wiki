@@ -1,5 +1,3 @@
-# Bisecting a Regression
-
 ## 1) At a minimum you'll need:
 - git (on windows http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git)
 - a server, if you have python installed that will work
