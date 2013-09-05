@@ -51,6 +51,12 @@ The goal is to support all HTML5 compliant browsers, but since feature support v
     <td>Android's Web Browser lacks a number of features or has defects, e.g. in typed arrays or HTTP range requests</td>
   </tr>
   <tr>
+    <td>Safari</td>
+    <td>limited</td>
+    <td>none</td>
+    <td>Safari (desktop and mobile) lacks a number of features or has defects, e.g. in typed arrays or HTTP range requests</td>
+  </tr>
+  <tr>
     <td>IE9</td>
     <td>limited</td>
     <td>none</td>
