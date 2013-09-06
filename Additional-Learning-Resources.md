@@ -12,7 +12,6 @@ Videos:
 
 Slides:
 + http://jviereck.github.com/slides/2012_07_berlinjs/index.html
-+ https://people.mozilla.com/~cjones/PDF.js-mozilla-vision-japan-2012.pdf
 + https://people.mozilla.com/~ydelendik/pdfjs-ttf-2012.pdf
 
 ## PDF-related resources
