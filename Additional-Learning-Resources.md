@@ -4,9 +4,6 @@ You can read more about PDF.js here:
 + http://andreasgal.com/2011/06/15/pdf-js/
 + http://blog.mozilla.com/cjones/2011/06/15/overview-of-pdf-js-guts/
 
-Listen:
-+ http://www.aminutewithbrendan.com/pages/20110616
-
 ## Presentations
 
 Videos:
