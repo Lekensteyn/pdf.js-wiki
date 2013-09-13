@@ -73,4 +73,4 @@ Now that your build is done, you can copy the viewer and its resources (core fil
 
 === Compatibility ===
 
-Note that you must include <tt>compatibility.js</tt> in order to support browsers like IE8+.
+Note that you must include <tt>compatibility.js</tt> in order to support browsers like IE9+.
