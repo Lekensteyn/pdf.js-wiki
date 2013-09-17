@@ -124,7 +124,7 @@ Please specify valid title (e.g. "Glyph spacing is incorrect" instead of "PDF.js
 <a name="corrupted-pdf"></a>
 ## I know that my PDFs are corrupted. Will PDF.js attempt to display it?
 
-Yes. The PDF.js will attempt to recover usable PDF data (pages, content, or fonts) and display the document. Please report the issue (see above) and we will take a look.
+Yes. PDF.js will attempt to recover usable PDF data (pages, content or fonts) and display the document. Please report the issue (see above) and we will take a look.
 
 <a name="idea"></a>
 ## I have a really great idea. Where is the best place to record it?
