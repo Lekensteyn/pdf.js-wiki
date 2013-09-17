@@ -121,4 +121,4 @@ If all goes well a collaborator will merge all your changes into the main repo.
 ## Useful artifacts
 
 * File split (issues #700 and #646)
-* API (issue #1100 and [api.js](https://github.com/mozilla/pdf.js/blob/master/src/api.js))
+* API (issue #1100 and [api.js](https://github.com/mozilla/pdf.js/blob/master/src/display/api.js))
