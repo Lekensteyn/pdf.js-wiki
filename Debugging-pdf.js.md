@@ -39,7 +39,7 @@ If the font is failing the open type sanitizer (OTS), Firefox should show a mess
 ### Helpful Font Tools
 If the font isn't failing the sanitizer or the sanitizer error doesn't lead you to the font issue, it is often helpful to use other font tools to try and find the source of the problem.
 
-**[TTX](http://www.letterror.com/code/ttx/)**
+**[TTX](http://sourceforge.net/projects/fonttools/)**
 
 TTX is probably the most useful tool for debugging fonts. It provides a way to convert fonts to XML and then back to the open type format from the XML. A helpful test is to first convert the font to XML, then back to OTF and then test if the font works using a test HTML page.  
 
