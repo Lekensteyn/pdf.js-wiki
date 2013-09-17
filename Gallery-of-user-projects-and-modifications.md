@@ -21,7 +21,7 @@
 + [doctape - store & view PDFs, office formats and vector graphics. Includes alternative UI & Flexpaper (Flash) fallback.] (http://www.doctape.com)
 + [SpanDeX.io - write, share, collaborate on LaTeX documents with live-updating side-by-side PDF preview] (http://www.spandex.io)
 + [Integrating PDF.js with Lunr.js to build a full text indexing ingestion pipeline in Javascript] (http://garysieling.com/blog/building-a-full-text-index-in-javascript) (@garysieling)
-
++ [Viewer.js - an embeddable open-source document viewer for the web that uses PDF.js to display PDFs and WebODF to display ODF files](http://viewerjs.org)
 ### Current Deployments
 
 The deployments can be tracked via ['intitle:"PDF.js viewer" next'](https://www.google.com/search?q=intitle%3A"PDF.js+viewer"+next) or ['"Toggle Sidebar" "Automatic Zoom"'](https://www.google.com/search?q="Toggle+Sidebar"+"Automatic+Zoom") search queries
