@@ -20,3 +20,4 @@ Example: http://www.example.com/pdf.js#page=2
 ** off: disable textLayer generation
 ** visible, shadow, hover: apply the CSS class <tt>textlayer-{value}</tt> to all text layers
 * pdfBug: handle PDF bugs
+* useCssZoom: set to true to only use CSS zoom. Example: useCssZoom=true
