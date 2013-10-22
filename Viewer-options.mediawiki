@@ -19,5 +19,5 @@ Example: http://www.example.com/pdf.js#page=2
 * textLayer: set to one of the following. Example: textLayer=off
 ** off: disable textLayer generation
 ** visible, shadow, hover: apply the CSS class <tt>textlayer-{value}</tt> to all text layers
-* pdfBug: handle PDF bugs
+* pdfBug: enable debugging tools, see https://github.com/mozilla/pdf.js/wiki/Debugging-pdf.js.
 * useOnlyCssZoom: set to true to use only CSS zoom. Example: useOnlyCssZoom=true
