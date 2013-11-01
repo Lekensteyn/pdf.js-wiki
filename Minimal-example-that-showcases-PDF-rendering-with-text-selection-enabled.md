@@ -398,8 +398,7 @@ window.onload = function () {
         $pdfContainer.append($textLayerDiv);
 
         page.getTextContent().then(function (textContent) {
-            var textLayer = new TextLayerBuilder($textLayerDiv.get(0), 0); //The second zero is an index identifying
-            //the page. It is set to page.number - 1.
+            var textLayer = new TextLayerBuilder({ textLayerDiv: $textLayerDiv.get(0) });
             textLayer.setTextContent(textContent);
 
             var renderContext = {
