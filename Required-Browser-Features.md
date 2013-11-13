@@ -736,6 +736,32 @@ if the browser cannot send (large) typed arrays to web workers.
   </tbody>
 </table>
 
+
+## <a id="Worker-transfers"></a>Worker can use transfers for postMessage
+
+Checks if the browser can transfer large chunks of data to the main thread vs cloning typed arrays. See [Using web workers](https://developer.mozilla.org/en-US/docs/Web/Guide/Performance/Using_web_workers#Passing_data_by_transferring_ownership_%28transferable_objects%29)
+
+<table>
+  <thead>
+    <tr>
+      <th>Chrome</th>
+      <th>Firefox (Gecko)</th>
+      <th>Internet Explorer</th>
+      <th>Opera</th>
+      <th>Safari</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Yes (v.17)</td>
+      <td>Yes (v.18~27)</td>
+      <td>No (v.11)</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+  </tbody>
+</table>
+
 ## <a id="Worker-xhr-response"></a>XMLHttpRequest supports the response property in web workers
 
 The PDF.js will execute all code on the main thread,
