@@ -24,6 +24,7 @@
 + [Viewer.js - an embeddable open-source document viewer for the web that uses PDF.js to display PDFs and WebODF to display ODF files](http://viewerjs.org)  
 + [Candy Reader ports PDF.js to standalone desktop application using node-webkit](https://github.com/humu2009/candy-pdf-reader) (@humu2009)
 + [PeerLibrary](https://github.com/peerlibrary/peerlibrary), a collaborative reading of academic publications, promoting open access and open science
++ [meteor-pdf.js](https://atmosphere.meteor.com/package/pdf.js), PDF.js bundled for [Meteor](http://meteor.com/), works both on client and server side (node.js integration)
 
 ### Current Deployments
 
