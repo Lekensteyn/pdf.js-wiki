@@ -23,6 +23,7 @@
 + [Integrating PDF.js with Lunr.js to build a full text indexing ingestion pipeline in Javascript] (http://garysieling.com/blog/building-a-full-text-index-in-javascript) (@garysieling)
 + [Viewer.js - an embeddable open-source document viewer for the web that uses PDF.js to display PDFs and WebODF to display ODF files](http://viewerjs.org)  
 + [Candy Reader ports PDF.js to standalone desktop application using node-webkit](https://github.com/humu2009/candy-pdf-reader) (@humu2009)
++ [PeerLibrary](https://github.com/peerlibrary/peerlibrary), a collaborative reading of academic publications, promoting open access and open science
 
 ### Current Deployments
 
