@@ -87,18 +87,19 @@ PDF.js is mainly written for *reading* PDF files, not editing them. Because of t
 (warning, the following list may be incomplete)
 
 ### Navigation
-* **next page:** n, k, right arrow key
-* **previous page:** p, j, left arrow key
+* **next page:** <kbd>n</kbd>, <kbd>k</kbd>, right arrow key
+* **previous page:** <kbd>p</kbd>, <kbd>j</kbd>, left arrow key
 
-In full screen mode, the home, end, page up, page down, and all arrow keys can be used to navigate the document.
+The <kbd>home</kbd>, <kbd>end</kbd>, <kbd>page up</kbd>, <kbd>page down</kbd> and all arrow keys can be used to navigate the document.
+
 ### Zoom and rotate
-User interface buttons or ctrl + mouse wheel can be used to change the zooming level, but keyboard shortcuts are also available:
-* **zoom in:** ctrl + "+", ctrl + = 
-* **zoom out:** ctrl + -
-* **restore normal zoom:** ctrl + 0 (in full screen mode)
-* **rotate the document clockwise:** r
-* **rotate counterclockwise:** shift + r
-* **presentation mode:** ctrl + alt + p
+User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change the zooming level, but keyboard shortcuts are also available:
+* **zoom in:** <kbd>ctrl</kbd> + <kbd>+</kbd>, <kbd>ctrl</kbd> + <kbd>=</kbd>
+* **zoom out:** <kbd>ctrl</kbd> + <kbd>-</kbd>
+* **restore normal zoom:** <kbd>ctrl</kbd> + <kbd>0</kbd>
+* **rotate the document clockwise:** <kbd>r</kbd>
+* **rotate counterclockwise:** <kbd>shift</kbd> + <kbd>r</kbd>
+* **presentation mode:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>p</kbd>
 
 (replace ctrl with meta on some configurations)
 
