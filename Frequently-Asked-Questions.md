@@ -92,7 +92,7 @@ PDF.js is mainly written for *reading* PDF files, not editing them. Because of t
 
 The <kbd>home</kbd>, <kbd>end</kbd>, <kbd>page up</kbd>, <kbd>page down</kbd> and all arrow keys can be used to navigate the document.
 
-### Zoom and rotate
+### Viewer controls
 User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change the zooming level, but keyboard shortcuts are also available:
 * **zoom in:** <kbd>ctrl</kbd> + <kbd>+</kbd>, <kbd>ctrl</kbd> + <kbd>=</kbd>
 * **zoom out:** <kbd>ctrl</kbd> + <kbd>-</kbd>
@@ -100,6 +100,7 @@ User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change th
 * **rotate the document clockwise:** <kbd>r</kbd>
 * **rotate counterclockwise:** <kbd>shift</kbd> + <kbd>r</kbd>
 * **presentation mode:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>p</kbd>
+* **Toggle hand tool:** <kbd>h</kbd>
 
 (replace ctrl with meta on some configurations)
 
