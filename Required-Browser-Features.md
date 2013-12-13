@@ -338,11 +338,11 @@ This is important for retrieving the binary PDF data using XHR.
   </thead>
   <tbody>
     <tr>
-      <td>Yes (v.24)</td>
+      <td>No</td>
       <td>Yes (v.6)</td>
       <td>Yes (v.10)</td>
       <td>?</td>
-      <td>Yes (v.5.1)</td>
+      <td>No</td>
     </tr>
   </tbody>
 </table>
