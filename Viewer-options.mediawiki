@@ -21,3 +21,4 @@ Example: http://www.example.com/pdf.js#page=2
 ** visible, shadow, hover: apply the CSS class <tt>textlayer-{value}</tt> to all text layers
 * pdfBug: enable debugging tools, see [https://github.com/mozilla/pdf.js/wiki/Debugging-pdf.js].
 * useOnlyCssZoom: set to true to use only CSS zoom. Example: useOnlyCssZoom=true
+* verbosity: specify the verbosity of console messages. 0 = only errors, 1 = warnings and errors, 5 = warnings, errors and information messages. Example: verbosity=5
