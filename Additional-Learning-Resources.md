@@ -9,6 +9,8 @@ You can read more about PDF.js here:
 Videos:
 + Julian Viereck – Zurich GTUG 2011, http://blog.mozilla.org/labs/2011/10/video-what-is-pdf-js/
 + Andreas Gal – JSConf.eu, 2011, http://blip.tv/jsconfeu/andreas-gal-pdf-js-5723942
++ Brendan Dahl - FOSDEM 2013, Brussels, https://air.mozilla.org/pdfjs-firefoxs-html5-pdf-viewer/
++ Mack Duan - Mozilla, 2013, https://air.mozilla.org/intern-pdfjs/
 
 Slides:
 + http://jviereck.github.com/slides/2012_07_berlinjs/index.html
