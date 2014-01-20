@@ -12,7 +12,7 @@ Videos:
 
 Slides:
 + http://jviereck.github.com/slides/2012_07_berlinjs/index.html
-+ https://people.mozilla.com/~ydelendik/pdfjs-ttf-2012.pdf
++ Yury Delendik - TTF 2012, [Evolving with Web Standards. The Story of PDF.JS.](https://people.mozilla.com/~ydelendik/pdfjs-ttf-2012.pdf)
 
 ## PDF-related resources
 
