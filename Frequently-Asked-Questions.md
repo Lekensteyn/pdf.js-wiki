@@ -87,8 +87,8 @@ PDF.js is mainly written for *reading* PDF files, not editing them. Because of t
 (warning, the following list may be incomplete)
 
 ### Navigation
-* **next page:** <kbd>n</kbd>, <kbd>k</kbd>, right arrow key
-* **previous page:** <kbd>p</kbd>, <kbd>j</kbd>, left arrow key
+* **next page:** <kbd>n</kbd>, <kbd>k</kbd>, right arrow key, click in presentation mode
+* **previous page:** <kbd>p</kbd>, <kbd>j</kbd>, left arrow key, <kbd>Shift</kbd> + click in presentation mode
 
 The <kbd>home</kbd>, <kbd>end</kbd>, <kbd>page up</kbd>, <kbd>page down</kbd> and all arrow keys can be used to navigate the document.
 
@@ -101,6 +101,7 @@ User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change th
 * **rotate counterclockwise:** <kbd>shift</kbd> + <kbd>r</kbd>
 * **presentation mode:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>p</kbd>
 * **toggle hand tool:** <kbd>h</kbd>
+* **move focus to the 'go to page' box:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>g</kbd>
 
 (replace ctrl with meta on some configurations)
 
