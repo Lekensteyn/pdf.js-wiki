@@ -13,8 +13,8 @@
 * [I'm developing a custom solution based on PDF.js core library. Can you help me?](#custom)
 
 <a name="file"></a>
-## Can I specify different PDF in the default viewer?
-You can the modify `DEFAULT_URL` variable in the web/viewer.js file. Or, you can append the `?file=` query string to the viewer URL, e.g. `http://mozilla.github.com/pdf.js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf`.
+## Can I specify a different PDF in the default viewer?
+You can modify the `DEFAULT_URL` variable in the `web/viewer.js` file or you can append the `?file=` query string to the viewer URL, e.g. `http://mozilla.github.com/pdf.js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf`.
 
 <a name="faq-xhr"></a>
 ## Can I load a PDF from another server (cross domain request)?
@@ -100,7 +100,7 @@ User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change th
 * **rotate the document clockwise:** <kbd>r</kbd>
 * **rotate counterclockwise:** <kbd>shift</kbd> + <kbd>r</kbd>
 * **presentation mode:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>p</kbd>
-* **Toggle hand tool:** <kbd>h</kbd>
+* **toggle hand tool:** <kbd>h</kbd>
 
 (replace ctrl with meta on some configurations)
 
@@ -117,7 +117,7 @@ It is known that minifiers break PDF.js code if advanced options are used (see [
 Yes. The code for the website at http://mozilla.github.com/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages` or download [the archive](https://github.com/mozilla/pdf.js/archive/gh-pages.zip).
 
 <a name="issue"></a>
-## PDF.js does not render my files right. Can I report an issue?
+## PDF.js does not render my files correctly. Can I report an issue?
 
 Yes. The issues are used to track both bugs filed by users and specific work items for developers. Try to file one issue per problem observed.
 
