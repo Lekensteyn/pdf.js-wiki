@@ -9,6 +9,6 @@ To get started, please read the README file.
 + [Required Browser Features](wiki/Required-Browser-Features).
 + [Glossary](wiki/Glossary) - Commonly used terms.
 + [Gallery of user projects and modifications](wiki/Gallery-of-user-projects-and-modifications).
-+ [Setup PDF.js in a website](wiki/Setup-pdf.js-in-a-website) ([Linux](wiki/Setup-PDF.js-in-a-website-(Linux%29)/[Windows](wiki/Setup-PDF.js-in-a-website-(Windows%29)/Mac)
++ [Setup PDF.js in a website](wiki/Setup-pdf.js-in-a-website): [Linux](wiki/Setup-PDF.js-in-a-website-(Linux)) or [Windows](wiki/Setup-PDF.js-in-a-website-(Windows))
 + [Viewer options](wiki/Viewer-options) - Options for PDF.js's viewer that can be given at the URL level.
 + [Bisecting a Regression](wiki/Bisecting-a-Regression) - How to find which commit caused a regression.
