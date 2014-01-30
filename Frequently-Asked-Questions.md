@@ -99,7 +99,7 @@ User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change th
 * **restore normal zoom:** <kbd>ctrl</kbd> + <kbd>0</kbd>
 * **rotate the document clockwise:** <kbd>r</kbd>
 * **rotate counterclockwise:** <kbd>shift</kbd> + <kbd>r</kbd>
-* **presentation mode:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>p</kbd>
+* **presentation mode:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>p</kbd> (does not work in IE11)
 * **toggle hand tool:** <kbd>h</kbd>
 * **move focus to the 'go to page' box:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>g</kbd>
 
