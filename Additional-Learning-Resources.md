@@ -10,11 +10,13 @@ Videos:
 + Julian Viereck – Zurich GTUG 2011, http://blog.mozilla.org/labs/2011/10/video-what-is-pdf-js/
 + Andreas Gal – JSConf.eu, 2011, http://blip.tv/jsconfeu/andreas-gal-pdf-js-5723942
 + Brendan Dahl - FOSDEM 2013, https://air.mozilla.org/pdfjs-firefoxs-html5-pdf-viewer/
++ Brendan Dahl - HTML5DevConf 2013, https://www.youtube.com/watch?v=4yLzRoErOHw
 + Mack Duan - Optimizing PDF.js, Mozilla, 2013, https://air.mozilla.org/intern-pdfjs/
 
 Slides:
 + http://jviereck.github.com/slides/2012_07_berlinjs/index.html
 + Yury Delendik - TTF 2012, [Evolving with Web Standards. The Story of PDF.JS.](https://people.mozilla.com/~ydelendik/pdfjs-ttf-2012.pdf)
++ Brendan Dahl - HTML5DevConf 2013, http://brendandahl.github.io/speaking-events/2013-html5-dev-conf
 
 ## PDF-related resources
 
