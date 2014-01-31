@@ -56,7 +56,7 @@ hg pull -u
 
 + update pdf.js and build extension
 ```
-node make extension
+node make mozcentral
 ```
 
 + Open new bugzilla bug
@@ -69,8 +69,9 @@ hg qnew bug-743264-fix -m "Bug 743264 - Update pdf.js to Version 0.2.537."
 ```
 
 + Update Files
+
 ```
-copy updated files into mozilla-central/browser/app/profile/extensions/uriloader\@pdf.js
+# copy files build ./build/mozcenral/* into mozilla-central/ root
 hg qrefresh
 ```
 
