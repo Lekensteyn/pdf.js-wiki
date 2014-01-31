@@ -58,6 +58,10 @@ hg pull -u
 ```
 node make mozcentral
 ```
++ (or, if you know previous commit sha for built pdf.js you can generate build/mozcentral.diff file)
+```
+BASELINE=<baseLineCommit> node make mozcentralbaseline; node make mozcentraldiff
+```
 
 + Open new bugzilla bug
 	+ Copy release notes there
