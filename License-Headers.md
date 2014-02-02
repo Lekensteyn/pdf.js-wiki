@@ -1,4 +1,4 @@
-## javascript
+## JavaScript
 ```javascript
 /* Copyright 2012 Mozilla Foundation
  *
@@ -16,7 +16,7 @@
  */
 ```
 
-## python
+## Python
 
 ```python
 # Copyright 2012 Mozilla Foundation
