@@ -5,12 +5,12 @@
 * [Required License in File Header](https://github.com/mozilla/pdf.js/wiki/License-Headers)
 
 ## Naming
-* variables and functions - lowerCamelCase
-* constructor like functions - UpperCamelCase
-* constants - ALL_UPPER_CASE_WITH_UNDERSCORES
+* Variables and functions - lowerCamelCase
+* Constructor-like functions - UpperCamelCase
+* Constants - ALL_UPPER_CASE_WITH_UNDERSCORES
 
 ## Braces
-* Always use braces and put them on same line even for single line control statements
+* Always use braces and put them on same line, even for single line control statements.
 
 ```javascript
 if (someVar) {
@@ -42,7 +42,7 @@ if (someVar === conditionA) {
 _Note: This wasn't always followed, but any new code should do this._
 
 ## Classes
-The standard way of creating classes in pdf.js is the following. Please note that by class we mean an object that is class-like. Also, note the naming of all anonymous functions.
+The standard way of creating classes in PDF.js is the following. Please note that by class we mean an object that is class-like. Also, note the naming of all anonymous functions.
 
 ```javascript
 var ClassName = (function ClassNameClosure() {
