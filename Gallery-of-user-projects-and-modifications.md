@@ -25,6 +25,7 @@
 + [Candy Reader ports PDF.js to standalone desktop application using node-webkit](https://github.com/humu2009/candy-pdf-reader) (@humu2009)
 + [PeerLibrary](https://github.com/peerlibrary/peerlibrary), a collaborative reading of academic publications, promoting open access and open science
 + [meteor-pdf.js](https://atmosphere.meteor.com/package/pdf.js), PDF.js bundled for [Meteor](http://meteor.com/), works both on client and server side (node.js integration)
++ [pdfjsgui](https://github.com/parkerlreed/pdfjsgui) Small python script to run pdf.js as a semi-standalone application
 
 ### Current Deployments
 
