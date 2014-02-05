@@ -26,6 +26,7 @@
 + [PeerLibrary](https://github.com/peerlibrary/peerlibrary), a collaborative reading of academic publications, promoting open access and open science
 + [meteor-pdf.js](https://atmosphere.meteor.com/package/pdf.js), PDF.js bundled for [Meteor](http://meteor.com/), works both on client and server side (node.js integration)
 + [pdfjsgui](https://github.com/parkerlreed/pdfjsgui) Small python script to run pdf.js as a semi-standalone application
++ [WebAppFind OCR demo](https://github.com/brettz9/webappfind/blob/master/demos/ocr.html) - Applies [Ocras.js](http://antimatter15.github.io/ocrad.js/demo.html) or [GOCR.js](http://antimatter15.github.io/gocr.js/demo.html) to a PDF file opened via right-click from the desktop (the Firefox add-on is currently Windows only; ports welcome!)
 
 ### Current Deployments
 
