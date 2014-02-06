@@ -1,10 +1,5 @@
 Options for PDF.js's viewer that can be given at the URL level. Multiple values of either type can be combined by separating with an ampersand (&) after the hash (example: #page=2&textLayer=off).
 
-===Options after the ?===
-Example: http://www.example.com/pdf.js?file=myfile.pdf
-
-* file: the filename of the PDF file to use (must be on the same server due to JavaScript limitations).  Example: file=myfile.pdf
-
 ===Options after the #===
 Example: http://www.example.com/pdf.js#page=2
 
@@ -22,3 +17,9 @@ Example: http://www.example.com/pdf.js#page=2
 * pdfBug: enable debugging tools, see [https://github.com/mozilla/pdf.js/wiki/Debugging-pdf.js].
 * useOnlyCssZoom: set to true to use only CSS zoom. Example: useOnlyCssZoom=true
 * verbosity: specify the verbosity of console messages. 0 = only errors, 1 = warnings and errors, 5 = warnings, errors and information messages. Example: verbosity=5
+
+
+===Options (for viewer.html) after the ?===
+Example: http://mozilla.github.io/pdf.js/web/viewer.html?file=myfile.pdf
+
+* file: the filename of the PDF file to use (must be on the same server due to JavaScript limitations).  Example: file=myfile.pdf
