@@ -22,7 +22,7 @@ You can test your own documents by placing them into the <tt>test</tt> directory
 
 === Opening PDF files from your website ===
 
-You need to use the <tt>file</tt> parameter in the URL whose value is a full [https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/encodeURI encoded URI]. For example:
+You need to use the <tt>file</tt> parameter in the URL whose value is a full [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent encoded URI]. For example:
 
   http://mozilla.github.com/pdf.js/web/viewer.html?file=http%3A%2F%2Fasync5.org%2Fmoz%2Fpdfjs.pdf
 
