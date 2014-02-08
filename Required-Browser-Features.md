@@ -1,5 +1,3 @@
-# Required Browser Features
-
 The page describes the features that are required for a web browser to have PDF.js function properly. Some of the features are critical and does not let PDF.js function properly if they are not supported or disabled. Some of them can be emulated if absent (e.g. in the [compatibility.js](https://github.com/mozilla/pdf.js/blob/master/web/compatibility.js) file), however the PDF.js performance and memory usage will be worse than when the feature is present.
 
 The required features tests can be run at http://mozilla.github.com/pdf.js/features/
