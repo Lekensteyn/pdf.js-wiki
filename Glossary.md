@@ -1,2 +1,2 @@
 + **CFF**: _Compact Font Format_. See [Wikipedia/PostScript fonts](http://en.wikipedia.org/wiki/PostScript_fonts).
-+ **IR**: _Intermediate Representation_. pdf.js translates PDF graphic operators (e.g. `Tf[], TJ[]`) into our own set of instructions  (e.g. `setFont(), showSpacedText()`, respectively). The set of instructions after this mapping is the IR of the original document.
++ **IR**: _Intermediate Representation_. PDF.js translates PDF graphic operators (e.g. `Tf[], TJ[]`) into our own set of instructions  (e.g. `setFont(), showSpacedText()`, respectively). The set of instructions after this mapping is the IR of the original document.
