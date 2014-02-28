@@ -53,6 +53,20 @@ var ClassName = (function ClassNameClosure() {
   ClassName.prototype = {
     functionName: function ClassName_functionName(...) {
       ...
+    },
+
+    aLongFunctionName: 
+      function ClassName_aLongFunctionName(arg1,
+                                           arg2,
+                                           ...) {
+      ...
+    },
+
+    aVeryVeryVeryVeryVeryLongFunctionName: 
+      function ClassName_aVeryVeryVeryVeryVeryLongFunctionName(arg1,
+                                                               arg2,
+                                                               ...) {
+      ...
     }
   };
 
