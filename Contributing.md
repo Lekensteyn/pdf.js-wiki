@@ -115,6 +115,12 @@ In addition to the GitHub pull request workflow, it's highly recommended that yo
 
 A collaborator will kick off further testing and do a code review.
 
+Something to speed up fetching the branch for the remote github repo using `git try username:branch` command -- add the following to the '.git/config':
+```
+[alias]
+  try = !sh -c 'IFS=\":\" read -ra ARGS <<< \"$0\" && git fetch https://github.com/${ARGS[0]}/pdf.js.git ${ARGS[1]} && git checkout FETCH_HEAD'
+```
+
 ### 8) Merging to master
 If all goes well, a collaborator will merge all your changes into the main repository.
 
