@@ -399,7 +399,7 @@ window.onload = function () {
 
         page.getTextContent().then(function (textContent) {
             var textLayer = new TextLayerBuilder($textLayerDiv.get(0));
-            textLayer.setTextContent(textContent);
+            textLayer.setTextContent({bidiTexts: textContent});
 
             var renderContext = {
                 canvasContext: context,
