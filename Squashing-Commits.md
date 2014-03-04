@@ -39,4 +39,4 @@ git push --force origin super-feature
   ```
   git rebase -i HEAD~5
   ```
-  Change `pick` to `squash` for last four and update the commit message in the editor.
+  Change `pick` to `squash` (or `fixup`) for last four and update the commit message in the editor, then `git push --force origin super-feature`.
