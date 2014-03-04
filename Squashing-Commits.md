@@ -40,3 +40,28 @@ git push --force origin super-feature
   git rebase -i HEAD~5
   ```
   Change `pick` to `squash` (or `fixup`) for last four and update the commit message in the editor, then `git push --force origin super-feature`.
+
+## (Recovering from bad squashes)
+
+Hopefully you did not do anything wrong, then you don't need to read this section :) If you did something wrong and you end up with lots of commits you don't recognize. Don't panic:
+
+1. Find your _last_ commit sha/id before you did squashing (e.g. 'abcde123'). The pull request github page will help you with that in the list of the commits (or diff comments). And then just run:
+
+  ```
+  git commit -B super-feature abcde123
+  ```
+
+2. Or, you can just cherry-pick your commits and up-to-date upstream master (e.g. you see 'abcdef123' and 'defghi567' as you commits):
+
+  ```
+  # fetches the current upstream repository
+  git fetch upstream
+  # reset your branch to upstream master
+  git checkout -B super-feature upstream/master
+  # cherry-pick only your commits and resolve conflicts
+  git cherry-pick abcdef123
+  git cherry-pick defghi567
+  # optionally rebase can be run, in this case git rebase -i HEAD~2
+  ```
+
+And repeat squashing.
