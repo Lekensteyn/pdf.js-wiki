@@ -51,7 +51,7 @@ Hopefully you did not do anything wrong, then you don't need to read this sectio
   git commit -B super-feature abcde123
   ```
 
-2. Or, you can just cherry-pick your commits and up-to-date upstream master (e.g. you see 'abcdef123' and 'defghi567' as you commits):
+2. Or, you can just cherry-pick your commits into up-to-date upstream master (e.g. you see 'abcdef123' and 'defghi567' as your commits):
 
   ```
   # fetches the current upstream repository
