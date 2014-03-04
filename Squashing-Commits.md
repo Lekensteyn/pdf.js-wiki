@@ -20,23 +20,23 @@ git push --force origin super-feature
 
 ## Alternatives
 1. Step-by-step commands
-```
-# fetches the current upstream repository
-git fetch upstream
-# resets HEAD to the current upstream
-git checkout upstream/master
-# merges all commits from the local branch
-git merge --no-commit --squash super-feature
-# re-creates the branch starting from current HEAD (old commits will be lost)
-git checkout -B super-feature
-# lets you edit the commit and checks in the changes (you can also use git commit -m "message")
-git commit -e
-# pushes the changes (in general, be careful with the --force parameter)
-git push --force origin super-feature
-```
+  ```
+  # fetches the current upstream repository
+  git fetch upstream
+  # resets HEAD to the current upstream
+  git checkout upstream/master
+  # merges all commits from the local branch
+  git merge --no-commit --squash super-feature
+  # re-creates the branch starting from current HEAD (old commits will be lost)
+  git checkout -B super-feature
+  # lets you edit the commit and checks in the changes (you can also use git commit -m "message")
+  git commit -e
+  # pushes the changes (in general, be careful with the --force parameter)
+  git push --force origin super-feature
+  ```
 
-1. Or, you can use rebase. Let's say you have 5 commits to squash and you don't have merge commits:
-```
-git rebase -i HEAD~5
-```
-Change `pick` to `squash` for last four and update the commit message in the editor.
+1. <a name="simple"></a>Or, you can use rebase. Let's say you have 5 commits to squash and you don't have merge commits:
+  ```
+  git rebase -i HEAD~5
+  ```
+  Change `pick` to `squash` for last four and update the commit message in the editor.
