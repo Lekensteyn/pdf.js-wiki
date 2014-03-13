@@ -106,11 +106,13 @@ User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change th
 (replace ctrl with meta on some configurations)
 
 <a name="minified"></a>
-## PDF.js files are too big. Can you provide minified versions of CSS and JS files?
+## The PDF.js files are too big. Can you provide minified versions of JS files?
 
-Not at the moment. The PDF.js is not automatically tested with any of minifiers. We are keeping it up to the website administrators to choose which minifier they want to use.
+The only supported minifier as of now is Google Closure Compiler (see https://developers.google.com/closure/compiler). You can build a minified version of PDF.js using the following command:
 
-It is known that minifiers break PDF.js code if advanced options are used (see [#710](https://github.com/mozilla/pdf.js/issues/710) or [#2479](https://github.com/mozilla/pdf.js/issues/2479)). It's safe to use minifiers in whitespace/comments-removal mode.
+`CLOSURE_COMPILER="../path/to/closure/compiler.jar" node make minified`
+
+It is known that other minifiers might break PDF.js code if advanced options are used (see [#710](https://github.com/mozilla/pdf.js/issues/710) or [#2479](https://github.com/mozilla/pdf.js/issues/2479)). It's safe to use minifiers in whitespace/comments removal mode.
 
 <a name="gh-pages"></a>
 ## Is there a pre-built version PDF.js available?
