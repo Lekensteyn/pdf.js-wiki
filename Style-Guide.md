@@ -55,17 +55,14 @@ var ClassName = (function ClassNameClosure() {
       ...
     },
 
-    aLongFunctionName: 
-      function ClassName_aLongFunctionName(arg1,
-                                           arg2,
-                                           ...) {
+    aLongFunctionName: function ClassName_aLongFunctionName(arg1,
+                                                            arg2,
+                                                            ...) {
       ...
     },
 
-    aVeryVeryVeryVeryVeryLongFunctionName: 
-      function ClassName_aVeryVeryVeryVeryVeryLongFunctionName(arg1,
-                                                               arg2,
-                                                               ...) {
+    aVeryLongFunctionName: 
+        function ClassName_aVeryLongFunctionName(...) {
       ...
     }
   };
