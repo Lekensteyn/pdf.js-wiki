@@ -13,6 +13,8 @@
 - `cd pdf.js/test`
 - `python test.py --noDownload`
 - open firefox and check http://localhost:8080/web/viewer.html goes to the pdf viewer
+- open different terminal tab/window
+- `cd pdf.js`
 
 ### Option 2 - Other Server
 - go to `http://<yourserver>/pdf.js/web/viewer.html`
