@@ -110,6 +110,8 @@ git push origin type3fontsupport
 ### 6) Pull Request
 Create a pull request on GitHub for your feature branch. The code will then be reviewed and tested further by our bot.
 
+Note that the translations for PDF.js in the `l10n` folder are synchronized with the Aurora branch of Mozilla Firefox. This means that we will only accept pull requests that add strings currently missing in the Aurora branch (because it will take at least six weeks before the most recent translations are in the Aurora branch), but keep in mind that the changes will be overwritten when we synchronize again.
+
 ### 7) Code Review and Further Testing
 In addition to the GitHub pull request workflow, it's highly recommended that you setup some form of communication with the PDF.js team via the #pdfjs IRC channel at irc.mozilla.org or e-mail. That will help to find a reviewer for your patch and speed up the review process.
 
