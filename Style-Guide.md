@@ -19,7 +19,6 @@ if (someVar) {
   return null;
 }
 ```
-_Note: This wasn't always followed, but any new code should do this._
 
 ## White Space
 * Space after control statements (if, else, while, for, ...)
