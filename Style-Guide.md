@@ -1,4 +1,3 @@
-# Style Guide
 ## General
 * Indentation - 2 spaces
 * Line Length - 80 characters
