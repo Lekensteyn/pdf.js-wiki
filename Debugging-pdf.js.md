@@ -10,7 +10,7 @@ PDF.js has several special URL parameters to alter how PDF.js works and to enabl
 * `pdfBug=all` - Enables all the debugging tools. You can optionally enable specific tools by specifying them by their ID, e.g. pdfBug=FontInspector or pdfBug=Stepper,FontInspector. More about PDFBug below.
 * `disableWorker=true` - Disables the worker which makes it easier to use debugging tools like Firebug where workers aren't supported yet.
 * `textLayer=[off|visible|shadow|hover]` - Disables or reveals the text layer that is used for text selection.
-* `disableFontFace=true` - Disables standard `@font-font` font loading and uses the internal font renderer instead.
+* `disableFontFace=true` - Disables standard `@font-face` font loading and uses the internal font renderer instead.
 * `disableRange=true` - Disables HTTP range requests when fetching the document.
 * `disableAutoFetch=true` - Disables auto fetching of the document; only gets necessary data to display the current view.
 
