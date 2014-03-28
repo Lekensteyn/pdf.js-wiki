@@ -15,9 +15,9 @@ An overview how to contribute code to the PDF.js project. The basic workflow:
 ### The Bare Necessities
 * Git client
 * GitHub account
-* [Python](http://www.python.org/download/)
 * [Node.js](http://nodejs.org/)
 * (for Windows, see [[Setting up pdf.js Development Environment for Windows]])
+* (for font or performance testing you will need [python](http://www.python.org/download/), included with mozilla-build for Windows)
 
 **Before you make any changes to the code you'll probably want jump down to [Generating Reference Images](#ref-images) to create the reference snapshot images so you can run the test framework and check for regressions.**
  
