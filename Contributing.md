@@ -86,7 +86,7 @@ Now we can generate the reference images:
 
 ```
 cd test/
-python test.py -m --browserManifestFile=resources/browser_manifests/browser_manifest.json
+node test.js -m --browserManifestFile=resources/browser_manifests/browser_manifest.json
 ```
 You can then run the test suite from the PDF.js root folder:
 
