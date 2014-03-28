@@ -29,6 +29,13 @@ To fork the repository you'll need to sign up for a GitHub account. Once you hav
 git clone git://github.com/<YOUR USERNAME>/pdf.js.git
 ```
 
+and pull additional libraries/tools:
+```
+git submodule init
+git submodule update
+npm install
+```
+
 It's useful to have the upstream repository registered as well
 ```
 git remote add upstream git://github.com/mozilla/pdf.js.git
