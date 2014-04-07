@@ -4,7 +4,7 @@ The simplest way to setup the development environment for the pdf.js project:
 
 * Git for Windows (http://code.google.com/p/msysgit/, the Unix line endings must be set)
 
-```> git config --global core.autocrlf input```
+  ```> git config --global core.autocrlf input```
 
 * Mozilla build environment (http://ftp.mozilla.org/pub/mozilla.org/mozilla/libraries/win32/MozillaBuildSetup-Latest.exe)
 
