@@ -39,6 +39,10 @@ if (someVar === conditionA) {
 
 _Note: This wasn't always followed, but any new code should do this._
 
+## Variables
+
+Variables must be defined only once within a function scope. Preferably at the top of the function.
+
 ## Classes
 The standard way of creating classes in PDF.js is the following. Please note that by class we mean an object that is class-like. Also, note the naming of all anonymous functions.
 
