@@ -1,5 +1,5 @@
 ## 1) At a minimum you'll need:
-- git (on windows http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git)
+- git (on windows http://msysgit.github.io)
 - a server, if you have python (or XAMPP/WAMP) installed that will work
 
 ## 2) Getting pdf.js
