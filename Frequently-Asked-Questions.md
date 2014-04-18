@@ -11,6 +11,7 @@
 * [I know that my PDFs are corrupted. Will PDF.js attempt to display it?](#corrupted-pdf)
 * [I have a really great idea. Where is the best place to record it?](#idea)
 * [I'm developing a custom solution based on PDF.js core library. Can you help me?](#custom)
+* [What is a latest stable version of PDF.js?](#version)
 
 <a name="file"></a>
 ## Can I specify a different PDF in the default viewer?
@@ -144,3 +145,14 @@ The issue tracking system is designed to record a single technical problem. A bu
 We are glad to hear that and will try to help you, but first check examples at https://github.com/mozilla/pdf.js#learning and search existing [issues](https://github.com/mozilla/pdf.js/search?q=keyword&type=Issues). If this does not help, please prepare short well-documented example that demonstrate the problem and make it accessible online on your website, jsbin, etc. before opening a new issue or contacting us on the IRC channel -- keep in mind that just code snippets won't help us troubleshoot the problem. The issues that do not provide enough details will be closed as invalid/incomplete (see [reporting issue](#issue) above).
 
 Please periodically check or subscribe to our dev-pdf-js@lists.mozilla.org mailing list to be informed about changes in the PDF.js architecture/design or security announcements.
+
+<a name="version"></a>
+## What is a latest stable version of PDF.js?
+
+PDF.js is a general-purpose library to parse and render PDFs. At the moment it's included in the number of projects such as Firefox, Firefox OS, Chromium Extension, etc. We are recording our changes to the library with Github [pull requests](https://github.com/mozilla/pdf.js/pulls) and the log of the changes is also available form the git log.
+
+The version number consists of three digits: the major release number, minor release number and build number. The major and minor number are selected when some major milestone is reached. The build number is incremented by one each time when new a commit is pushed to the master branch. For sanity check, we accompany each version number with the SHA number of the latest commit.
+
+We are moving fast and trying to land as much good stuff as we can review and test. The [generic viewer](http://mzl.la/pdf-js) and development of version of Firefox PDF Viewer [extension](http://mzl.la/pdf-xpi) are always contain the latest PDF.js build and available for testing.
+
+During cool down period, at our discretion, we push our library to the [Firefox Nightly](http://nightly.mozilla.org/) channel. We decided to tag/mark our master branch each time we do that, and at that point a beta release is created. To define a stable version we listen for a feedback from users and projects that use PDF.js library. If no critical issues (e.g. a build is unusable, majority of the documents cannot be rendered, etc.) appeared, we promote the build as stable. Otherwise we either discard the release by replacing it by new beta or redo the build with commits that will fix a critical issue.
