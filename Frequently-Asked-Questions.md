@@ -118,7 +118,7 @@ It is known that other minifiers might break PDF.js code if advanced options are
 <a name="gh-pages"></a>
 ## Is there a pre-built version PDF.js available?
 
-Yes. The code for the website at http://mozilla.github.com/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages` or download [the archive](https://github.com/mozilla/pdf.js/archive/gh-pages.zip).
+Yes. Please see http://mozilla.github.io/pdf.js/getting_started/ page for details. Also the code for the website at http://mozilla.github.io/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages` or download [the archive](https://github.com/mozilla/pdf.js/archive/gh-pages.zip).
 
 <a name="issue"></a>
 ## PDF.js does not render my files correctly. Can I report an issue?
@@ -149,7 +149,7 @@ Please periodically check or subscribe to our dev-pdf-js@lists.mozilla.org maili
 <a name="version"></a>
 ## What is a latest stable version of PDF.js?
 
-PDF.js is a general-purpose library to parse and render PDFs. At the moment it's included in the number of projects such as Firefox, Firefox OS, Chromium Extension, etc. We are recording our changes to the library with Github [pull requests](https://github.com/mozilla/pdf.js/pulls). Also the log of the changes is available form the git log.
+PDF.js is a general-purpose library to parse and render PDFs. At the moment it's included in the number of projects such as Firefox, Firefox OS, Chromium Extension, etc. We are recording our changes to the library with Github [pull requests](https://github.com/mozilla/pdf.js/pulls). Also the log of the changes is available from the git log.
 
 The version number consists of three digits: the major release number, minor release number and build number. The major and minor number are selected when some major milestone is reached. The build number is incremented by one each time when new a commit is pushed to the master branch. For sanity check, we accompany each version number with the SHA number of the latest commit.
 
