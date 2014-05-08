@@ -12,6 +12,7 @@
 * [I have a really great idea. Where is the best place to record it?](#idea)
 * [I'm developing a custom solution based on PDF.js core library. Can you help me?](#custom)
 * [What is a latest stable version of PDF.js?](#version)
+* [What types of PDF files are slow in PDF.js? Can I optimize PDF to make PDF.js faster?](#optimize)
 
 <a name="file"></a>
 ## Can I specify a different PDF in the default viewer?
@@ -156,3 +157,16 @@ The version number consists of three digits: the major release number, minor rel
 We are moving fast and trying to land as much good stuff as we can review and test. The [generic viewer](http://mzl.la/pdf-js) and development of version of Firefox PDF Viewer [extension](http://mzl.la/pdf-xpi) always contain the latest PDF.js build and available for testing.
 
 During cooldown period, about once or twice in 6 weeks, we push our library to the [Firefox Nightly](http://nightly.mozilla.org/) channel. We decided to tag/mark our master branch each time we do that, and at this point a beta release is created. To promote a latest beta to a stable release, we listen for feedback (via [github](https://github.com/mozilla/pdf.js/issues), [bugzilla](https://bugzilla.mozilla.org/enter_bug.cgi?product=Firefox&component=PDF+Viewer), [mailing list](https://lists.mozilla.org/listinfo/dev-pdf-js‎), or [IRC](irc://irc.mozilla.org/%23pdfjs)) from the users and projects that use PDF.js library. If no critical issues (e.g. a build is unusable, majority of the documents cannot be rendered, etc.) appeared, we promote the build as stable. Otherwise we either discard the release by replacing it by new beta or redo the build with commits that will fix a critical issue.
+
+<a name="optimize"></a>
+## What types of PDF files are slow in PDF.js? Can I optimize PDF to make PDF.js faster?
+
+Typically, smaller in size PDFs will be rendered faster and it depends how big is a single page. The amount of pages does not affect the performance. It's essential that you will optimize your documents for the web. See [Optimize a PDF](http://help.adobe.com/en_US/acrobat/X/pro/using/WS58a04a822e3e50102bd615109794195ff-7c85.w.html) from Adobe's website. There are couple of more improvement techniques we can suggest:
+
+  1. Avoid using high resolution images -- 150 dpi resolution for scanned images shall be enough for screens, especially for low powered devices;
+  2. Try to use JPEG encoding for color images/photos in RGB colorspace when possible;
+  3. Avoid using expensive compositions/effects such as transitions/masking -- flatten transparency;
+  4. Avoid using PDF generators (or don't create content) that produce ineffective PDF output (e.g. LibreOffice creates a lots of tiny images for vector elements/pictures it does not understand);
+  5. If there is a setting, use web-optimized PDF output / linearization;
+  6. Fix or don't produce corrupted PDFs that does not conform PDF32000 specification.
+
