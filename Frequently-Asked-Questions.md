@@ -13,6 +13,7 @@
 * [I'm developing a custom solution based on PDF.js core library. Can you help me?](#custom)
 * [What is a latest stable version of PDF.js?](#version)
 * [What types of PDF files are slow in PDF.js? Can I optimize a PDF file to make PDF.js faster?](#optimize)
+* [Is it possible to use PDF.js to extract images as files from the PDFs?](#images)
 
 <a name="file"></a>
 ## Can I specify a different PDF in the default viewer?
@@ -169,3 +170,6 @@ Typically, PDFs with a smaller file size will be rendered faster and it depends 
   4. Avoid using PDF generators (or don't create content) that produce ineffective PDF output (e.g. LibreOffice creates a lots of tiny images for vector elements/pictures it does not understand);
   5. If there is such a setting, use web-optimized PDF output / linearization;
   6. Fix or don't produce corrupted PDFs that do not conform to the PDF32000 specification.
+
+<a name="images"></a>
+## Is it possible to use PDF.js to extract images as files from the PDFs?
