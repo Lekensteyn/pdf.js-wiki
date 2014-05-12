@@ -16,9 +16,9 @@ Then you can reach your Node.js server using the following URL:
 
   http://localhost:8888/web/viewer.html
 
-You can test your own documents by placing them into the <tt>test</tt> directory and using an URL such as:
+You can test your own documents by opening them with the Open File button in the toolbar or by placing your PDF file in `/web` and using a URL such as:
 
-  http://localhost:8888/test/your-test-file.pdf
+  http://localhost:8888/?file=your-test-file.pdf
 
 === Opening PDF files from your website ===
 
