@@ -4,7 +4,7 @@ Options for PDF.js's viewer that can be given at the URL level. Multiple values 
 Example: http://www.example.com/pdf.js#page=2
 
 * page: page number. Example: page=2
-* zoom: zoom level. Example: zoom=200 (`[zoom],[left offset],[top offset]`, `page-width`, `page-height`, `page-fit`, `auto`)
+* zoom: zoom level. Example: zoom=200 (accepted formats: `[zoom],[left offset],[top offset]`, `page-width`, `page-height`, `page-fit`, `auto`)
 * nameddest: go to a named destination
 * pagemode: either "thumbs" or "bookmarks".  Example: pagemode=thumbs
 * disableWorker: set to true to disable web workers. Example: disableWorker=true
