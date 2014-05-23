@@ -10,6 +10,7 @@ These directions assume that you named the Mozilla pdf.js repo (not your fork) `
 ```
 1. Then you simply need to do:
 ```bash
+git merge upstream/master
 git squash super-feature
 ```
 1. That will bring up your editor to allow you to put in the commit message you want. After entering a commit message, press Esc and type `:wq` to exit the editor (if the editor is set to vim).
