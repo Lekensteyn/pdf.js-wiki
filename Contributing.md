@@ -56,7 +56,7 @@ If the branch contains lot of small commits, you might be asked to squash the co
 ### <a id="lint"></a> 4) Run Lint and Testing
 **Run Lint**
 
-Make sure your code follows our style guides and run from the [PDF.js](http://www.ebookma.com) folder:
+Make sure your code follows our style guides and run from the PDF.js folder:
 
 ```
 node make lint
