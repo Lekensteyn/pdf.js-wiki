@@ -1,0 +1,1 @@
+To view PDF files with reading password, this plugin won't run, how can I deal with this situation?
