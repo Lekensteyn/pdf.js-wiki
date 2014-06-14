@@ -61,5 +61,21 @@ The PDF document compression stream types used
 6 - CCF
 7 - RL
 8 - JBIG
+9 - JPX
+10 - Reserved
+```
+
+## PDF_VIEWER_FONT_TYPES
+
+```
+0 - Unknown
+1 - Type1
+2 - TrueType
+3 - CIDFontType0
+4 - CIDFontType2
+5 - Type3
+6 - OpenType
+7 - Type0
+8 - MMType1
 9 - Reserved
 ```
