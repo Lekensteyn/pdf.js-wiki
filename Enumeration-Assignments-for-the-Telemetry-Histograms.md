@@ -56,12 +56,12 @@ The PDF document compression stream types used
 1 - Flate
 2 - LZW
 3 - DCT
-4 - A85
-5 - AHx
-6 - CCF
-7 - RL
-8 - JBIG
-9 - JPX
+4 - JPX
+5 - JBIG
+6 - A85
+7 - AHx
+8 - CCF
+9 - RL
 10 - Reserved
 ```
 
