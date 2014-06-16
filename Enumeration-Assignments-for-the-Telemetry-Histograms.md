@@ -59,7 +59,7 @@ The PDF document compression stream types used
 4 - JPX
 5 - JBIG
 6 - A85
-7 - AHx
+7 - AHX
 8 - CCF
 9 - RL
 10 - Reserved
@@ -70,12 +70,14 @@ The PDF document compression stream types used
 ```
 0 - Unknown
 1 - Type1
-2 - TrueType
+2 - Type1C
 3 - CIDFontType0
-4 - CIDFontType2
-5 - Type3
-6 - OpenType
-7 - Type0
-8 - MMType1
-9 - Reserved
+4 - CIDFontType0C
+5 - TrueType
+6 - CIDFontType2
+7 - Type3
+8 - OpenType
+9 - Type0
+10 - MMType1
+11 - Reserved
 ```
