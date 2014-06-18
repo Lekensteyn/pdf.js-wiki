@@ -14,12 +14,16 @@ When working on issues related to performance, it is important to provide a perf
 
 Run the following command to create a 'baseline' measurement (before you make your changes):
 
-    cd test
-    node test.js --browserManifestFile=resources/browser_manifests/browser_manifest.json --statsFile=stats/results/baseline.json --statsDelay=5000 --manifestFile=my_pdfs.json
+    $ cd test
+    $ node test.js --browserManifestFile=resources/browser_manifests/browser_manifest.json \
+        --statsFile=stats/results/baseline.json --statsDelay=5000 \
+        --manifestFile=my_pdfs.json
 
 Then apply your changes and create a 'current' measurement:
 
-    node test.js --browserManifestFile=resources/browser_manifests/browser_manifest.json --statsFile=stats/results/current.json --statsFile=base.json --statsDelay=5000 --manifestFile=my_pdfs.json
+    $ node test.js --browserManifestFile=resources/browser_manifests/browser_manifest.json \
+        --statsFile=stats/results/current.json --statsDelay=5000 \
+        --manifestFile=my_pdfs.json
 
 Now you can compare the measurements and see any performance differences:
 
