@@ -2,7 +2,7 @@ This page shows you how to render a PDF with text-selection enabled. To get the 
 
 For this example, we are going to be using a sample PDF that is available [here](http://vivin.net/pub/pdfjs/TestDocument.pdf) However, we will not be loading up this document directly in this example. Instead, we will be starting with the base64 representation of the PDF. Of course, if you have the PDF file at your disposal you can simply do `PDFJS.getDocument('mypdf.pdf').then(...)` instead of using the base64-encoded data.
 
-First, let's take a look at the HTML file that we're going to use at https://github.com/mozilla/pdf.js/blob/master/examples/text-selection/index.html, which includes scripts necessary script (include minimal.js described below).
+First, let's take a look at the HTML file that we're going to use at https://github.com/mozilla/pdf.js/blob/master/examples/text-selection/index.html, which includes necessary scripts (including minimal.js described below).
 
 There are a few resources that we use. The first is a CSS file called `minimal.css`. This contains the minimal CSS styles required to get text-selection to work. Text-selection is accomplished by overlaying `div`s over the PDF. These `div`s will contain text that matches the PDF text that they are overlaying. `minimal.css` looks like this:
 
