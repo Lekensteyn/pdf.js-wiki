@@ -28,6 +28,32 @@ No emulation of the CANVAS element is provided for the browsers that do not supp
   </tbody>
 </table>
 
+## <a id="canvas"></a>CANVAS ImageData has set function
+
+PDF.js will set the canvas backing ImageData object contents.
+If the `set` function does not exist, it will be emulated.
+
+<table>
+  <thead>
+    <tr>
+      <th>Chrome</th>
+      <th>Firefox (Gecko)</th>
+      <th>Internet Explorer</th>
+      <th>Opera</th>
+      <th>Safari</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Emulated / Yes (v.21)</td>
+      <td>Yes (v.4)</td>
+      <td>Emulated / Yes (v.11)</td>
+      <td>?</td>
+      <td>Yes (v.5)</td>
+    </tr>
+  </tbody>
+</table>
+
 ## <a id="get-literal"></a>get-literal properties
 
 The core library defines object properties using object 'get' literal:
