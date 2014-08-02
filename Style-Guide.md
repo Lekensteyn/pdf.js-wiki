@@ -27,7 +27,7 @@ if (someVar) {
 ```
 
 ## Equalities
-* Use only strict equalities (and inequalities) in control statements, e.g.
+* Use only strict equalities (and inequalities), e.g.
 
 ```javascript
 if (someVar === conditionA) {
@@ -36,8 +36,6 @@ if (someVar === conditionA) {
   return false;
 }
 ```
-
-_Note: This wasn't always followed, but any new code should do this._
 
 ## Variables
 
