@@ -11,13 +11,24 @@ body {
     font-family: arial, verdana, sans-serif;
 }
 
-.pdf-content {
+/* Allow absolute positioning of the canvas and textLayer in the page. They
+   will be the same size and will be placed on top of each other. */
+.pdfPage {
+    position: relative;
+    overflow: visible;
     border: 1px solid #000000;
+}
+
+.pdfPage > canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* CSS classes used by TextLayerBuilder to style the text layer divs */
 
-/* This stuff is important! Otherwise when you select the text, the text in the divs will show up! */
+/* This stuff is important! Otherwise when you select the text,
+   the text in the divs will show up! */
 ::selection { background:rgba(0,0,255,0.3); }
 ::-moz-selection { background:rgba(0,0,255,0.3); }
 
@@ -39,30 +50,6 @@ body {
     white-space: pre;
     cursor: text;
 }
-
-.textLayer .highlight {
-    margin: -1px;
-    padding: 1px;
-
-    background-color: rgba(180, 0, 170, 0.2);
-    border-radius: 4px;
-}
-
-.textLayer .highlight.begin {
-    border-radius: 4px 0px 0px 4px;
-}
-
-.textLayer .highlight.end {
-    border-radius: 0px 4px 4px 0px;
-}
-
-.textLayer .highlight.middle {
-    border-radius: 0px;
-}
-
-.textLayer .highlight.selected {
-    background-color: rgba(0, 100, 0, 0.2);
-}
 ```
 
 The next resources that we have is `pdf.js` itself (be sure you run `node make generic` to build it) and two additional JavaScript files:
@@ -77,14 +64,12 @@ Finally we have `minimal.js` which contains all the logic required to actually l
 ```javascript
 // ...
     page.getTextContent().then(function (textContent) {
-      var textLayer = new TextLayerBuilder({
-        textLayerDiv: $textLayerDiv.get(0),
+      var textLayerBuilder = new TextLayerBuilder({
+        textLayerDiv: textLayerDiv,
         viewport: viewport,
         pageIndex: 0
       });
-      textLayer.setTextContent(textContent);
-
-      // ...
+      textLayerBuilder.setTextContent(textContent);
     });
 // ...
 ```
