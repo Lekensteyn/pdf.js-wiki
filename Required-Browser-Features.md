@@ -2,7 +2,7 @@ This page describes the features that are required for a web browser to have PDF
 
 The required feature tests can be run at http://mozilla.github.com/pdf.js/features/
 
-## <a id="canvas"></a>CANVAS element is present
+## <a name="canvas"></a>CANVAS element is present
 
 Support of the CANVAS element and 2D context is required feature for PDF.js.
 No emulation of the CANVAS element is provided for the browsers that do not support it.
@@ -28,7 +28,7 @@ No emulation of the CANVAS element is provided for the browsers that do not supp
   </tbody>
 </table>
 
-## <a id="canvas"></a>CANVAS ImageData has set function
+## <a name="canvas"></a>CANVAS ImageData has set function
 
 PDF.js will set the canvas backing ImageData object contents.
 If the `set` function does not exist, it will be emulated.
@@ -54,7 +54,7 @@ If the `set` function does not exist, it will be emulated.
   </tbody>
 </table>
 
-## <a id="get-literal"></a>get-literal properties
+## <a name="get-literal"></a>get-literal properties
 
 The core library defines object properties using object 'get' literal:
 
@@ -87,7 +87,7 @@ The browsers that don't understand this syntax will not be able to execute the c
   </tbody>
 </table>
 
-## <a id="addEventListener"></a>addEventListener is present
+## <a name="addEventListener"></a>addEventListener is present
 
 The `addEventListener` method is used to bind event listeners for DOM elements.
 No emulation of the `addEventListener` method is provided in the browsers that do not support it.
@@ -113,7 +113,7 @@ No emulation of the `addEventListener` method is provided in the browsers that d
   </tbody>
 </table>
 
-## <a id="Uint8Array"></a><a id="Uint16Array"></a><a id="Int32Array"></a><a id="Float32Array"></a><a id="Float64Array"></a>Typed arrays are present
+## <a name="Uint8Array"></a><a name="Uint16Array"></a><a name="Int32Array"></a><a name="Float32Array"></a><a name="Float64Array"></a>Typed arrays are present
 
 The `Uint8Array`, `Uint16Array`, `Int32Array`, `Uint32Array`, `Float32Array` and `Float64Array` will be replaced by the artificial TypedArray object if those types are not implemented natively.
 
@@ -142,7 +142,7 @@ If the `Float32Array` native implementation exists and the `Float64Array` is abs
   </tbody>
 </table>
 
-## <a id="Object-create"></a>Object.create() is present
+## <a name="Object-create"></a>Object.create() is present
 
 The `Object.create` method will be added to the `Object` function if the native implementation is absent.
 
@@ -167,7 +167,7 @@ The `Object.create` method will be added to the `Object` function if the native 
   </tbody>
 </table>
 
-## <a id="Object-defineProperty"></a>Object.defineProperty() is present
+## <a name="Object-defineProperty"></a>Object.defineProperty() is present
 
 
 The `Object.defineProperty` method will be added to the `Object` function if the native implementation is absent. The `__defineGetter__` / `__defineSetter__` will be used instead.
@@ -193,7 +193,7 @@ The `Object.defineProperty` method will be added to the `Object` function if the
   </tbody>
 </table>
 
-## <a id="Object-defineProperty-DOM"></a>Object.defineProperty() can be used with DOM objects
+## <a name="Object-defineProperty-DOM"></a>Object.defineProperty() can be used with DOM objects
 
 Some browsers do not allow using the `Object.defineProperty` with DOM objects.
 In this case, the `Object.defineProperty` is replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty).
@@ -219,7 +219,7 @@ In this case, the `Object.defineProperty` is replaced by the artificial one. See
   </tbody>
 </table>
 
-## <a id="get-literal-redefine"></a>Defined via get-literal properties can be redefined
+## <a name="get-literal-redefine"></a>Defined via get-literal properties can be redefined
 
 Some browsers does not allow redefine properties defined with get literal by the `Object.defineProperty`.
 In this case, the `Object.defineProperty` is replaced by the artificial one. See [Object.defineProperty() is present](#Object-defineProperty).
@@ -245,7 +245,7 @@ In this case, the `Object.defineProperty` is replaced by the artificial one. See
   </tbody>
 </table>
 
-## <a id="Object-keys"></a>Object.keys() is present
+## <a name="Object-keys"></a>Object.keys() is present
 
 The `Object.keys` method will be added to the `Object` function if the native implementation is absent.
 
@@ -270,7 +270,7 @@ The `Object.keys` method will be added to the `Object` function if the native im
   </tbody>
 </table>
 
-## <a id="FileReader"></a>FileReader is present
+## <a name="FileReader"></a>FileReader is present
 
 The `FileReader` allows PDF.js read the file data provided in the input[type=file] HTML element. The live PDF.js demo will not be able to read a local file, if the `FileReader` object is not supported.
 
@@ -295,7 +295,7 @@ The `FileReader` allows PDF.js read the file data provided in the input[type=fil
   </tbody>
 </table>
 
-## <a id="FileReader-readAsArrayBuffer"></a>FileReader.prototype.readAsArrayBuffer() is present
+## <a name="FileReader-readAsArrayBuffer"></a>FileReader.prototype.readAsArrayBuffer() is present
 
 Older browsers that have no `readAsArrayBuffer` method implementation: the `readAsBinaryString` will be used to emulate its functionality.
 
@@ -320,7 +320,7 @@ Older browsers that have no `readAsArrayBuffer` method implementation: the `read
   </tbody>
 </table>
 
-## <a id="XMLHttpRequest-overrideMimeType"></a>XMLHttpRequest.prototype.overrideMimeType() is present
+## <a name="XMLHttpRequest-overrideMimeType"></a>XMLHttpRequest.prototype.overrideMimeType() is present
 
 The empty `overrideMimeType` method will be added to the `XMLHttpRequest.prototype`, if the browser does not support it.
 
@@ -345,7 +345,7 @@ The empty `overrideMimeType` method will be added to the `XMLHttpRequest.prototy
   </tbody>
 </table>
 
-## <a id="XMLHttpRequest-response"></a>XMLHttpRequest.prototype.response is present
+## <a name="XMLHttpRequest-response"></a>XMLHttpRequest.prototype.response is present
 
 The `response` getter will be added to the `XMLHttpRequest.prototype`, if the browser does not support it.
 This is important for retrieving the binary PDF data using XHR.
@@ -371,7 +371,7 @@ This is important for retrieving the binary PDF data using XHR.
   </tbody>
 </table>
 
-## <a id="bota"></a>btoa() is present
+## <a name="bota"></a>btoa() is present
 
 The `btoa` will be added to the window object, if the browser does not support it.
 
@@ -396,7 +396,7 @@ The `btoa` will be added to the window object, if the browser does not support i
   </tbody>
 </table>
 
-## <a id="Function-bind"></a>Function.prototype.bind is present
+## <a name="Function-bind"></a>Function.prototype.bind is present
 
 The `bind` method will be added to the `Function.prototype`, if the browser does not support it.
 
@@ -421,7 +421,7 @@ The `bind` method will be added to the `Function.prototype`, if the browser does
   </tbody>
 </table>
 
-## <a id="dataset"></a>dataset is present for HTML element
+## <a name="dataset"></a>dataset is present for HTML element
 
 The `dataset` property will be added to the `HTMLElement.prototype`, if the browser does not support it.
 This is important for specifying addition information (e.g. for text selection layer)
@@ -449,7 +449,7 @@ attached to specific HTML DOM element.
   </tbody>
 </table>
 
-## <a id="classList"></a>classList is present for HTML element
+## <a name="classList"></a>classList is present for HTML element
 
 The `classList` property will be added to the `HTMLElement.prototype`, if the browser does not support it.
 This is important to simplify the viewer implementation.
@@ -475,7 +475,7 @@ This is important to simplify the viewer implementation.
   </tbody>
 </table>
 
-## <a id="console"></a>console object is present
+## <a name="console"></a>console object is present
 
 The `console` object will be added to the window object with empty `log` and `error` methods,
 if the browser does not support it. This is important for the output of error messages and diagnostic information.
@@ -501,7 +501,7 @@ if the browser does not support it. This is important for the output of error me
   </tbody>
 </table>
 
-## <a id="console-log-bind"></a>console.log is a bind-able function
+## <a name="console-log-bind"></a>console.log is a bind-able function
 
 The `console.log` and `console.error` functions will be replaced, if the browser does not allow using
 the bind method with these functions.
@@ -527,7 +527,7 @@ the bind method with these functions.
   </tbody>
 </table>
 
-## <a id="apply-typed-array"></a>Function.prototype.apply accepts typed array
+## <a name="apply-typed-array"></a>Function.prototype.apply accepts typed array
 
 The core code relies on the `Function.prototype.apply` method to accept the typed array as the second argument.
 No emulation is provided in browsers that do not support it.
@@ -553,7 +553,7 @@ No emulation is provided in browsers that do not support it.
   </tbody>
 </table>
 
-## <a id="navigator-language"></a>navigator.language is present
+## <a name="navigator-language"></a>navigator.language is present
 
 The language getter will be added to the window.navigator object, if the browser does not support it.
 
@@ -579,7 +579,7 @@ The language getter will be added to the window.navigator object, if the browser
   </tbody>
 </table>
 
-## <a id="fillRule-evenodd"></a>evenodd fill rule is supported
+## <a name="fillRule-evenodd"></a>evenodd fill rule is supported
 
 Some PDF content is using "even-odd" fill rule/method. The content will not be displayed
 properly (example: [#2351](https://github.com/mozilla/pdf.js/issues/2351)) if this feature is not supported.  
@@ -605,7 +605,7 @@ properly (example: [#2351](https://github.com/mozilla/pdf.js/issues/2351)) if th
   </tbody>
 </table>
 
-## <a id="dash-array"></a>dashed line style is supported
+## <a name="dash-array"></a>dashed line style is supported
 
 Some PDF content is using custom dash line styles. The content will not be displayed
 properly if this feature is not supported.
@@ -631,7 +631,7 @@ properly if this feature is not supported.
   </tbody>
 </table>
 
-## <a id="font-face"></a>@font-face is supported/enabled
+## <a name="font-face"></a>@font-face is supported/enabled
 
 Most of PDF documents use embedded fonts. If the browser does not support `@font-face`
 style rule, the document will not be displayed property.
@@ -657,7 +657,7 @@ style rule, the document will not be displayed property.
   </tbody>
 </table>
 
-## <a id="font-face-sync"></a>@font-face loading completion detection
+## <a name="font-face-sync"></a>@font-face loading completion detection
 
 The PDF.js shall wait some time before using fonts with CANVAS,
 if the browser cannot tell if fonts are loaded and can be used.
@@ -683,7 +683,7 @@ if the browser cannot tell if fonts are loaded and can be used.
   </tbody>
 </table>
 
-## <a id="Worker"></a>Worker is supported/enabled
+## <a name="Worker"></a>Worker is supported/enabled
 
 The PDF.js will execute all code (even long running) on the main thread,
 if the browser does not support web workers. 
@@ -709,7 +709,7 @@ if the browser does not support web workers.
   </tbody>
 </table>
 
-## <a id="Worker-Uint8Array"></a>Worker can receive/send typed arrays
+## <a name="Worker-Uint8Array"></a>Worker can receive/send typed arrays
 
 The PDF.js will execute all code on the main thread,
 if the browser cannot send (large) typed arrays to web workers. 
@@ -736,7 +736,7 @@ if the browser cannot send (large) typed arrays to web workers.
 </table>
 
 
-## <a id="Worker-transfers"></a>Worker can use transfers for postMessage
+## <a name="Worker-transfers"></a>Worker can use transfers for postMessage
 
 Checks if the browser can transfer large chunks of data to the main thread vs cloning typed arrays. See [Using web workers](https://developer.mozilla.org/en-US/docs/Web/Guide/Performance/Using_web_workers#Passing_data_by_transferring_ownership_%28transferable_objects%29)
 
@@ -761,7 +761,7 @@ Checks if the browser can transfer large chunks of data to the main thread vs cl
   </tbody>
 </table>
 
-## <a id="Worker-xhr-response"></a>XMLHttpRequest supports the response property in web workers
+## <a name="Worker-xhr-response"></a>XMLHttpRequest supports the response property in web workers
 
 The PDF.js will execute all code on the main thread,
 if the browser cannot request network binary data from web workers. 
