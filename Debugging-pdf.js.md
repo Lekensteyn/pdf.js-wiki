@@ -1,5 +1,5 @@
 ## Enabling
-As a safety precaution the debugging tools/parameters are disabled, and user shall enabled them for the generic viewer, the extension and the version of PDF.js bundled with Firefox (the debugging tools will be enabled ).
+As a safety precaution the debugging tools/parameters are disabled, and user shall enabled them for the generic viewer, the extension and the version of PDF.js bundled with Firefox.
 
 * Extension version: set/create a `extensions.uriloader@pdf.js.pdfBugEnabled` setting as a boolean `true` in 'about:config'
 * Mozilla Central (Firefox) version: set/create a `pdfjs.pdfBugEnabled` setting as a boolean `true` in 'about:config'
