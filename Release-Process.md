@@ -2,7 +2,7 @@ Overview: Release a version every six weeks.  Ideally this should be one week be
 
 1. [Update pdf.js on mozilla central.](https://github.com/mozilla/pdf.js/wiki/Updating-pdf.js-on-Mozilla-Central)
 1. `git checkout <SHA IN MOZ CENTRAL>`
-1. Run `node make dist` to generate the zip and update pdfjs.confg
+1. Run `node make publish` to generate the zip and update pdfjs.confg
 1. Create a PR with pdfjs.config changes
 1. Create github release
    2. add release notes
