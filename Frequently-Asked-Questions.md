@@ -121,6 +121,8 @@ It is known that other minifiers might break PDF.js code if advanced options are
 
 Yes. Please see http://mozilla.github.io/pdf.js/getting_started/ page for details. Also the code for the website at http://mozilla.github.io/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages` or download [the archive](https://github.com/mozilla/pdf.js/archive/gh-pages.zip).
 
+There are also generic PDF.js library builds available at https://github.com/mozilla/pdfjs-dist. These builds can be installed via npm `npm install pdfjs-dist` or bower `bower install pdfjs-dist`.
+
 <a name="issue"></a>
 ## PDF.js does not render my files correctly. Can I report an issue?
 
