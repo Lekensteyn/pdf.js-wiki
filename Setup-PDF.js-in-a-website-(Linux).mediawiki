@@ -30,7 +30,7 @@ You need to use the <tt>file</tt> parameter in the URL whose value is a full [ht
 === Build ===
 You need to run this command:
 
- node make generic
+ nodejs make generic
 
 and you should get the following output (or something similar):
  
