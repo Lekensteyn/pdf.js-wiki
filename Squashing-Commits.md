@@ -4,20 +4,23 @@ We try to keep the history for pdf.js relatively clean and we may ask contributo
 These directions assume that you named the Mozilla pdf.js repo (not your fork) `upstream` and you have a branch called `super-feature`. See [[Contributing]] for details.
 
 1. Add the following to your git config. Either the global one or the config within your pdf.js fork (`.git/config`).
-```bash
-[alias]
-	squash = !sh -c 'git checkout upstream/master && git merge --no-commit --squash $0 && git checkout -B $0 && git commit -e'
-```
+  ```bash
+  [alias]
+  	squash = !sh -c 'git checkout upstream/master && git merge --no-commit --squash $0 && git checkout -B $0 && git commit -e'
+  ```
+
 1. Then you simply need to do:
-```bash
-git merge upstream/master
-git squash super-feature
-```
+  ```bash
+  git merge upstream/master
+  git squash super-feature
+  ```
+
 1. That will bring up your editor to allow you to put in the commit message you want. After entering a commit message, press Esc and type `:wq` to exit the editor (if the editor is set to vim).
+
 1. Then update the pull request:
-```bash
-git push --force origin super-feature
-```
+  ```bash
+  git push --force origin super-feature
+  ```
 
 ## Alternatives
 1. Step-by-step commands
