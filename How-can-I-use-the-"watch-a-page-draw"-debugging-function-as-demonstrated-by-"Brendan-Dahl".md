@@ -1,1 +1,0 @@
-How can I use the "watch a page draw" debugging function as demonstrated by "Brendan Dahl" ?
