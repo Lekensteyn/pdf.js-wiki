@@ -15,7 +15,11 @@ PDF.js has several special URL parameters to alter how PDF.js works and to enabl
 * `textLayer=[off|visible|shadow|hover]` - Disables or reveals the text layer that is used for text selection.
 * `disableFontFace=true` - Disables standard `@font-face` font loading and uses the internal font renderer instead.
 * `disableRange=true` - Disables HTTP range requests when fetching the document.
-* `disableAutoFetch=true` - Disables auto fetching of the document; only gets necessary data to display the current view.
+* `disableStream=true` - Disables streaming when fetching the document.
+* `disableAutoFetch=true` - Disables auto fetching of the document; only gets necessary data to display the current view. *Note:* streaming also needs to be disabled for this to have any effect. 
+* `useOnlyCssZoom=true` - Disables re-rendering of pages and uses CSS zooming instead.
+* `verbosity=[0|1|5]` - Specifies the verbosity level of console messages. 0 = only errors, 1 = warnings and errors, 5 = warnings, errors and information messages.
+* `locale=[en-US|...]` - Specifies which language to use in the viewer UI. For a list of the available locales, see https://github.com/mozilla/pdf.js/tree/master/l10n.
 
 ## PDFBug Tools
 See the instructions above on how to enable these tools.
