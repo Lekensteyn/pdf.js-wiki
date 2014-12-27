@@ -1,1 +1,0 @@
-I want to change the language of the pdf viewer ,where I need to change in the code ,
