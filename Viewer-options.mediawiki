@@ -7,16 +7,6 @@ Example: http://www.example.com/pdf.js#page=2
 * zoom: zoom level. Example: zoom=200 (accepted formats: `[zoom],[left offset],[top offset]`, `page-width`, `page-height`, `page-fit`, `auto`)
 * nameddest: go to a named destination
 * pagemode: either "thumbs" or "bookmarks".  Example: pagemode=thumbs
-* disableWorker: set to true to disable web workers. Example: disableWorker=true
-* disableRange: set to true to disable range requests. Example: disableRange=true
-* disableAutoFetch: set to true to disable autofetching. Example: disableAutoFetch=true
-* locale: use another locale than the default. Example: locale=nl
-* textLayer: set to one of the following. Example: textLayer=off
-** off: disable textLayer generation
-** visible, shadow, hover: apply the CSS class <tt>textlayer-{value}</tt> to all text layers
-* pdfBug: enable debugging tools, see [https://github.com/mozilla/pdf.js/wiki/Debugging-pdf.js].
-* useOnlyCssZoom: set to true to use only CSS zoom. Example: useOnlyCssZoom=true
-* verbosity: specify the verbosity of console messages. 0 = only errors, 1 = warnings and errors, 5 = warnings, errors and information messages. Example: verbosity=5
 
 
 ===Options (for viewer.html) after the ?===
