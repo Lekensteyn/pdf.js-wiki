@@ -1,6 +1,0 @@
-The goal of PDF is to enable users to exchange and view electronic documents easily and reliably,
-independent of the environment in which they were created or the environment in which they are viewed or
-printed. At the core of **PDF** is an _advanced imaging model_ derived from the PostScript® page description language. This PDF `Imaging Model` enables the description of text and graphics in a device-independent and resolution-independent manner.
-
-To improve performance for > interactive viewing, PDF defines a more structured format than that used by most PostScript language programs.Unlike Postscript, which is a programming language, PDF is based on a structured binary file format that is optimized for high performance in interactive viewing.   
-PDF also includes objects, such as annotations and hypertext links, that are not part of the page content itself but are useful for interactive viewing and document interchange. PDF files may be created natively in PDF form, converted from other electronic formats or digitized from paper, micro form, or other hard copy format. Businesses, governments, libraries,archives and other institutions and individuals around the world use PDF to represent considerable bodies of important information. 
