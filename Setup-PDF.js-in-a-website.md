@@ -3,7 +3,15 @@ You can choose to use a pre-built version of PDF.js, or build PDF.js from source
 ## Pre-built PDF.js
 ### With npm
 
+This way works by loading this file `pdfjs-dist/build/pdf.js` after you install pdf.js:
+
     npm install pdfjs-dist
+
+#### With webpack/browserify
+
+   var pdf = require('pdfjs-dist/build/pdf');
+   var pdfWorker = require('pdfjs-dist/build/pdf.worker');
+   // Still figuring out how to use with worker.
 
 ### From examples
 When the source code of PDF.js changes, the [online demo](http://mozilla.github.io/pdf.js/web/viewer.html) is automatically updated. The source of all demo files can easily be accessed at https://github.com/mozilla/pdf.js/tree/gh-pages/.  
