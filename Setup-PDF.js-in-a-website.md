@@ -29,6 +29,7 @@ webpackConfig.module.loaders = {
 // Without any special config, requiring the file and letting it to pollute
 // the global namespace is the way to go:
 require('pdfjs-dist/build/pdf');
+require('pdfjs-dist/web/pdf_viewer'); // Only if you need `PDFJS.PDFViewer`
 // Webpack returns a string to the url because we configured the url-loader.
 PDFJS.workerSrc = require('pdfjs-dist/build/pdf.worker.js');
 var url = require('assets/books/my book.pdf'); 
