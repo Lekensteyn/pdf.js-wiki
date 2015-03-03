@@ -12,7 +12,7 @@ This way works by loading this file `pdfjs-dist/build/pdf.js` after you install 
 If you use webpack or browserify there is an easy way to require the files:
 
 ```javascript
-var pdf = require('pdfjs-dist/build/pdf');
+var pdf       = require('pdfjs-dist/build/pdf');
 var pdfWorker = require('pdfjs-dist/build/pdf.worker');
 // Still figuring out how to use with worker.
 ```
