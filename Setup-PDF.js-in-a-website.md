@@ -9,6 +9,8 @@ This way works by loading this file `pdfjs-dist/build/pdf.js` after you install 
 
 #### With webpack/browserify
 
+If you use webpack or browserify there is an easy way to require the files:
+
    var pdf = require('pdfjs-dist/build/pdf');
    var pdfWorker = require('pdfjs-dist/build/pdf.worker');
    // Still figuring out how to use with worker.
