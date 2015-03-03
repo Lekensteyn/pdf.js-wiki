@@ -1,6 +1,11 @@
 You can choose to use a pre-built version of PDF.js, or build PDF.js from source.
 
 ## Pre-built PDF.js
+### With npm
+
+    npm install pdfjs-dist
+
+### From examples
 When the source code of PDF.js changes, the [online demo](http://mozilla.github.io/pdf.js/web/viewer.html) is automatically updated. The source of all demo files can easily be accessed at https://github.com/mozilla/pdf.js/tree/gh-pages/.  
 These files can also be uploaded to your server to use PDF.js to display PDF files from your website
 
