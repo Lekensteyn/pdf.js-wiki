@@ -7,15 +7,35 @@ This way works by loading this file `pdfjs-dist/build/pdf.js` after you install 
 
     npm install pdfjs-dist
 
-#### With webpack/browserify
+#### With webpack
 
 If you use webpack or browserify there is an easy way to require the files:
 
 ```javascript
-var pdf       = require('pdfjs-dist/build/pdf');
-var pdfWorker = require('pdfjs-dist/build/pdf.worker');
-// Still figuring out how to use with worker.
+// In your webpack config:
+//
+// Install `npm install url-loader` first.
+// This will enable you to get the url of the worker and the pdf to use in the index.js.
+// Notice that for the build process it might need some extra work.
+
+webpackConfig.module.loaders = {
+    test: /\.pdf$|pdf\.worker\.js$/,
+    loader: "url-loader?limit=10000"
+}
+
+// in index.js
+// 
+// `var PDFJS = require('pdfjs-dist/build/pdf');` would be better but
+// somehow the PDFJS becomes an empty object.
+// Without any special config, requiring the file and letting it to pollute
+// the global namespace is the way to go:
+require('pdfjs-dist/build/pdf');
+// Webpack returns a string to the url because we configured the url-loader.
+PDFJS.workerSrc = require('pdfjs-dist/build/pdf.worker.js');
+var url = require('assets/books/my book.pdf'); 
+PDFJS.getDocument(url).then(function(pdf) {/* Continue the normal tutorial from the official readme.*/})
 ```
+
 ### From examples
 When the source code of PDF.js changes, the [online demo](http://mozilla.github.io/pdf.js/web/viewer.html) is automatically updated. The source of all demo files can easily be accessed at https://github.com/mozilla/pdf.js/tree/gh-pages/.  
 These files can also be uploaded to your server to use PDF.js to display PDF files from your website
