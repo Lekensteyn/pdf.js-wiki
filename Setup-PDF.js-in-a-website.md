@@ -17,7 +17,6 @@ If you use webpack or browserify there is an easy way to require the files:
 // Install `npm install url-loader` first.
 // This will enable you to get the url of the worker and the pdf to use in the index.js.
 // Notice that for the build process it might need some extra work.
-
 webpackConfig.module.loaders = {
     test: /\.pdf$|pdf\.worker\.js$/,
     loader: "url-loader?limit=10000"
