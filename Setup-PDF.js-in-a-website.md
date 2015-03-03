@@ -11,10 +11,11 @@ This way works by loading this file `pdfjs-dist/build/pdf.js` after you install 
 
 If you use webpack or browserify there is an easy way to require the files:
 
-   var pdf = require('pdfjs-dist/build/pdf');
-   var pdfWorker = require('pdfjs-dist/build/pdf.worker');
-   // Still figuring out how to use with worker.
-
+```javascript
+var pdf = require('pdfjs-dist/build/pdf');
+var pdfWorker = require('pdfjs-dist/build/pdf.worker');
+// Still figuring out how to use with worker.
+```
 ### From examples
 When the source code of PDF.js changes, the [online demo](http://mozilla.github.io/pdf.js/web/viewer.html) is automatically updated. The source of all demo files can easily be accessed at https://github.com/mozilla/pdf.js/tree/gh-pages/.  
 These files can also be uploaded to your server to use PDF.js to display PDF files from your website
