@@ -4,6 +4,7 @@
 
 ### Alternative UI
 
++ [The Docket Alarm PDF Viewer](https://www.docketalarm.com/cases/PTAB/IPR2013-00142/Inter_Partes_Review_of_U.S._Pat._6931558/07-29-2014-PET-221/Final_Decision-51-Final_Written_Decision/?pdfjs) check out the ctrl+f features (@speedplane)
 + [PDF Viewer for SproutCore](https://github.com/GestiXi/sproutcore-pdf) (@nicolasbadia)
 + [PDF Viewer Panel for the Ext JS 4.1 Framework](https://github.com/SunboX/ext_ux_pdf_panel) (@sonnenkiste)
 + [PDF Viewer Panel for the Sencha Touch 2 Framework](https://github.com/SunboX/st2_pdf_panel) (@sonnenkiste)
