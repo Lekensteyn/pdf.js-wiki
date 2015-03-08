@@ -1,4 +1,4 @@
-Options for PDF.js's viewer that can be given at the URL level. Multiple values of either type can be combined by separating with an ampersand (&) after the hash (example: #page=2&textLayer=off).
+Options for PDF.js's viewer that can be given at the URL level. Multiple values of either type can be combined by separating with an ampersand (&) after the hash (example: #page=2&zoom=200).
 
 ===Options after the #===
 Example: http://www.example.com/pdf.js#page=2
