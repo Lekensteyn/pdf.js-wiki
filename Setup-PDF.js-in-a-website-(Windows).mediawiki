@@ -10,7 +10,7 @@ The easiest way to setup your testing environment is to follow the instructions 
  cd ./pdfjs/
  node make server
 
-If Node.js complains about not recognizing <tt>python2.7</tt> as an intenal or external command ([https://github.com/mozilla/pdf.js/issues/2016#issuecomment-8008140 more information here]), then go to your Python installation directory (in my case, <tt>C:\Python27</tt>), copy the file <tt>python.exe</tt> and rename the copy to <tt>python2.7.exe</tt>. After that, run the command again.
+If Node.js complains about not recognizing <tt>python2.7</tt> as an internal or external command ([https://github.com/mozilla/pdf.js/issues/2016#issuecomment-8008140 more information here]), then go to your Python installation directory (in my case, <tt>C:\Python27</tt>), copy the file <tt>python.exe</tt> and rename the copy to <tt>python2.7.exe</tt>. After that, run the command again.
 
 Then you can reach your Node.js server using the following URL:
 
