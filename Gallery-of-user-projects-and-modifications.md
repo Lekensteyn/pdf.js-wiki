@@ -31,6 +31,7 @@
 + [WebAppFind OCR demo](https://github.com/brettz9/webappfind/blob/master/demos/ocr.html) - Applies [Ocras.js](http://antimatter15.github.io/ocrad.js/demo.html) or [GOCR.js](http://antimatter15.github.io/gocr.js/demo.html) to a PDF file opened via right-click from the desktop (the Firefox add-on is currently Windows only; ports welcome!)
 + [slidr.io](http://slidr.io/) Presentation hosting platform build with a pdf.js based player! (@nesQuick)
 + [Librelio](https://github.com/libreliodev/javascript) The Librelio HTML5 reader is based on pdf.js. It features page curl effect and multimedia overlays (video, slide shows). An example is available [here](http://reader.librelio.com/pdfreader.html?waurl=%2Fwind_355%2Fwind_355.pdf).
++ [ckanext-pdfview](https://github.com/ckan/ckanext-pdfview) The PDF viewer of CKAN - the technology behind hundreds of data portals like data.gov and data.gov.uk, uses pdf.js.
 
 ### Current Deployments
 
