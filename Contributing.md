@@ -75,19 +75,19 @@ Now you have automatic linting of your changes to JavaScript files whenever you 
 
 To ensure your changes didn't introduce any regressions you need to run the testing framework. There are four basic types of tests:
 
-* load - just checks if the PDF file can be loaded without crashing
+* load - checks if the PDF file can be loaded without crashing
 * eq - a reference test which takes correctly rendered snapshots and compares them to the snapshots created by the current code
-* fbf - a forward back forward test
+* fbf - a forward-back-forward test
 * unit tests - Jasmine unit tests that are run separately from the above tests
 
 <a id="ref-images"></a>**Generating Reference Images**
 
-The reference tests require you to generate the original snapshots for comparison. The snapshots should be generated before you make any changes. If you have already made some changes, `git stash` your work. Then make sure you have setup a `browser_manifest` file. There are templates located in `test/resources/browser_manifests/`.  Copy one of the templates (replace `<your os>` with Mac, Linux or Windows).
+The reference tests require you to generate the original snapshots for comparison. The snapshots should be generated before you make any changes. If you have already made some changes, `git stash` your work. Then make sure you have setup a `browser_manifest.json` file. Copy the example browser manifest located in `test/resources/browser_manifests` to get started.
 
 ```
-cp test/resources/browser_manifests/browser_manifest.json.<your os> test/resources/browser_manifests/browser_manifest.json
+cp test/resources/browser_manifests/browser_manifest.json.example test/resources/browser_manifests/browser_manifest.json
 ```
-Then edit the manifest in your favorite editor and make sure it points to the browser(s) you want to use for generating the reference images.
+Then edit the manifest in your editor and make sure it points to the browser(s) you want to use for generating the reference images.
 
 Now we can generate the reference images:
 
