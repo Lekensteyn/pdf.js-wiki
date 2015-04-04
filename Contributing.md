@@ -19,7 +19,7 @@ Below is an overview of how to contribute code to the PDF.js project. The basic 
 
 If you develop on Windows, read [[Setting up pdf.js Development Environment for Windows]]. For font or performance testing you will need [Python](http://www.python.org/download/), which is also included with mozilla-build for Windows.
 
-***Before you make any changes to the code you will probably want jump down to [Generating reference images](#ref-images) to create the reference snapshot images so you can run the test framework and check for regressions.***
+_Before you make any changes to the code you will probably want jump down to [Generating reference images](#ref-images) to create the reference snapshot images so you can run the test framework and check for regressions._
  
 If you are familiar with GitHub and creating feature branches you can skip down to [Run lint and testing](#lint).
 
@@ -65,7 +65,7 @@ node make lint
 ```
 The first time you run the command above, the linting tool `jshint` will be automatically installed in the PDF.js folder.
 
-**Protip**: If you are a Vim user, then install [Syntastic](http://www.vim.org/scripts/script.php?script_id=2736) and add the following line to your `.vimrc`:
+_Protip_: If you are a Vim user, then install [Syntastic](http://www.vim.org/scripts/script.php?script_id=2736) and add the following line to your `.vimrc`:
 
 ```
 let g:syntastic_javascript_checker = "jshint"
