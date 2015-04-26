@@ -59,7 +59,7 @@ The PDF document compression stream types used
 4 - JPX
 5 - JBIG
 6 - A85
-7 - AHX
+7 - AHx
 8 - CCF
 9 - RL
 10 - Reserved
