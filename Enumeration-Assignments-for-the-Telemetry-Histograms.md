@@ -21,7 +21,7 @@ The PDF document generator. It is top-25 from our test set. The "/Producer" fiel
 ```
 0 - Other
 1 - "acrobat distiller"
-2 - "acrobat pdfwritter"
+2 - "acrobat pdfwriter"
 3 - "adobe livecycle"
 4 - "adobe pdf library"
 5 - "adobe photoshop"
