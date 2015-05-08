@@ -1,7 +1,7 @@
 Options for PDF.js's viewer that can be given at the URL level. Multiple values of either type can be combined by separating with an ampersand (&) after the hash (example: #page=2&zoom=200).
 
 ===Options after the #===
-Example: http://www.example.com/pdf.js#page=2
+Example: http://mozilla.github.io/pdf.js/web/viewer.html#page=2
 
 * page: page number. Example: page=2
 * zoom: zoom level. Example: zoom=200 (accepted formats: `[zoom],[left offset],[top offset]`, `page-width`, `page-height`, `page-fit`, `auto`)
