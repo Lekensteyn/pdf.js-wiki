@@ -67,9 +67,9 @@ Be sure to edit <tt>viewer.html</tt> and <tt>viewer.js</tt> to use the correct f
 Now that your build is done, you can copy the viewer and its resources (core files) to your production directory and upload the contents of that directory to your web server (use Git Bash again):
 
  # make a production directory if you haven't done so already
- mkdir ./production/
+ mkdir production
  # copy the viewer and its resources to the production folder
- cp -R ./build/generic ./production
+ cp -R build/generic production
 
 === Compatibility ===
 
