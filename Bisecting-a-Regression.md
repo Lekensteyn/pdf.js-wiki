@@ -36,9 +36,9 @@
 ### Option 3 - Using MXR
 - If you know it was good in the Beta or Aurora branch, get the bad commit ID from MXR. Find the line with 'PDFJS.build = ' and copy the value in the single quotes, e.g., 4e83123.
 
-Aurora: http://mxr.mozilla.org/mozilla-aurora/source/browser/extensions/pdfjs/content/build/pdf.js#24
+Aurora: http://mxr.mozilla.org/mozilla-aurora/source/browser/extensions/pdfjs/content/build/pdf.js#25
 
-Beta: http://mxr.mozilla.org/mozilla-beta/source/browser/extensions/pdfjs/content/build/pdf.js#24
+Beta: http://mxr.mozilla.org/mozilla-beta/source/browser/extensions/pdfjs/content/build/pdf.js#25
 
 ## 7) Verify the working version
 - `git checkout <commit ID that you found above>`
