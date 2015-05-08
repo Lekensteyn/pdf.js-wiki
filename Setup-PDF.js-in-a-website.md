@@ -3,7 +3,7 @@ You can choose to use a pre-built version of PDF.js, or build PDF.js from source
 ## Pre-built PDF.js
 ### With npm
 
-This way works by loading this file `pdfjs-dist/build/pdf.js` after you install pdf.js:
+This way works by loading this file `pdfjs-dist/build/pdf.js` after you install PDF.js:
 
     npm install pdfjs-dist
 
