@@ -54,7 +54,7 @@ You can minify PDF.js by approximately 30% with [http://yui.github.com/yuicompre
 There is a package for yui-compressor on Ubuntu 12.10 or Linux Mint 14:
 
  sudo apt-get install yui-compressor
- cd <pdfjs-dir>
+ cd <pdf.js-dir>
  mkdir ./production/
  # yui-compressor ./build/pdf.js -o ./production/pdf-min.js # BEWARE OF UNSUPPORTED BEHAVIOR
 
