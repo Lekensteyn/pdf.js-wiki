@@ -55,7 +55,7 @@ There is a package for yui-compressor on Ubuntu 12.10 or Linux Mint 14:
 
  sudo apt-get install yui-compressor
  cd <pdf.js-dir>
- mkdir ./production/
+ mkdir production
  # yui-compressor ./build/pdf.js -o ./production/pdf-min.js # BEWARE OF UNSUPPORTED BEHAVIOR
 
 ==== Use the minified file ====
@@ -75,9 +75,9 @@ Be sure to edit <tt>viewer.html</tt> and <tt>viewer.js</tt> to use the correct f
 Now that your build is done, you can copy the viewer and its resources (core files) to your production directory and upload the contents of that directory to your web server:
 
  # make a production directory if you haven't done so already
- mkdir ./production/
+ mkdir production
  # copy the viewer and its resources to the production folder
- cp -R ./build/generic ./production
+ cp -R build/generic production
 
 === Compatibility ===
 
