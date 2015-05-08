@@ -56,7 +56,7 @@ There is a package for yui-compressor on Ubuntu 12.10 or Linux Mint 14:
  sudo apt-get install yui-compressor
  cd <pdf.js-dir>
  mkdir production
- # yui-compressor ./build/pdf.js -o ./production/pdf-min.js # BEWARE OF UNSUPPORTED BEHAVIOR
+ yui-compressor ./build/pdf.js -o ./production/pdf-min.js # BEWARE OF UNSUPPORTED BEHAVIOR
 
 ==== Use the minified file ====
 
