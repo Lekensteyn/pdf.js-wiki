@@ -16,7 +16,7 @@
 
 <a name="file"></a>
 ## Can I specify a different PDF in the default viewer?
-You can modify the `DEFAULT_URL` variable in the `web/viewer.js` file or you can append the `?file=` query string to the viewer URL, e.g. `http://mozilla.github.com/pdf.js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf`.
+You can modify the `DEFAULT_URL` variable in the `web/viewer.js` file or you can append the `?file=` query string to the viewer URL, e.g. `http://mozilla.github.com/pdf.js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf`. In the latter case, the PDF path/URL must be encoded using encodeURIComponent().
 
 <a name="faq-xhr"></a>
 ## Can I load a PDF from another server (cross domain request)?
