@@ -59,6 +59,12 @@ The goal is to support all HTML5 compliant browsers, but since feature support v
     <td>Safari (desktop and mobile) lacks a number of features or has defects, e.g. in typed arrays or HTTP range requests</td>
   </tr>
   <tr>
+    <td>IE10+</td>
+    <td>limited</td>
+    <td>none</td>
+    <td>IE 10 or above may lack of features or may have defects.</td>
+  </tr>
+  <tr>
     <td>IE9</td>
     <td>limited</td>
     <td>none</td>
