@@ -1,6 +1,5 @@
 Schedule:
-+ Bug Triage - Every Monday 3:00PM PDT\*
-+ Engineering - Every Thursday 2:30PM PDT\*
++ Engineering and Bug Triage - Every Monday 3:00PM PDT\*
 
 \* Meeting times can vary a bit, so check on IRC first if you plan to attend.
 
@@ -13,5 +12,4 @@ Schedule:
 ## Meeting Notes
 
 Follow the format of:
-+ Triage - etherpad.mozilla.org/pdfjs-triage-YYYY-MM-DD
 + Engineering - etherpad.mozilla.org/pdfjs-YYYY-MM-DD
