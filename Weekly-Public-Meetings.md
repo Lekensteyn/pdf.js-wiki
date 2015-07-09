@@ -12,4 +12,4 @@ Schedule:
 ## Meeting Notes
 
 Follow the format of:
-+ Engineering - etherpad.mozilla.org/pdfjs-YYYY-MM-DD
++ Engineering and Bug Triage - etherpad.mozilla.org/pdfjs-YYYY-MM-DD
