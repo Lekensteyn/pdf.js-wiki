@@ -1,6 +1,6 @@
 ## MSYS Environment
 
-The simplest way to setup the development environment for the PDF.js project:
+The easiest way to setup the development environment for the PDF.js project:
 
 * Node.js (http://nodejs.org)
 
