@@ -1,18 +1,18 @@
-You can choose to use a pre-built version of PDF.js, or build PDF.js from source.
+You can choose to use a pre-built version of PDF.js or build PDF.js from source.
 
 ## Pre-built PDF.js
 ### With npm
 
-This way works by loading this file `pdfjs-dist/build/pdf.js` after you install PDF.js:
+This works by loading the file `pdfjs-dist/build/pdf.js` after you have installed PDF.js using:
 
     npm install pdfjs-dist
 
-#### With webpack
+#### With Browserify or Webpack
 
-If you use webpack or browserify there is an easy way to require the files:
+If you use Browserify or Webpack there is an easy way to require the files:
 
 ```javascript
-// In your webpack config:
+// In your Webpack config:
 //
 // Install `npm install url-loader` first.
 // This will enable you to get the url of the worker and the pdf to use in the index.js.
@@ -23,29 +23,23 @@ webpackConfig.module.loaders = {
 }
 
 // in index.js
-// 
-// `var PDFJS = require('pdfjs-dist/build/pdf');` would be better but
-// somehow the PDFJS becomes an empty object.
-// Without any special config, requiring the file and letting it to pollute
-// the global namespace is the way to go:
 require('pdfjs-dist/build/pdf');
 require('pdfjs-dist/web/pdf_viewer'); // Only if you need `PDFJS.PDFViewer`
 // Webpack returns a string to the url because we configured the url-loader.
 PDFJS.workerSrc = require('pdfjs-dist/build/pdf.worker.js');
 var url = require('assets/books/my book.pdf'); 
-PDFJS.getDocument(url).then(function(pdf) {/* Continue the normal tutorial from the official readme.*/})
+PDFJS.getDocument(url).then(function(pdf) {/* Continue the normal tutorial from the README.*/})
 ```
 
 ### From examples
-When the source code of PDF.js changes, the [online demo](http://mozilla.github.io/pdf.js/web/viewer.html) is automatically updated. The source of all demo files can easily be accessed at https://github.com/mozilla/pdf.js/tree/gh-pages/.  
-These files can also be uploaded to your server to use PDF.js to display PDF files from your website
+When the source code of PDF.js changes, the [online demo](http://mozilla.github.io/pdf.js/web/viewer.html) is automatically updated. The source of all demo files can easily be accessed at https://github.com/mozilla/pdf.js/tree/gh-pages. These files can also be uploaded to your server to use PDF.js to display PDF files from your website.
 
 1. Download https://github.com/mozilla/pdf.js/archive/gh-pages.zip.
-2. Extract the zip file (a directory called "pdf.js-gh-pages" will be created).
+2. Extract the ZIP file (a directory called "pdf.js-gh-pages" will be created).
 3. Copy the following directories to your website:
    * pdf.js-gh-pages/build/
    * pdf.js-gh-pages/web/  
-   The web/ directory contains a 1 MB pdf file called "compressed.tracemonkey-pldi-09.pdf". This file is only used as an example for the demo and can safely be removed if you need disk space.
+   The web/ directory contains a 1 MB PDF file called "compressed.tracemonkey-pldi-09.pdf". This file is only used as an example for the demo and can safely be removed.
 4. If you want to open a PDF from your website with PDF.js, simply link to the viewer and pass the location of the PDF file. For example:
 
     ```html
@@ -53,4 +47,4 @@ These files can also be uploaded to your server to use PDF.js to display PDF fil
     ```
 
 ## Build PDF.js from source
-After cloning PDF.js, you can build PDF.js from source by running `node make generic` in Git Bash or another terminal. This will create the built PDF.js in the `build` folder. Note that you must include `compatibility.js` in order to support browsers like IE8+.
+After cloning PDF.js, you can build PDF.js from source by running `node make generic` in Git Bash or another terminal. This will create the built PDF.js in the `build` folder, which you can upload to your server. Note that you must include `compatibility.js` in order to support browsers like IE8+.
