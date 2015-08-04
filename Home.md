@@ -1,4 +1,4 @@
-To get started, please read the [README](https://github.com/mozilla/pdf.js/blob/master/README.md) file.
+Welcome to the PDF.js wiki! To get started, please read the [README](https://github.com/mozilla/pdf.js/blob/master/README.md) file and consult the pages below:
 
 + [FAQ](wiki/Frequently-Asked-Questions) - Frequently asked questions.
 + [Contributing/Workflow](wiki/Contributing) - How to contribute to the PDF.js project. Also contains more information on setting up testing.
