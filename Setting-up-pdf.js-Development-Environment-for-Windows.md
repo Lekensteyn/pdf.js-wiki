@@ -4,7 +4,7 @@ The easiest way to setup the development environment for the PDF.js project:
 
 * Node.js (http://nodejs.org)
 
-* Git for Windows (https://github.com/git-for-windows/git/releases; Unix line endings must be set)
+* Git for Windows (https://github.com/git-for-windows/git/releases); note that Unix line endings must be set:
 
   ```> git config --global core.autocrlf input```
 
