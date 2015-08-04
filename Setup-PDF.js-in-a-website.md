@@ -53,8 +53,4 @@ These files can also be uploaded to your server to use PDF.js to display PDF fil
     ```
 
 ## Build PDF.js from source
-### Linux
-* [Instructions for Linux can be found here.](Setup-PDF.js-in-a-website-(Linux))
-
-### Windows
-* [Instructions for Windows can be found here.](Setup-PDF.js-in-a-website-(Windows))
+After cloning PDF.js, you can build PDF.js from source using `node make generic`. This will create the built PDF.js in the `build` folder. Note that you must include `compatibility.js` in order to support browsers like IE8+.
