@@ -1,6 +1,6 @@
 ## MSYS Environment
 
-The simplest way to setup the development environment for the pdf.js project:
+The simplest way to setup the development environment for the PDF.js project:
 
 * Git for Windows (http://code.google.com/p/msysgit/, the Unix line endings must be set)
 
