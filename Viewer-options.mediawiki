@@ -8,7 +8,7 @@ Example: http://mozilla.github.io/pdf.js/web/viewer.html#page=2
 * nameddest: go to a named destination
 * pagemode: either "thumbs" or "bookmarks".  Example: pagemode=thumbs
 
-===Options (for viewer.html) after the ?===
+===Options after the ?===
 Example: http://mozilla.github.io/pdf.js/web/viewer.html?file=myfile.pdf
 
 * file: the filename of the PDF file to use (must be on the same server due to JavaScript limitations).  Example: file=myfile.pdf
