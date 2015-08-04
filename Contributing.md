@@ -27,6 +27,7 @@ If you are familiar with GitHub and creating feature branches you can skip down 
 To fork the repository you need to have a GitHub account. Once you have an account you can click the fork button up top. Now that you have your fork you need to clone it (replace `{username}` with your GitHub username) using
 ```
 git clone git://github.com/{username}/pdf.js.git
+cd pdf.js
 ```
 
 and pull additional libraries and tools:
