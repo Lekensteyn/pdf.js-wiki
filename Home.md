@@ -12,4 +12,4 @@ The PDF.js wiki contains relevant pages about setting up PDF.js, contributing to
 + Interesting user projects: [Gallery of user projects and modifications](wiki/Gallery-of-user-projects-and-modifications)
 + Publications, presentations and learning material: [Learning resources](wiki/Additional-Learning-Resources)
 
-Other information can be found through the pages navigation on the right. If you have questions after consulting the wiki, you can contact us as described in the [README](https://github.com/mozilla/pdf.js/blob/master/README.md).
+Other information can be found through the pages navigation on the right. If you have questions after consulting the wiki, you can contact us as described in the [README](https://github.com/mozilla/pdf.js/blob/master/README.md#questions).
