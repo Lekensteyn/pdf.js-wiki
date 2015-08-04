@@ -1,6 +1,6 @@
 ## Git for Windows environment
 
-This is the easiest and most recommended way to setup a development environment for PDF.js:
+This is the easiest and recommended way to setup a development environment for PDF.js:
 
 * Install Node.js from http://nodejs.org.
 
