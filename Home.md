@@ -3,6 +3,7 @@ The PDF.js wiki contains relevant pages about setting up PDF.js, contributing to
 + Frequently asked questions: [FAQ](wiki/Frequently-Asked-Questions)
 + Contributing to PDF.js and setting up testing: [Contributing](wiki/Contributing)
 + Code style information: [Style guide](wiki/Style-Guide)
++ Squashing multiple commits into one commit: [Squashing commits](wiki/Squashing-Commits)
 + Debugging tips and enabling debugging tools: [Debugging PDF.js](wiki/Debugging-PDF.js)
 + Determining which commit caused a regression: [Bisecting a regression](wiki/Bisecting-a-Regression)
 + Setting up PDF.js for usage in websites: [Setup PDF.js in a website](wiki/Setup-pdf.js-in-a-website)
