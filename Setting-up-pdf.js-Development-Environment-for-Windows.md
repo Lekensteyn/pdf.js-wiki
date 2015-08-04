@@ -8,10 +8,6 @@ The easiest way to setup the development environment for the PDF.js project:
 
   ```> git config --global core.autocrlf input```
 
-* Mozilla build environment (http://ftp.mozilla.org/pub/mozilla.org/mozilla/libraries/win32/MozillaBuildSetup-Latest.exe)
-
-If Visual Studio is not installed or to avoid switching between the Git bash and the Mozilla build environment, modify any startXXX.cmd file in C:\mozilla-build to look like https://gist.github.com/1518181.
-
 ## Cygwin Environment
 Another way to setup a development environment for PDF.js is to use [Cygwin](http://www.cygwin.com/) which is a collection of tools providing basic Linux API look and feel. Download the latest 'setup.exe' file from Cygwins website and follow the install instructions until you reach the "Select Packages" screen. Here you should at least choose:
 
