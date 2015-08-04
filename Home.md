@@ -10,4 +10,6 @@ The PDF.js wiki contains relevant pages about setting up PDF.js, contributing to
 + Options for the PDF.js viewer: [Viewer options](wiki/Viewer-options)
 + Bug triage and engineering meetings: [Weekly public meetings](wiki/Weekly-Public-Meetings)
 + Interesting user projects: [Gallery of user projects and modifications](wiki/Gallery-of-user-projects-and-modifications)
-+ Additional learning material: [Learning resources](wiki/Additional-Learning-Resources)
++ Publications, presentations and learning material: [Learning resources](wiki/Additional-Learning-Resources)
+
+Other information can be found through the pages navigation on the right. If you have questions after consulting the wiki, feel free to get in touch through IRC using #mozilla on irc.mozilla.org.
