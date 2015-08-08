@@ -23,6 +23,9 @@ Slides:
 A really basic overview of PDF is described here:
 + http://partners.adobe.com/public/developer/en/livecycle/lc_pdf_overview_format.pdf
 
+Summary of the PDF file format:
++ http://www.planetpdf.com/developer/article.asp?ContentID=navigating_the_internal_struct
+
 The PDF specification itself:
 + http://www.adobe.com/devnet/acrobat/pdfs/PDF32000_2008.pdf
 + http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/pdf_reference_1-7.pdf
