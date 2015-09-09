@@ -3,6 +3,30 @@ We try to keep the history for pdf.js relatively clean and we may ask contributo
 **Note:**
 These directions assume that you named the Mozilla pdf.js repo (not your fork) `upstream` and you have a branch called `super-feature`. See [[Contributing]] for details.
 
+1. <a name="simple"></a>Simple case (no merge commits) - say you have three commits in your pull request and you want to squash them into one commit:
+  ```
+  git rebase -i HEAD~3
+  ```
+  Change `pick` to `squash` (or `fixup`) for last two and update the commit message in the editor, then `git push --force origin super-feature`.
+
+1. Advanced case (merge commits) - say you have three commits but one of them was a merge commit: _This can be avoided if you use `git pull --rebase upstream master` instead of a regular `git pull upstream master`._
+  ```
+  # fetches the current upstream repository
+  git fetch upstream
+  # resets HEAD to the current upstream
+  git checkout upstream/master
+  # merges all commits from the local branch
+  git merge --no-commit --squash super-feature
+  # re-creates the branch starting from current HEAD (old commits will be lost)
+  git checkout -B super-feature
+  # lets you edit the commit and checks in the changes (you can also use git commit -m "message")
+  git commit -e
+  # pushes the changes (in general, be careful with the --force parameter)
+  git push --force origin super-feature
+  ```
+
+## Alternatives
+
 1. Add the following to your git config. Either the global one or the config within your pdf.js fork (`.git/config`).
   ```bash
   [alias]
@@ -21,29 +45,6 @@ These directions assume that you named the Mozilla pdf.js repo (not your fork) `
   ```bash
   git push --force origin super-feature
   ```
-
-## Alternatives
-1. Step-by-step commands
-  ```
-  # fetches the current upstream repository
-  git fetch upstream
-  # resets HEAD to the current upstream
-  git checkout upstream/master
-  # merges all commits from the local branch
-  git merge --no-commit --squash super-feature
-  # re-creates the branch starting from current HEAD (old commits will be lost)
-  git checkout -B super-feature
-  # lets you edit the commit and checks in the changes (you can also use git commit -m "message")
-  git commit -e
-  # pushes the changes (in general, be careful with the --force parameter)
-  git push --force origin super-feature
-  ```
-
-1. <a name="simple"></a>Or, you can use rebase. Let's say you have 5 commits to squash and you don't have merge commits:
-  ```
-  git rebase -i HEAD~5
-  ```
-  Change `pick` to `squash` (or `fixup`) for last four and update the commit message in the editor, then `git push --force origin super-feature`.
 
 ## (Recovering from bad squashes)
 
