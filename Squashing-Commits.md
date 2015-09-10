@@ -1,7 +1,7 @@
 We try to keep the history for PDF.js relatively clean and we may ask contributors to "squash" their commits before we merge.  
 
 **Note:**
-These directions assume that you named the Mozilla pdf.js repo (not your fork) `upstream` and you have a branch called `super-feature`. See [[Contributing]] for details.
+These directions assume that you named the Mozilla PDF.js repo (not your fork) `upstream` and you have a branch called `super-feature`. See [[Contributing]] for details.
 
 1. <a name="simple"></a>Simple case (no merge commits) - say you have three commits in your pull request and you want to squash them into one commit:
   ```
