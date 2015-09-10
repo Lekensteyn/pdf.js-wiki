@@ -1,4 +1,4 @@
-We try to keep the history for pdf.js relatively clean and we may ask contributors to "squash" their commits before we merge.  
+We try to keep the history for PDF.js relatively clean and we may ask contributors to "squash" their commits before we merge.  
 
 **Note:**
 These directions assume that you named the Mozilla pdf.js repo (not your fork) `upstream` and you have a branch called `super-feature`. See [[Contributing]] for details.
