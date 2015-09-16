@@ -38,8 +38,8 @@ Presentations:
 
 ## Examples
 
-+ [Minimal example that showcases PDF rendering with text selection enabled](http://github.com/mozilla/pdf.js/wiki/Minimal-example-that-showcases-PDF-rendering-with-text-selection-enabled)
-
++ https://github.com/mozilla/pdf.js/tree/master/examples/learning
++ https://github.com/mozilla/pdf.js/tree/master/examples/components
 
 ## Related projects
 
