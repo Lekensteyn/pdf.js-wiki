@@ -82,7 +82,7 @@ The goal is to support all HTML5 compliant browsers, but since feature support v
 ## What browsers have extensions (and where can I find install procedures)?
 There is currently a Firefox, Chromium and Opera extension.  The Chromium extension is maintained by a PDF.js contributor. The Opera extension can be found [here](https://addons.opera.com/extensions/details/pdf-viewer). For installing the Firefox or Chromium extension, please refer to the [readme](https://github.com/mozilla/pdf.js/blob/master/README.md).
 
-The Firefox extension is not supported and marked as disabled for Firefox versions 35 and up. PDF.js is part of the Firefox since version 19. The extension is mostly used to bring newer version of the PDF.js library to the older Firefox version. (The users shall uninstall the extension and revert shumway.disabled configuration setting and set Options->Applications selection for PDF documents to internal viewer to continue viewing PDFs in the Firefox.)
+The Firefox extension is not supported and marked as disabled for Firefox versions 35 and up. PDF.js is part of the Firefox since version 19. The extension is mostly used to bring newer version of the PDF.js library to the older Firefox version. (The users shall uninstall the extension and revert `pdfjs.disabled` configuration setting and set Options->Applications selection for PDF documents to internal viewer to continue viewing PDFs in the Firefox.)
 
 <a name="faq-contrib"></a>
 ## I know JavaScript and want to contribute to the project. How do I start?
