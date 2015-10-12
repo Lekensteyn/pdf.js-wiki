@@ -80,6 +80,7 @@ To ensure your changes did not introduce any regressions you need to run the tes
 
 * `load` test: checks if the PDF file can be loaded without crashing
 * `eq` test: a reference test that takes correctly rendered snapshots and compares them to snapshots from the current code
+* `text` test: a reference test that takes snapshots of the `textLayer` layout and compares them to snapshots from the current code
 * `fbf` test: a forward-back-forward test
 * Unit tests: Jasmine unit tests that are run separately from the above tests
 
