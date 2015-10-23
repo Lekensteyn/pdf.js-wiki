@@ -18,6 +18,10 @@
 ## Can I specify a different PDF in the default viewer?
 You can modify the `DEFAULT_URL` variable in the `web/viewer.js` file or you can append the `?file=` query string to the viewer URL, e.g. `http://mozilla.github.com/pdf.js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf`. In the latter case, the PDF path/URL must be encoded using `encodeURIComponent()`.
 
+The viewer can be started without any PDF loaded by setting the `DEFAULT_URL` variable to empty string or via using `?file=` parameter without any location specified. Use `PDFViewerApplication.open(file)` to load PDF later.
+
+You can use raw binary data to open a PDF document: use Uint8Array instead of URL in `PDFViewerApplication.open` call or the `DEFAULT_URL` variable value. If you have base64 encoded data, please [decode](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) it first -- not all browsers have `atob` or data URI scheme support. (The base64 conversion operation uses more memory, so we recommend to deliver raw PDF data as typed array in first place.)
+
 <a name="faq-xhr"></a>
 ## Can I load a PDF from another server (cross domain request)?
 Not by default, but it is possible.  PDF.js runs with the same permissions as any other JavaScript code, which means it cannot do cross origin requests (see [Same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) and [an example](https://gist.github.com/3452072)).  There are some possible ways to get around this such as using [CORS](http://enable-cors.org/) (see also [unsafe headers issue](https://github.com/mozilla/pdf.js/issues/3150#issuecomment-17582371) and [Access-Control-Expose-Headers issue](https://github.com/mozilla/pdf.js/issues/4530)) or setting up a proxy on your server that will feed PDF.js the PDF file (example: https://github.com/mozilla/pdf.js/issues/1000#issuecomment-133756244).
