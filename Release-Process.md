@@ -1,9 +1,16 @@
 Overview: Release a version every six weeks.  Ideally this should be one week before Firefox uplift dates, see https://wiki.mozilla.org/RapidRelease/Calendar
 
-1. [Update pdf.js on mozilla central.](https://github.com/mozilla/pdf.js/wiki/Updating-pdf.js-on-Mozilla-Central)
-1. `git checkout <SHA IN MOZ CENTRAL>`
-1. Run `node make publish` to generate the zip and update pdfjs.confg
-1. Create a PR with pdfjs.config changes
+### After an [api-(minor|major)] Pull Request Lands:
+
+Update pdfjs.config:
+
+1. Bump `versionPrefix` major/minor version number
+1. Set `baseVersion` to commit id of the merge commit 
+
+### Releasing a new version
+
+1. `git checkout upstream/master`
+1. Run `node make publish` to generate the zip
 1. Create github release
    2. add release notes
    2. attach zip generated from above
