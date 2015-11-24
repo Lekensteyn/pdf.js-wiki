@@ -10,7 +10,7 @@ While we use Travis CI for linting, we use the bots for all other tasks like gen
 - `unittest` (runs the unit tests)
 - `fonttest` (runs the font tests)
 - `test` (runs all tests, i.e., the unit tests, font tests and reference tests)
-- `makeref` (generates new reference images for the reference tests when a pull request has an influence on them, i.e., if rendering is different)
+- `makeref` (generates new reference images for the reference tests, for instance when a pull request changes the rendering of some PDFs)
 
 Characteristics
 ---------------
