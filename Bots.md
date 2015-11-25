@@ -15,4 +15,12 @@ While we use Travis CI for linting, we use the bots for all other tasks like gen
 Characteristics
 ---------------
 
-We have a Linux and a Windows bot. The Linux bot runs Ubuntu 12.04.4 LTS with Xvfb, whereas the Windows bot runs Windows Server Datacenter (service pack 2). We have installed the `latex-cjk-all` font package on the Linux bot for improved font rendering.
+We have a Linux and a Windows bot. The Linux bot runs Ubuntu 12.04.4 LTS with Xvfb, whereas the Windows bot runs Windows Server Datacenter (service pack 2). The Linux bot has a few additional font packages to improve font rendering:
+
+- `latex-cjk-all`
+- `xfonts-wqy`
+- `fonts-arphic-ukai`
+- `fonts-arphic-uming`
+- `fonts-ipafont-mincho`
+- `fonts-ipafont-gothic`
+- `fonts-unfonts-core`
