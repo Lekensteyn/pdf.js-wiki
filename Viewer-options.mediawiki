@@ -11,4 +11,4 @@ Example: http://mozilla.github.io/pdf.js/web/viewer.html#page=2
 ===Options after the ?===
 Example: http://mozilla.github.io/pdf.js/web/viewer.html?file=myfile.pdf
 
-* file: the filename of the PDF file to use (must be on the same server due to JavaScript limitations).  Example: file=myfile.pdf
+* file: the path of the PDF file to use (must be on the same server due to JavaScript limitations). Please notice that the path/URL must be encoded using encodeURIComponent(). Example: /web/viewer.html?file=%2Fmyfiles%2Ffile.pdf
