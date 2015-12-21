@@ -3,7 +3,7 @@ You can choose to use a pre-built version of PDF.js or build PDF.js from source.
 ## Pre-built PDF.js
 ### With npm
 
-Add dependencies to your project:
+Add the dependencies to your project:
 
     npm install pdfjs-dist node-ensure --save
 
@@ -16,22 +16,19 @@ var data = new Uint8Array(fs.readFileSync('helloworld.pdf'));
 PDFJS.getDocument(data).then(function (pdfDocument) {
   console.log('Number of pages: ' + pdfDocument.numPages);
 });
-
 ```
 
-Depending on APIs you are trying to use, you may need stuff some DOM APIs. See more complex example at https://github.com/mozilla/pdf.js/blob/master/examples/node/getinfo.js.
-
+Depending on the APIs that you want to use, you might need to stuff some DOM APIs. Refer to https://github.com/mozilla/pdf.js/blob/master/examples/node/getinfo.js for a more complex example.
 
 #### With Webpack
 
-Add dependencies to your project:
+Add the dependencies to your project:
 
     npm install pdfjs-dist entry-loader --save-dev
 
-To use the library in your project add `require('pdfjs-dist')` in your file requires and normally build your project.
+To use the library in your project add `require('pdfjs-dist')` to your file requires and build your project normally.
 
-See complete example at https://github.com/mozilla/pdf.js/tree/master/examples/webpack
-
+Refer to https://github.com/mozilla/pdf.js/tree/master/examples/webpack for a complete example.
 
 ### From examples
 When the source code of PDF.js changes, the [online demo](http://mozilla.github.io/pdf.js/web/viewer.html) is automatically updated. The source of all demo files can easily be accessed at https://github.com/mozilla/pdf.js/tree/gh-pages. These files can also be uploaded to your server to use PDF.js to display PDF files from your website.
