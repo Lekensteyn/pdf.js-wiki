@@ -5,7 +5,7 @@
 * [I know JavaScript and want to contribute to the project. How do I start?](#faq-contrib)
 * [Is it possible to add annotations to a PDF?](#faq-annotations)
 * [What are the PDF.js keyboard shortcuts?](#faq-shortcuts)
-* [The PDF.js files are too big. Can you provide minified versions of JS files?](#minified)
+* [The PDF.js files are too big. Is it possible to obtain minified versions of the JS files?](#minified)
 * [Is there a pre-built version PDF.js available?](#gh-pages)
 * [PDF.js does not render my files right. Can I report an issue?](#issue)
 * [I know that my PDFs are corrupted. Will PDF.js attempt to display it?](#corrupted-pdf)
