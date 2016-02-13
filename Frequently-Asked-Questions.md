@@ -127,13 +127,13 @@ User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change th
 - Double-click on the "Show document outline" button (![Show document outline](https://mozilla.github.io/pdf.js/web/images/toolbarButton-viewOutline.png)) to expand/collapse all outline items.
 
 <a name="minified"></a>
-## The PDF.js files are too big. Can you provide minified versions of JS files?
+## The PDF.js files are too big. Is it possible to obtain minified versions of the JS files?
 
-The only supported minifier as of now is Google Closure Compiler (see https://developers.google.com/closure/compiler). You can build a minified version of PDF.js using the following command:
+You can build a minified version of PDF.js using the following command:
 
-`CLOSURE_COMPILER="../path/to/closure/compiler.jar" node make minified`
+`node make minified`
 
-It is known that other minifiers might break PDF.js code if advanced options are used (see [#710](https://github.com/mozilla/pdf.js/issues/710) or [#2479](https://github.com/mozilla/pdf.js/issues/2479)). It's safe to use minifiers in whitespace/comments removal mode.
+We use UglifyJS to minify the JS files. It is known that other minifiers might break PDF.js code if advanced options are used (see [#710](https://github.com/mozilla/pdf.js/issues/710) or [#2479](https://github.com/mozilla/pdf.js/issues/2479)). It's safe to use minifiers, such as Google Closure Compiler, in whitespace/comments removal mode.
 
 <a name="gh-pages"></a>
 ## Is there a pre-built version PDF.js available?
