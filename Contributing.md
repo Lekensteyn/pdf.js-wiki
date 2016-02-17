@@ -19,9 +19,9 @@ Below is an overview of how to contribute code to the PDF.js project. The basic 
 
 If you develop on Windows, read [[Setting up pdf.js Development Environment for Windows]]. For font testing you will need [Python](http://www.python.org/download).
 
-_Before you make any changes to the code you will probably want jump down to [Generating reference images](#ref-images) to create the reference snapshot images so you can run the test framework and check for regressions._
+_Before you make any changes to the code you will probably want jump down to the "Generating reference images" section to create the reference snapshot images so you can run the test framework and check for regressions._
  
-If you are familiar with GitHub and creating feature branches you can skip down to [Run lint and testing](#lint).
+If you are familiar with GitHub and creating feature branches you can skip down to the "Run lint and testing" section.
 
 ### 1. Fork
 To fork the repository you need to have a GitHub account. Once you have an account you can click the fork button up top. Now that you have your fork you need to clone it (replace `{username}` with your GitHub username) using
@@ -56,7 +56,7 @@ Now that you have a new branch you can edit/create/delete files. Follow the stan
 
 If the branch contains lot of small commits, you might be asked to squash the commits. You can use Git's rebase option or follow the instructions on the [[Squashing Commits]] page.
 
-### <a id="lint"></a> 4. Run lint and testing
+### 4. Run lint and testing
 **Run lint**
 
 Make sure that your code follows our [[Style Guide]] and run from the PDF.js folder:
@@ -84,7 +84,7 @@ To ensure your changes did not introduce any regressions you need to run the tes
 * `fbf` test: a forward-back-forward test
 * Unit tests: Jasmine unit tests that are run separately from the above tests
 
-<a id="ref-images"></a>**Generating reference images**
+**Generating reference images**
 
 The reference tests require you to generate original snapshots for comparison. The snapshots should be generated before you make any changes. If you have already made some changes, `git stash` your work. Then make sure you have created a `browser_manifest.json` file. Copy the example browser manifest located in `test/resources/browser_manifests` to get started:
 
