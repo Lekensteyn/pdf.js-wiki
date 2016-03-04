@@ -10,7 +10,7 @@ Update pdfjs.config:
 ### Releasing a new version
 
 1. `git checkout upstream/master`
-1. Run `node make publish` to generate the zip
+1. Run `gulp publish` to generate the zip
 1. Create github release
    2. add release notes
    2. attach zip generated from above
