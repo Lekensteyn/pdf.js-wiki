@@ -62,7 +62,7 @@ If the branch contains lot of small commits, you might be asked to squash the co
 Make sure that your code follows our [[Style Guide]] and run from the PDF.js folder:
 
 ```
-node make lint
+gulp lint
 ```
 The first time you run the command above, the linting tool `jshint` will be automatically installed in the PDF.js folder.
 
@@ -103,15 +103,15 @@ node test.js -m --browserManifestFile=resources/browser_manifests/browser_manife
 You can then run the test suite from the PDF.js root folder:
 
 ```
-node make test
+gulp test
 ```
 
 **Running unit tests separately**
 
-Unit tests are run when `node make test` is run, but they can also be run separately two different ways:
+Unit tests are run when `gulp test` is run, but they can also be run separately two different ways:
 
-1. In the browser. A web server has to be setup to host the PDF.js files. Tests will be executed by opening the `{url-to-pdf.js}/test/unit/unit_test.html` page. If the web server is started using the `node make server` command, the URL will be `http://localhost:8888/test/unit/unit_test.html`.
-2. Command line. `node make unittest` will run all the tests using the regression test framework.
+1. In the browser. A web server has to be setup to host the PDF.js files. Tests will be executed by opening the `{url-to-pdf.js}/test/unit/unit_test.html` page. If the web server is started using the `gulp server` command, the URL will be `http://localhost:8888/test/unit/unit_test.html`.
+2. Command line. `gulp unittest` will run all the tests using the regression test framework.
 
 ### 5. Push changes to your fork/branch
 After lint and all tests pass, push the changes to your fork/branch on GitHub:
