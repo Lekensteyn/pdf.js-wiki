@@ -131,7 +131,7 @@ User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change th
 
 You can build a minified version of PDF.js using the following command:
 
-`node make minified`
+`gulp minified`
 
 We use UglifyJS to minify the JS files. It is known that other minifiers might break PDF.js code if advanced options are used (see [#710](https://github.com/mozilla/pdf.js/issues/710) or [#2479](https://github.com/mozilla/pdf.js/issues/2479)). It's safe to use minifiers, such as Google Closure Compiler, in whitespace/comments removal mode.
 
