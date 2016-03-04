@@ -9,7 +9,7 @@ At a minimum you will need Git and Node.js.
 
 ### Option 1 - Node.js server
 - Run `cd pdf.js`
-- Run `node make server`
+- Run `gulp server`
 - Open a browser and go to `http://localhost:8080/web/viewer.html`
 
 ### Option 2 - Another server
