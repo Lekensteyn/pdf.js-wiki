@@ -56,11 +56,11 @@ hg pull -u
 
 + update pdf.js and build extension
 ```
-node make mozcentral
+gulp mozcentral
 ```
 + (or, if you know previous commit sha for built pdf.js you can generate build/mozcentral.diff file)
 ```
-BASELINE=<baseLineCommit> node make mozcentralbaseline; node make mozcentraldiff
+BASELINE=<baseLineCommit> gulp mozcentralbaseline; gulp mozcentraldiff
 ```
 
 + Open new bugzilla bug
@@ -119,7 +119,7 @@ git cherry-pick <someCommit>
 
 + Build the patch
 ```
-BASELINE=<baseLineCommit> node make mozcentralbaseline; node make mozcentraldiff
+BASELINE=<baseLineCommit> gulp mozcentralbaseline; gulp mozcentraldiff
 ```
 
 + Apply that to the branch
