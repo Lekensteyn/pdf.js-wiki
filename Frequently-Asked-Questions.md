@@ -182,7 +182,7 @@ During cooldown period, about once or twice in 6 weeks, we push our library to t
 <a name="optimize"></a>
 ## What types of PDF files are slow in PDF.js? Can I optimize a PDF file to make PDF.js faster?
 
-Typically, PDFs with a smaller file size will be rendered faster and it depends on how big a single page is. The amount of pages does not affect the performance. It's essential that you optimize your documents for the web. See [Optimize a PDF](http://help.adobe.com/en_US/acrobat/X/pro/using/WS58a04a822e3e50102bd615109794195ff-7c85.w.html) from Adobe's website for more information. There are more improvement techniques that we can suggest:
+Typically, PDFs with a smaller file size will be rendered faster and it depends on how big a single page is. The amount of pages does not affect the performance. It's essential that you optimize your documents for the web. See [Optimize a PDF](https://helpx.adobe.com/acrobat/using/optimizing-pdfs-acrobat-pro.html) from Adobe's website for more information. There are more improvement techniques that we can suggest:
 
   1. Avoid using high resolution images -- 150 dpi resolution for scanned images shall be enough for screens, especially for low powered devices;
   2. Try to use JPEG encoding for color images/photos in RGB colorspace when possible;
