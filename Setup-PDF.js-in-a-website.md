@@ -30,6 +30,16 @@ To use the library in your project add `require('pdfjs-dist')` to your file requ
 
 Refer to https://github.com/mozilla/pdf.js/tree/master/examples/webpack for a complete example.
 
+#### With Browserify
+
+Add the dependencies to your project:
+
+    npm install pdfjs-dist --save-dev
+
+To use the library in your project add `require('pdfjs-dist')` to your file requires and build your project normally. The worker shall be built into separate bundle: "pdf.worker.js" taken as is or built as separate file that uses `require('pdfjs-dist/build/pdf.worker')`. The PDFJS.workerSrc shall be set to point to this file.
+
+Refer to https://github.com/mozilla/pdf.js/tree/master/examples/browserify for a complete example.
+
 ### From examples
 When the source code of PDF.js changes, the [online demo](http://mozilla.github.io/pdf.js/web/viewer.html) is automatically updated. The source of all demo files can easily be accessed at https://github.com/mozilla/pdf.js/tree/gh-pages. These files can also be uploaded to your server to use PDF.js to display PDF files from your website.
 
