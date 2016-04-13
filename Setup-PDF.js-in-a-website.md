@@ -5,7 +5,7 @@ You can choose to use a pre-built version of PDF.js or build PDF.js from source.
 
 Add the dependencies to your project:
 
-    npm install pdfjs-dist node-ensure --save
+    npm install pdfjs-dist --save
 
 Simple usage example:
 
@@ -24,9 +24,9 @@ Depending on the APIs that you want to use, you might need to stuff some DOM API
 
 Add the dependencies to your project:
 
-    npm install pdfjs-dist entry-loader --save-dev
+    npm install pdfjs-dist --save-dev
 
-To use the library in your project add `require('pdfjs-dist')` to your file requires and build your project normally.
+To use the library in your project add `require('pdfjs-dist')` to your file requires and build your project normally. The worker shall be built into a separate bundle: take the file "./node_modules/pdfjs-dist/build/pdf.worker.entry.js" or built a separate file that uses `require('pdfjs-dist/build/pdf.worker')`. `PDFJS.workerSrc` shall be set to point to this file.
 
 Refer to https://github.com/mozilla/pdf.js/tree/master/examples/webpack for a complete example.
 
@@ -36,7 +36,7 @@ Add the dependencies to your project:
 
     npm install pdfjs-dist --save-dev
 
-To use the library in your project add `require('pdfjs-dist')` to your file requires and build your project normally. The worker shall be built into a separate bundle named "pdf.worker.js" taken as is or built as a separate file that uses `require('pdfjs-dist/build/pdf.worker')`. `PDFJS.workerSrc` shall be set to point to this file.
+To use the library in your project add `require('pdfjs-dist')` to your file requires and build your project normally. The worker shall be built into a separate bundle: take the file "./node_modules/pdfjs-dist/build/pdf.worker.entry.js" or built a separate file that uses `require('pdfjs-dist/build/pdf.worker')`. `PDFJS.workerSrc` shall be set to point to this file.
 
 Refer to https://github.com/mozilla/pdf.js/tree/master/examples/browserify for a complete example.
 
