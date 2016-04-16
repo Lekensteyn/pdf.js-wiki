@@ -3,7 +3,7 @@ As a safety precaution the debugging tools/parameters are disabled, and user sha
 
 * Extension version: set/create a `extensions.uriloader@pdf.js.pdfBugEnabled` setting as a boolean `true` in 'about:config'
 * Mozilla Central (Firefox) version: set/create a `pdfjs.pdfBugEnabled` setting as a boolean `true` in 'about:config'
-* Generic viewer: execute `Preferences.set('pdfBugEnabled', true);` in the JavaScript console
+* Generic viewer: execute `PDFViewerApplication.preferences.set('pdfBugEnabled', true);` in the JavaScript console
 
 The debugging tools/parameters are always enabled for non-production code.
 
