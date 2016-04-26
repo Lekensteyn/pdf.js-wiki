@@ -56,4 +56,4 @@ When the source code of PDF.js changes, the [online demo](http://mozilla.github.
     ```
 
 ## Build PDF.js from source
-After cloning PDF.js, you can build PDF.js from source by running `gulp generic` in Git Bash or another terminal. This will create the built PDF.js in the `build` folder, which you can upload to your server. Note that you must include `compatibility.js` in order to support browsers like IE8+.
+After cloning PDF.js, you can build PDF.js from source by running `gulp generic` in Git Bash or another terminal. This will create the built PDF.js in the `build` folder, which you can upload to your server. Note that you must include `compatibility.js` in order to support browsers like IE9+.
