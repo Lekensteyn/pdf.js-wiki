@@ -18,6 +18,10 @@ Found a defect? Open a new issue and include a clear description of the problem 
 
 There is also a support page at the Chrome Web Store (https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm/support), but it's not read very often due to the lack of notifications.
 
+## Privacy policy
+
+As of version 1.5.285, the extension sends at most two pings a day to pdfjs.robwu.nl so that the developers know which versions of Chrome we need to take into account. The source code and privacy policy are published at https://github.com/Rob--W/pdfjs-telemetry.
+
 ## Release process
 [Rob Wu (@Rob--W)](https://github.com/Rob--W) maintains the Chrome extension and manages its listing in the Chrome Web Store. Contact him for questions about the extension (e.g. "When will the PDF Viewer be updated?").
 
