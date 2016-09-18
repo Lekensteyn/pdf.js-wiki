@@ -4,7 +4,7 @@ Install it from https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldb
 ## End-user documentation
 
 ### Shortcuts
-See [What are the PDF.js keyboard shortcuts?](Frequently-Asked-Questions#faq-shortcuts)
+See [What are the PDF.js keyboard shortcuts?](Frequently-Asked-Questions#faq-shortcuts) for shortcuts and other advanced UI features.
 
 ### Preferences
 Visit `chrome://extensions/?options=oemmndcbldboiebfnladdacbdfmadadm` to change the default settings, such as whether to enable the hand tool by default, or to enable tools for [debugging PDF.js](Debugging-pdf.js).
