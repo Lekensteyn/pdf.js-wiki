@@ -24,3 +24,5 @@ We have a Linux and a Windows bot. The Linux bot runs Ubuntu 12.04.4 LTS with Xv
 - `fonts-ipafont-mincho`
 - `fonts-ipafont-gothic`
 - `fonts-unfonts-core`
+
+Both bots use Node.js 4.6.1 LTS and NPM 3.10.9.
