@@ -65,12 +65,11 @@ Make sure that your code follows our [[Style Guide]] and run from the PDF.js fol
 ```
 gulp lint
 ```
-The first time you run the command above, the linting tool `jshint` will be automatically installed in the PDF.js folder.
 
 _Protip_: If you are a Vim user, then install [Syntastic](http://www.vim.org/scripts/script.php?script_id=2736) and add the following line to your `.vimrc`:
 
 ```
-let g:syntastic_javascript_checker = "jshint"
+let g:syntastic_javascript_checkers = ['eslint']
 ```
 
 Now you have automatic linting of your changes to JavaScript files whenever you save.
