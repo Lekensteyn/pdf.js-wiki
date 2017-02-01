@@ -3,7 +3,7 @@ PDF.js maintains two bots that perform various tasks for pull requests. The bots
 Tasks
 -----
 
-While we use Travis CI for linting, we use the bots for all other tasks like generating a preview for a pull request and running unit, font and reference tests. The available bot commands are listed below.
+While we use Travis CI for linting (and running a selection of unit tests), we use the bots for all other tasks like generating a preview for a pull request and running unit, font and reference tests. The available bot commands are listed below.
 
 - `preview` (generates a preview build for the pull request)
 - `lint` (runs the linting tool)
