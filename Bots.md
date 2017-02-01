@@ -27,3 +27,7 @@ We have a Linux and a Windows bot. The Linux bot runs Ubuntu 12.04.4 LTS with Xv
 
 Linux bot uses Node.js 4.6.1 LTS and NPM 3.10.9.
 Windows bot uses Node.js 6.9.4 LTS and NPM 3.10.10
+
+Setup
+-----
+[Windows](https://github.com/mozilla/pdf.js/wiki/Windows-Bot-Setup)
