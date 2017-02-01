@@ -15,7 +15,7 @@ While we use Travis CI for linting, we use the bots for all other tasks like gen
 Characteristics
 ---------------
 
-We have a Linux and a Windows bot. The Linux bot runs Ubuntu 12.04.4 LTS with Xvfb, whereas the Windows bot runs Windows Server Datacenter (service pack 2). The Linux bot has a few additional font packages to improve font rendering:
+We have a Linux and a Windows bot. The Linux bot runs Ubuntu 12.04.4 LTS with Xvfb, whereas the Windows bot runs Windows Server Datacenter 2016. The Linux bot has a few additional font packages to improve font rendering:
 
 - `latex-cjk-all`
 - `xfonts-wqy`
@@ -25,4 +25,5 @@ We have a Linux and a Windows bot. The Linux bot runs Ubuntu 12.04.4 LTS with Xv
 - `fonts-ipafont-gothic`
 - `fonts-unfonts-core`
 
-Both bots use Node.js 4.6.1 LTS and NPM 3.10.9.
+Linux bot uses Node.js 4.6.1 LTS and NPM 3.10.9.
+Windows bot uses Node.js 6.9.4 LTS and NPM 3.10.10
