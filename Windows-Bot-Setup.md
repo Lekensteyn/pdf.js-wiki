@@ -1,4 +1,5 @@
 1. Install git https://git-scm.com/download/win
+1. Install msys2 and copy 'zip' from mys2's bin to git's (TODO: maybe we should start with msys2)
 1. Install python 2.7 https://www.python.org/downloads/windows/
   1. Ensure installer adds it to the path
 1. Install node js lts https://nodejs.org/en/
