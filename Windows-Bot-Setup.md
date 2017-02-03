@@ -3,12 +3,15 @@
 1. Install python 2.7 https://www.python.org/downloads/windows/
   1. Ensure installer adds it to the path
 1. Install node js lts https://nodejs.org/en/
+1. `cd c; mkdir pdfjs`
 1. Install botio from cloned repo (the npm package is not up to date)
   1. git clone https://github.com/brendandahl/botio.git
   1. cd botio
   1. npm install -g .
+1. `cd ..` (back to pdfjs)
 1. Install bot files
   1. `git clone https://github.com/mozilla/botio-files-pdfjs.git`
+  1. `cd botio-file-pdfjs`
   1. edit config.json
 1. Setup pdfjsbot github access token
 1. Start the bot `botio start --user pdfjsbot --pwd <github access token>`
