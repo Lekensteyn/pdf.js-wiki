@@ -11,7 +11,7 @@
 1. `cd ..` (back to pdfjs)
 1. Install bot files
   1. `git clone https://github.com/mozilla/botio-files-pdfjs.git`
-  1. `cd botio-file-pdfjs`
+  1. `cd botio-files-pdfjs`
   1. edit config.json
 1. Setup pdfjsbot github access token
 1. Start the bot `botio start --user pdfjsbot --pwd <github access token>`
