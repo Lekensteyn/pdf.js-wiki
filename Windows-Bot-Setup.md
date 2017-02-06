@@ -14,6 +14,7 @@
   1. `cd botio-files-pdfjs`
   1. edit config.json
   1. edit test-files/browser_manifest.json
+  1. copy amo.json to this folder
 1. Setup pdfjsbot github access token
 1. Start the bot `botio start --user pdfjsbot --pwd <github access token>`
 1. Setup webhooks on github
