@@ -2,7 +2,7 @@
 
 You can read more about PDF.js here:
 + http://andreasgal.com/2011/06/15/pdf-js/
-+ http://blog.mozilla.com/cjones/2011/06/15/overview-of-pdf-js-guts/
++ https://web.archive.org/web/20160408133647/https://blog.mozilla.org/cjones/2011/06/15/overview-of-pdf-js-guts/
 
 ## Presentations
 
