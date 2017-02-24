@@ -26,7 +26,7 @@ Add the dependencies to your project:
 
     npm install pdfjs-dist --save-dev
 
-To use the library in your project add `require('pdfjs-dist')` to your file requires and build your project normally. The worker shall be built into a separate bundle: take the file "./node_modules/pdfjs-dist/build/pdf.worker.entry.js" or built a separate file that uses `require('pdfjs-dist/build/pdf.worker')`. `PDFJS.workerSrc` shall be set to point to this file.
+To use the library in your project add `require('pdfjs-dist')` to your file requires and build your project normally. The worker shall be built into a separate bundle: take the file "./node_modules/pdfjs-dist/build/pdf.worker.entry.js" or built a separate file that uses `require('pdfjs-dist/build/pdf.worker')`. `PDFJS.workerSrc` shall be set to point to this file. You can use the `pdfjs-dist/webpack` module for PDF.js autoconfiguration.
 
 Refer to https://github.com/mozilla/pdf.js/tree/master/examples/webpack for a complete example.
 
