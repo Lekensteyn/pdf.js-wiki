@@ -97,8 +97,7 @@ Then edit the manifest and make sure it points to the browser(s) you want to use
 Now we can generate the reference images:
 
 ```
-cd test/
-node test.js -m --browserManifestFile=resources/browser_manifests/browser_manifest.json
+gulp makeref
 ```
 You can then run the test suite from the PDF.js root folder:
 
