@@ -66,10 +66,10 @@ Make sure that your code follows our [[Style Guide]] and run from the PDF.js fol
 gulp lint
 ```
 
-_Protip_: If you are a Vim user, then install [Syntastic](http://www.vim.org/scripts/script.php?script_id=2736) and add the following line to your `.vimrc`:
+_Protip_: If you are a Vim user, then install [Syntastic](http://www.vim.org/scripts/script.php?script_id=2736), install ESLint globally using `npm install -g eslint` and add the following line to your `.vimrc`:
 
 ```
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers=['eslint']
 ```
 
 Now you have automatic linting of your changes to JavaScript files whenever you save.
