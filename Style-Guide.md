@@ -3,7 +3,7 @@ This page outlines the style conventions that PDF.js follows to maintain a consi
 ## General
 * Indentation: 2 spaces
 * Line length: 80 characters
-* Required license in header: see https://github.com/mozilla/pdf.js/blob/master/web/viewer.js#L1-L16
+* Required license in header: see https://github.com/mozilla/pdf.js/blob/master/src/license_header.js
 
 ## Naming
 * Variables and functions: lowerCamelCase
