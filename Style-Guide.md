@@ -58,9 +58,9 @@ var ClassName = (function ClassNameClosure() {
       ...
     },
 
-    aVeryVeryVeryLongFunctionName(arg1,
-                                  arg2,
-                                  ...) {
+    aVeryVeryVeryLongFunctionName: function (arg1,
+                                             arg2,
+                                             ...) {
       ...
     },
   };
