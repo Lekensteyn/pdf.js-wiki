@@ -45,7 +45,7 @@ if (someVar === conditionA) {
 Variables must be defined only once within a function scope, preferably at the top of the function.
 
 ## Classes
-The standard way of creating classes in PDF.js, when adding *new* code, is the following. Please note that by class we mean an object that is class-like.
+The transition towards ES6 classes has started, but until that is completed, the standard way of creating classes in PDF.js, when adding *new* code, is the following. Please note that by class we mean an object that is class-like.
 
 ```javascript
 var ClassName = (function ClassNameClosure() {
@@ -54,13 +54,13 @@ var ClassName = (function ClassNameClosure() {
   }
 
   ClassName.prototype = {
-    functionName(arg1, arg2, ...) {
+    functionName: function(arg1, arg2, ...) {
       ...
     },
 
-    anVeryVeryVeryLongFunctionName(arg1,
-                                   arg2,
-                                   ...) {
+    aVeryVeryVeryLongFunctionName(arg1,
+                                  arg2,
+                                  ...) {
       ...
     },
   };
