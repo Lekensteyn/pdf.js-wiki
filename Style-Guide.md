@@ -1,5 +1,5 @@
 This page outlines the style conventions that PDF.js follows to maintain a consistent codebase. We ask each contributor that creates a pull request to adhere to these conventions.  
-Many of these conventions will also be checked automatically by a linting tool after each push to a branch of a pull request. Please refer to https://github.com/mozilla/pdf.js/wiki/Contributing#4-run-lint-and-testing for more information about running the linting tool locally.
+Many of these conventions will also be checked automatically by a linting tool after each push to a branch of a pull request. Please refer to https://github.com/mozilla/pdf.js/wiki/Contributing#4-run-lint-and-testing for information about running the linting tool locally.
 
 ## General
 * Indentation: 2 spaces
@@ -44,7 +44,7 @@ if (someVar === conditionA) {
 Variables must be defined only once within a function scope, preferably at the top of the function.
 
 ## Classes
-The standard way of creating classes in PDF.js is the following. Please note that by class we mean an object that is class-like. Also, note the naming of all anonymous functions.
+The standard way of creating classes in PDF.js, when adding *new* code, is the following. Please note that by class we mean an object that is class-like.
 
 ```javascript
 var ClassName = (function ClassNameClosure() {
@@ -53,20 +53,15 @@ var ClassName = (function ClassNameClosure() {
   }
 
   ClassName.prototype = {
-    functionName: function ClassName_functionName(...) {
+    functionName(arg1, arg2, ...) {
       ...
     },
 
-    aLongFunctionName: function ClassName_aLongFunctionName(arg1,
-                                                            arg2,
-                                                            ...) {
+    anVeryVeryVeryLongFunctionName(arg1,
+                                   arg2,
+                                   ...) {
       ...
     },
-
-    aVeryLongFunctionName: 
-        function ClassName_aVeryLongFunctionName(...) {
-      ...
-    }
   };
 
   return ClassName;
