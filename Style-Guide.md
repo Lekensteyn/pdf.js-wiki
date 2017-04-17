@@ -54,7 +54,7 @@ var ClassName = (function ClassNameClosure() {
   }
 
   ClassName.prototype = {
-    functionName: function (arg1, arg2, ...) {
+    functionName: function(arg1, arg2, ...) {
       ...
     },
 
