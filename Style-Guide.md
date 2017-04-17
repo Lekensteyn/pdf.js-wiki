@@ -1,4 +1,5 @@
-This page outlines the style conventions that PDF.js follows to maintain a consistent codebase. We ask each contributor that creates a pull request to adhere to these conventions. Some of these conventions will also be checked automatically by a linting tool after each push to a branch of a pull request.
+This page outlines the style conventions that PDF.js follows to maintain a consistent codebase. We ask each contributor that creates a pull request to adhere to these conventions.  
+Many of these conventions will also be checked automatically by a linting tool after each push to a branch of a pull request. Please refer to https://github.com/mozilla/pdf.js/wiki/Contributing#4-run-lint-and-testing for more information about running the linting tool locally.
 
 ## General
 * Indentation: 2 spaces
