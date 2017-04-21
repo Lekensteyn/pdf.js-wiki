@@ -11,6 +11,7 @@
 * [I know that my PDFs are corrupted. Will PDF.js attempt to display it?](#corrupted-pdf)
 * [I have a really great idea. Where is the best place to record it?](#idea)
 * [I'm developing a custom solution based on PDF.js core library. Can you help me?](#custom)
+* [I want to render all 100 pages in a document at high resolution. Is it a good idea?](#allthepages) 
 * [What is a latest stable version of PDF.js?](#version)
 * [What types of PDF files are slow in PDF.js? Can I optimize a PDF file to make PDF.js faster?](#optimize)
 
@@ -167,6 +168,13 @@ The issue tracking system is designed to record a single technical problem. A bu
 We are glad to hear that and will try to help you, but first check examples at https://github.com/mozilla/pdf.js#learning and search existing [issues](https://github.com/mozilla/pdf.js/search?q=keyword&type=Issues). If this does not help, please prepare short well-documented example that demonstrate the problem and make it accessible online on your website, jsbin, etc. before opening a new issue or contacting us on the IRC channel -- keep in mind that just code snippets won't help us troubleshoot the problem. The issues that do not provide enough details will be closed as invalid/incomplete (see [reporting issue](#issue) above).
 
 Please periodically check or subscribe to our dev-pdf-js@lists.mozilla.org mailing list to be informed about changes in the PDF.js architecture/design or security announcements.
+
+<a name="allthepages"></a>
+## I want to render all 100 pages in a document at high resolution. Is it a good idea?
+
+Not really. You can count yourself: a letter page size is 816⨉1056px at 96DPI (and if you have a HiDPI display, multiple each dimension by window.devicePixelRatio, e.g. 2), and you will need a canvas that takes a memory 816⨉1056⨉4 = 3,446,784 bytes (don't forget to multiple that by e.g. 4 (= 2⨉2) if it's a HiDPI display). Which requires you to allocate 3.5Mb (or 13.8Mb) per page. You need decent amount of memory to hold 100 canvases, and it does not count time that will be spend on rendering these canvases.
+
+The demo viewer creates, renders, and holds canvases only for visible pages to reduce amount of used memory. Our recommendation is to create and render only visible pages.
 
 <a name="version"></a>
 ## What is a latest stable version of PDF.js?
