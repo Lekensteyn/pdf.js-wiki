@@ -173,14 +173,14 @@ Please periodically check or subscribe to our dev-pdf-js@lists.mozilla.org maili
 <a name="allthepages"></a>
 ## I want to render all 100 pages in a document at high resolution. Is it a good idea?
 
-Not really. You can count yourself: a letter page size is 816⨉1056px at 96DPI (and if you have a HiDPI display, multiple each dimension by window.devicePixelRatio, e.g. 2), and you will need a canvas that takes a memory 816⨉1056⨉4 = 3,446,784 bytes (don't forget to multiple that by e.g. 4 (= 2⨉2) if it's a HiDPI display). Which requires you to allocate 3.5Mb (or 13.8Mb) per page. You need decent amount of memory to hold 100 canvases, and it does not count time that will be spend on rendering these canvases.
+Not really. You can count yourself: a letter page size is 816⨉1056px at 96DPI (and if you have a HiDPI display, multiple each dimension by window.devicePixelRatio, e.g. 2), and you will need a canvas that takes a memory 816⨉1056⨉4 = 3,446,784 bytes (don't forget to multiple that by e.g. 2⨉2 = 4, if it's a HiDPI display). Which requires you to allocate 3.5Mb (or 13.8Mb) per page. You need decent amount of memory to hold 100 canvases, and it does not count time that will be spend on rendering these canvases.
 
 The demo viewer creates, renders, and holds canvases only for visible pages to reduce amount of used memory. Our recommendation is to create and render only visible pages.
 
 <a name="range"></a>
 ## PDF.js is fetching entire PDF file from a server. Can it fetch only its portion?
 
-Actually PDF.js is doing just that. The PDF is a complicated format;in most of the cases, vital data of a PDF document is located at the end. Depending on [browser support](#faq-support) and on what web server returns in the [HTTP Range Requests headers](https://tools.ietf.org/html/rfc7233), the PDF.js automatically may start using HTTP Range Requests to fetch not-yet-loaded portions of a PDF needed for rendering of visible pages, so a document can be rendered without fully loading it. 
+Actually PDF.js is doing just that. The PDF is a complicated format; in most of the cases, vital data of a PDF document is located at the end. Depending on [browser support](#faq-support) and on what web server returns in the [HTTP Range Requests headers](https://tools.ietf.org/html/rfc7233), the PDF.js automatically may start using HTTP Range Requests to fetch not-yet-loaded portions of a PDF needed for rendering of visible pages, so a document can be rendered without fully loading it. 
 
 <a name="version"></a>
 ## What is a latest stable version of PDF.js?
