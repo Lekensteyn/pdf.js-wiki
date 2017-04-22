@@ -11,8 +11,8 @@
 * [I know that my PDFs are corrupted. Will PDF.js attempt to display it?](#corrupted-pdf)
 * [I have a really great idea. Where is the best place to record it?](#idea)
 * [I'm developing a custom solution based on PDF.js core library. Can you help me?](#custom)
-* [I want to render all 100 pages in a document at high resolution. Is it a good idea?](#allthepages)
-* [PDF.js is fetching entire PDF file from a server. Can it fetch only its portion?](#range)
+* [I want to render all 100 pages in a document at a high resolution. Is it a good idea?](#allthepages)
+* [PDF.js is fetching the entire PDF file from a server. Can it fetch only the required portions for rendering?](#range)
 * [What is a latest stable version of PDF.js?](#version)
 * [What types of PDF files are slow in PDF.js? Can I optimize a PDF file to make PDF.js faster?](#optimize)
 
@@ -171,16 +171,16 @@ We are glad to hear that and will try to help you, but first check examples at h
 Please periodically check or subscribe to our dev-pdf-js@lists.mozilla.org mailing list to be informed about changes in the PDF.js architecture/design or security announcements.
 
 <a name="allthepages"></a>
-## I want to render all 100 pages in a document at high resolution. Is it a good idea?
+## I want to render all 100 pages in a document at a high resolution. Is it a good idea?
 
-Not really. You can count yourself: a letter page size is 816⨉1056px at 96DPI (and if you have a HiDPI display, multiple each dimension by window.devicePixelRatio, e.g. 2), and you will need a canvas that takes a memory 816⨉1056⨉4 = 3,446,784 bytes (don't forget to multiple that by e.g. 2⨉2 = 4, if it's a HiDPI display). Which requires you to allocate 3.5Mb (or 13.8Mb) per page. You need decent amount of memory to hold 100 canvases, and it does not count time that will be spend on rendering these canvases.
+Not really. You can count yourself: a letter page size is 816⨉1056px at 96DPI (and if you have a HiDPI display, multiply each dimension by `window.devicePixelRatio`, e.g., 2), so you will need a canvas that takes up 816⨉1056⨉4 = 3,446,784 bytes (don't forget to multiply that by e.g., 2⨉2 = 4 if it's a HiDPI display). This requires you to allocate 3.5Mb (or 14Mb) per page. You need a decent amount of memory to hold the 100 canvases, and it does not count the time that is spent on rendering them.
 
-The demo viewer creates, renders, and holds canvases only for visible pages to reduce amount of used memory. Our recommendation is to create and render only visible pages.
+The demo viewer creates, renders, and holds canvases only for visible pages to reduce the amount of used memory. Our recommendation is to create and render only visible pages.
 
 <a name="range"></a>
-## PDF.js is fetching entire PDF file from a server. Can it fetch only its portion?
+## PDF.js is fetching the entire PDF file from a server. Can it fetch only the required portions for rendering?
 
-Actually PDF.js is doing just that. The PDF is a complicated format; in most of the cases, vital data of a PDF document is located at the end. Depending on [browser support](#faq-support) and on what web server returns in the [HTTP Range Requests headers](https://tools.ietf.org/html/rfc7233), the PDF.js automatically may start using HTTP Range Requests to fetch not-yet-loaded portions of a PDF needed for rendering of visible pages, so a document can be rendered without fully loading it. 
+Actually, PDF.js is doing just that. PDF is a complicated format; in most of the cases, the vital data of a PDF document is located at the end. Depending on [browser support](#faq-support) and on what web server returns the [HTTP Range Requests headers](https://tools.ietf.org/html/rfc7233), PDF.js may automatically start using HTTP Range Requests to fetch not-yet-loaded portions of a PDF needed for rendering visible pages, so a document can be rendered without fully loading it.
 
 <a name="version"></a>
 ## What is a latest stable version of PDF.js?
