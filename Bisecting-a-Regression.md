@@ -32,7 +32,7 @@ Mark the current version as bad using `git bisect start` and `git bisect bad`.
 A Bugzilla patch contains the commit information near `browser/extensions/pdfjs/content/build/pdf.js`, e.g., see https://bug871530.bugzilla.mozilla.org/attachment.cgi?id=750657 (was added3d (good), will be 869b878 (bad)).
 
 ### Using DXR
--f you know it was good in the Beta branch, get the bad commit ID from DXR. Find the line with `PDFJS.build =` and copy the value in the single quotes, for example `4e83123`. You can find PDF.js on DXR at http://dxr.mozilla.org/mozilla-beta/source/browser/extensions/pdfjs/content/build/pdf.js.
+If you know it was good in the Beta branch, get the bad commit ID from DXR. Find the line with `PDFJS.build =` and copy the value in the single quotes, for example `4e83123`. You can find PDF.js on DXR at http://dxr.mozilla.org/mozilla-beta/source/browser/extensions/pdfjs/content/build/pdf.js.
 
 ## Verify the working version
 - Run `git checkout <commit ID that you found above>`.
