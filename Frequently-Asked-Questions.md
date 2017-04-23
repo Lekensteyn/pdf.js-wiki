@@ -159,9 +159,9 @@ Yes. PDF.js will attempt to recover usable PDF data (pages, content or fonts) an
 <a name="idea"></a>
 ## I have a really great idea. Where is the best place to record it?
 
-The best place is our dev-pdf-js@lists.mozilla.org mailing list. You can subscribe to it using [lists.mozilla.org](https://lists.mozilla.org/listinfo/dev-pdf-js) or [Google Groups](https://groups.google.com/group/mozilla.dev.pdf-js/topics). This way you will reach not only developers. As an alternative, you can join our [weekly engineering meeting](https://github.com/mozilla/pdf.js/wiki/Weekly-Public-Meetings) to discuss new ideas for the project.
+You can contact the developers on our IRC channel `#pdfjs` on `irc.mozilla.org`.
 
-The issue tracking system is designed to record a single technical problem. A bug report is something where a developer/contributor can work on. The [GitHub issue tracker](https://github.com/mozilla/pdf.js/issues?state=open) is not a good place for general, not well thought out or unworkable ideas. Most likely a discussion-type issue will not be addressed for a long time or closed as invalid.
+The issue tracking system is designed to record a single technical problem. A bug report is something a developer/contributor can work on. The [GitHub issue tracker](https://github.com/mozilla/pdf.js/issues?state=open) is not a good place for general, not well thought out or unworkable ideas. Most likely a discussion-type issue will not be addressed for a long time or closed as invalid.
 
 <a name="custom"></a>
 ## I'm developing a custom solution based on PDF.js core library. Can you help me?
