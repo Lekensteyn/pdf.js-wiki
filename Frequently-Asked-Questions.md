@@ -30,56 +30,56 @@ Not by default, but it is possible.  PDF.js runs with the same permissions as an
 
 <a name="faq-support"></a>
 ## What browsers are supported?
-The goal is to support all HTML5 compliant browsers, but since feature support varies per browser/version our support for all PDF features varies as well. If you want to support more browsers than Firefox you'll need to include [compatibility.js](https://github.com/mozilla/pdf.js/blob/master/web/compatibility.js) which has polyfills for missing features. Find the list of features needed for PDF.js to properly work and browser tests for those features at [[Required Browser Features]]. In general, the support is below:
+The objective is to support all HTML5 compliant browsers, but since feature support varies per browser/version our support for all PDF features varies as well. We include `compatibility.js` by default which has polyfills for missing features. Find the list of features needed for PDF.js to properly work and browser tests for those features at [[Required Browser Features]]. In general, the support is below:
 
 <table>
-  <tr><th>Browser</th><th>Supported</th><th>Automated Testing</th><th>Notes</th></tr>
+  <tr><th>Browser</th><th>Supported</th><th>Automated testing</th><th>Notes</th></tr>
   <tr>
-    <td>Firefox Stable</td>
-    <td>yes</td>
-    <td>Windows and Linux</td>
+    <td>Firefox (stable)</td>
+    <td>Yes</td>
+    <td>Windows/Linux</td>
     <td></td>
   </tr>
   <tr>
-    <td>Chrome Stable</td>
-    <td>yes</td>
-    <td>Windows and Linux</td>
+    <td>Chrome (stable)</td>
+    <td>Yes</td>
+    <td>Linux</td>
     <td></td>
   </tr>
   <tr>
-    <td>Opera Stable</td>
-    <td>yes</td>
-    <td>none</td>
+    <td>Opera (stable)</td>
+    <td>Yes</td>
+    <td>None</td>
     <td></td>
   </tr>
   <tr>
     <td>Android</td>
-    <td>limited</td>
-    <td>none</td>
-    <td>Android's Web Browser version 4.0 or below lacks a number of features or has defects, e.g. in typed arrays or HTTP range requests</td>
+    <td>Limited</td>
+    <td>None</td>
+    <td>Android's own web browser version 4.0 or below lacks a number of features or has defects, e.g., in typed arrays or HTTP range requests.</td>
   </tr>
   <tr>
     <td>Safari</td>
-    <td>limited</td>
-    <td>none</td>
-    <td>Safari (desktop and mobile) lacks a number of features or has defects, e.g. in typed arrays or HTTP range requests</td>
+    <td>Limited</td>
+    <td>None</td>
+    <td>Safari (desktop and mobile) lacks a number of features or has defects, e.g., in typed arrays or HTTP range requests.</td>
   </tr>
   <tr>
-    <td>IE10+</td>
-    <td>limited</td>
-    <td>none</td>
-    <td>IE 10 or above may lack of features or may have defects.</td>
+    <td>IE10/IE11/Edge</td>
+    <td>Limited</td>
+    <td>None</td>
+    <td>IE10 or above are reported to have missing features and defects.</td>
   </tr>
   <tr>
     <td>IE9</td>
-    <td>limited</td>
-    <td>none</td>
-    <td>IE9 lacks a number of features and most notably typed arrays which causes subpar performance.</td>
+    <td>Limited</td>
+    <td>None</td>
+    <td>IE9 lacks a number of features, most notably typed arrays which causes subpar performance.</td>
   </tr>
   <tr>
-    <td>&lt;=IE8</td>
-    <td>NO</td>
-    <td>none</td>
+    <td>IE8 or lower</td>
+    <td>No</td>
+    <td>None</td>
     <td>IE8 and below are missing too many features to be supported.</td>
   </tr>
 </table>
