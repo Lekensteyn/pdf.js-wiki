@@ -1,4 +1,4 @@
-* [Can I specify different PDF in the default viewer?](#file)
+* [Can I specify a different PDF in the default viewer?](#file)
 * [Can I load a PDF from another server (cross domain request)?](#faq-xhr)
 * [What browsers are supported?](#faq-support)
 * [What browsers have extensions (and where can I find install procedures)?](#faq-extensions)
