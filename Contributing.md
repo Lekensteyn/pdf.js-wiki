@@ -17,6 +17,7 @@ Below is an overview of how to contribute code to the PDF.js project. The basic 
 * GitHub account
 * [Node.js](http://nodejs.org/)
 * Gulp (via `npm install -g gulp-cli`)
+* An ES6 compatible browser
 
 If you develop on Windows, read [[Setting up pdf.js Development Environment for Windows]]. For font testing you will need [Python](http://www.python.org/download).
 
