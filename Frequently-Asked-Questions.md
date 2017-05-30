@@ -43,7 +43,7 @@ The objective is to support all HTML5 compliant browsers, but since feature supp
   <tr>
     <td>Chrome (stable)</td>
     <td>Yes</td>
-    <td>Linux</td>
+    <td>Windows/Linux</td>
     <td></td>
   </tr>
   <tr>
