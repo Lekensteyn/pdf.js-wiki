@@ -16,4 +16,4 @@ Update pdfjs.config:
    2. attach zip generated from above
    2. mark as pre-release
 1. Remove pre-release flag from previous beta release
-1. Eat cake
+1. Eat cake, cookie or any other treat
