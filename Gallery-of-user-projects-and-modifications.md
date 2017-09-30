@@ -9,7 +9,7 @@
 + [PDF Viewer Panel for the Ext JS 4.1 Framework](https://github.com/SunboX/ext_ux_pdf_panel) (@sonnenkiste)
 + [PDF Viewer Panel for the Sencha Touch 2 Framework](https://github.com/SunboX/st2_pdf_panel) (@sonnenkiste)
 + [jQuery-pdfdoc - Simple jQuery PDF Viewer plugin](http://dev.funkynerd.com/projects/jquery-pdfdoc) (@JAZ-013)
-+ [Alfresco Share add-on component](http://code.google.com/p/share-extras/wiki/MediaViewers)
++ [Alfresco Share add-on component](https://share-extras.github.io/addons/media-viewers)
 + [Plone integration](https://github.com/collective/collective.pdfjs)
 
 ### Cool projects
