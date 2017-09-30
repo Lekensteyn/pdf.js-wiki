@@ -1,7 +1,3 @@
-### Unofficial builds
-
-+ [Chrome extension](https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm) (@Rob--W)
-
 ### Alternative UI
 
 + [The Docket Alarm PDF Viewer](https://www.docketalarm.com/cases/PTAB/IPR2013-00142/Inter_Partes_Review_of_U.S._Pat._6931558/07-29-2014-PET-221/Final_Decision-51-Final_Written_Decision/?pdfjs) check out the ctrl+f features (@speedplane)
