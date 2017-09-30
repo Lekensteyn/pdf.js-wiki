@@ -33,6 +33,7 @@
 + [Librelio](https://github.com/libreliodev/javascript) The Librelio HTML5 reader is based on pdf.js. It features page curl effect and multimedia overlays (video, slide shows). An example is available [here](http://reader.librelio.com/pdfreader.html?waurl=%2Fwind_355%2Fwind_355.pdf).
 + [ckanext-pdfview](https://github.com/ckan/ckanext-pdfview) The PDF viewer of [CKAN](http://ckan.org) - the technology behind hundreds of data portals like [data.gov](http://data.gov) and [data.gov.uk](http:/data.gov.uk), uses pdf.js.
 + [Ignite Player](https://github.com/clkao/ignite) pdf.js-based ignite talk presentation player, from local files or dropbox.
++ [Word Lookup](https://github.com/samurdhilbk/pdf.js) Fork of PDF.js with a feature for which the user selects a word and presses a shortcut key to bring up its meaning within the viewer.
 
 ### Current Deployments
 
