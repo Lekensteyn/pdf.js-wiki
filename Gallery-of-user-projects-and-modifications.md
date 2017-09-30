@@ -10,7 +10,6 @@
 
 ### Cool projects
 + [Touch Reader with Storage](https://github.com/digitarald/pdf-reader.js) (@digitarald)
-+ [Library and eBook reader application](https://developer.mozilla.org/en-US/demos/detail/elibri)
 + [Cubic VR, 3D Pdfs!](http://scotland.proximity.on.ca/dxr/tmp/CubicVR.js/samples/pdf/) (@humphd)
 + [Coverflow Pdfs](http://cjcliffe.github.com/CubicVR.js/cubicvr/samples/pdf/pdf_gallery.html) (@humphd)
 + [Page flip effect - based on www.turnjs.com jQuery plugin](http://www.maxims6n.bget.ru/pdf_books/demo_21.html) (@MaximS)
