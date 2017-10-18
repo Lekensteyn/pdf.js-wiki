@@ -67,6 +67,8 @@ The Adobe Font Development Kit includes the above `ttx` program and several othe
  % sfntedit -f font.otf
 ```
 
+`tx` can also be used to dump information from the font, see `tx -dump -h` for more information.
+
 **Other Font Tools**
 * [FontForge](http://fontforge.sourceforge.net/)
 * [Microsoft Font Validator](http://www.microsoft.com/typography/FontValidator.mspx)
