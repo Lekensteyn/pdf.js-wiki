@@ -7,6 +7,7 @@
 * [What are the PDF.js keyboard shortcuts?](#faq-shortcuts)
 * [The PDF.js files are too big. Is it possible to obtain minified versions of the JS files?](#minified)
 * [Is there a pre-built version PDF.js available?](#gh-pages)
+* [What is the ECCN for PDF.js?](#eccn)
 * [PDF.js does not render my files right. Can I report an issue?](#issue)
 * [I know that my PDFs are corrupted. Will PDF.js attempt to display it?](#corrupted-pdf)
 * [I have a really great idea. Where is the best place to record it?](#idea)
@@ -143,6 +144,15 @@ We use UglifyJS to minify the JS files. It is known that other minifiers might b
 Yes. Please see http://mozilla.github.io/pdf.js/getting_started/ page for details. Also the code for the website at http://mozilla.github.io/pdf.js is located in the "gh-pages" branch. You can clone it using `git clone -b gh-pages https://github.com/mozilla/pdf.js.git pdfjs-gh-pages` or download [the archive](https://github.com/mozilla/pdf.js/archive/gh-pages.zip).
 
 There are also generic PDF.js library builds available at https://github.com/mozilla/pdfjs-dist. These builds can be installed via npm `npm install pdfjs-dist` or bower `bower install pdfjs-dist`.
+
+<a name="eccn"></a>
+## What is the ECCN for PDF.js?
+
+PDF.js is publicly available software not subject to the Export Administration
+Regulations (EAR) per EAR 734.3(b) and 734.7. Because PDF.js is not subject to
+the EAR it does not have an Export Control Classification Number (ECCN).
+Mozilla has completed the notification for PDF.js publicly available encryption
+source code per EAR 742.15(b).
 
 <a name="issue"></a>
 ## PDF.js does not render my files correctly. Can I report an issue?
