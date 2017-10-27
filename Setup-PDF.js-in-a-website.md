@@ -58,4 +58,4 @@ When the source code of PDF.js changes, the [online demo](http://mozilla.github.
 The viewer is built on the display layer and is the UI for PDF viewer in Firefox and the other browser extensions within the project. It can be a good starting point for building your own viewer. *However, we do ask if you plan to embed the viewer in your own site, that it not just be an unmodified version. Please re-skin it or build upon it.*
 
 ## Build PDF.js from source
-After cloning PDF.js, you can build PDF.js from source by running `gulp generic` in Git Bash or another terminal. This will create the built PDF.js in the `build` folder, which you can upload to your server. Note that you must include `compatibility.js` in order to support browsers like IE9+.
+After cloning PDF.js, you can build PDF.js from source by running `gulp generic` in Git Bash or another terminal. This will create the built PDF.js in the `build` folder, which you can upload to your server.
