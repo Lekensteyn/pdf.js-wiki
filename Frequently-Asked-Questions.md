@@ -23,7 +23,7 @@ You can modify the `DEFAULT_URL` variable in the `web/viewer.js` file or you can
 
 The viewer can be started without any PDF loaded by setting the `DEFAULT_URL` variable to empty string or via using `?file=` parameter without any location specified. Use `PDFViewerApplication.open(file)` to load PDF later.
 
-You can use raw binary data to open a PDF document: use Uint8Array instead of URL in `PDFViewerApplication.open` call or the `DEFAULT_URL` variable value. If you have base64 encoded data, please [decode](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) it first -- not all browsers have `atob` or data URI scheme support. (The base64 conversion operation uses more memory, so we recommend to deliver raw PDF data as typed array in first place.)
+You can use raw binary data to open a PDF document: use Uint8Array instead of URL in `PDFViewerApplication.open` call or the `DEFAULT_URL` variable value. If you have base64 encoded data, please [decode](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) it first -- not all browsers have `atob` or data URI scheme support. (The base64 conversion operation uses more memory, so we recommend delivering raw PDF data as typed array in first place.)
 
 <a name="faq-xhr"></a>
 ## Can I load a PDF from another server (cross domain request)?
@@ -93,7 +93,7 @@ The Firefox extension is not supported and marked as disabled for Firefox versio
 
 <a name="faq-contrib"></a>
 ## I know JavaScript and want to contribute to the project. How do I start?
-First, you need to prepare your [fork](https://help.github.com/articlenetworks/fork-a-repo) and setup the development environment. Don't forget to read the [[Contributing]] page. Second, make yourself familiar with the [PDF format and PDF.js internals](Additional-Learning-Resources). Third, if you don't already have a certain issue you want to fix, choose one from the [open issues labeled 5-good-beginner-bug](https://github.com/mozilla/pdf.js/issues?direction=desc&labels=5-good-beginner-bug&page=1&sort=created&state=open).  Last, submit a [pull request](https://help.github.com/articles/using-pull-requests) for the review. _During any part of the process we recommend to communicate with the PDF.js team on #pdfjs IRC channel at irc.mozilla.org if you have questions or need to find a reviewer._
+First, you need to prepare your [fork](https://help.github.com/articlenetworks/fork-a-repo) and setup the development environment. Don't forget to read the [[Contributing]] page. Second, make yourself familiar with the [PDF format and PDF.js internals](Additional-Learning-Resources). Third, if you don't already have a certain issue you want to fix, choose one from the [open issues labeled 5-good-beginner-bug](https://github.com/mozilla/pdf.js/issues?direction=desc&labels=5-good-beginner-bug&page=1&sort=created&state=open).  Last, submit a [pull request](https://help.github.com/articles/using-pull-requests) for the review. _During any part of the process we recommend communicating with the PDF.js team on #pdfjs IRC channel at irc.mozilla.org if you have questions or need to find a reviewer._
 
 <a name="faq-annotations"></a>
 ## Is it possible to add annotations to a PDF?
