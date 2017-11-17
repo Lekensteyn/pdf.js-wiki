@@ -117,7 +117,8 @@ User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change th
 * **rotate the document clockwise:** <kbd>r</kbd>
 * **rotate counterclockwise:** <kbd>shift</kbd> + <kbd>r</kbd>
 * **presentation mode:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>p</kbd> (does not work in IE11)
-* **toggle hand tool:** <kbd>h</kbd>
+* **enable hand tool:** <kbd>h</kbd>
+* **enable text selection tool:** <kbd>s</kbd>
 * **move focus to the 'go to page' box:** <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>g</kbd>
 
 (replace ctrl with meta on some configurations)
