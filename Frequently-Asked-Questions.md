@@ -23,7 +23,7 @@ You can modify the `DEFAULT_URL` variable in the `web/viewer.js` file or you can
 
 The viewer can be started without any PDF loaded by setting the `DEFAULT_URL` variable to empty string or via using `?file=` parameter without any location specified. Use `PDFViewerApplication.open(file)` to load PDF later.
 
-You can use raw binary data to open a PDF document: use Uint8Array instead of URL in `PDFViewerApplication.open` call or the `DEFAULT_URL` variable value. If you have base64 encoded data, please [decode](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) it first -- not all browsers have `atob` or data URI scheme support. (The base64 conversion operation uses more memory, so we recommend delivering raw PDF data as typed array in first place.)
+You can use raw binary data to open a PDF document: use Uint8Array instead of URL in the `PDFViewerApplication.open` call. If you have base64 encoded data, please [decode](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) it first -- not all browsers have `atob` or data URI scheme support. (The base64 conversion operation uses more memory, so we recommend delivering raw PDF data as typed array in first place.)
 
 <a name="faq-xhr"></a>
 ## Can I load a PDF from another server (cross domain request)?
