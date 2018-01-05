@@ -97,7 +97,7 @@ First, you need to prepare your [fork](https://help.github.com/articlenetworks/f
 
 <a name="faq-annotations"></a>
 ## Is it possible to add annotations to a PDF?
-PDF.js is mainly written for *reading* PDF files, not editing them. Because of that we don't yet support adding any kind of annotations. We do however support rendering a number of annotation types for viewing.
+PDF.js is designed for *reading* PDF files, not editing them. Because of that we don't support adding any kind of annotations. However, we do support rendering annotations for viewing.
 
 <a name="faq-shortcuts"></a>
 ## What are the PDF.js keyboard shortcuts?
