@@ -104,8 +104,8 @@ PDF.js is mainly written for *reading* PDF files, not editing them. Because of t
 (warning, the following list may be incomplete)
 
 ### Navigation
-* **next page:** <kbd>n</kbd>, <kbd>j</kbd>, right arrow key, <kbd>Space bar</kbd> or click in presentation mode
-* **previous page:** <kbd>p</kbd>, <kbd>k</kbd>, left arrow key, <kbd>Shift</kbd> + <kbd>Space bar</kbd> or <kbd>Shift</kbd> + click in presentation mode
+* **next page:** <kbd>n</kbd>, <kbd>j</kbd>, right arrow key, down arrow key, <kbd>Space bar</kbd>, <kbd>Enter</kbd> or click in presentation mode
+* **previous page:** <kbd>p</kbd>, <kbd>k</kbd>, left arrow key, up arrow key, <kbd>Shift</kbd> + <kbd>Space bar</kbd>, <kbd>Shift</kbd> + <kbd>Enter</kbd> or <kbd>Shift</kbd> + click in presentation mode
 
 The <kbd>home</kbd>, <kbd>end</kbd>, <kbd>page up</kbd>, <kbd>page down</kbd> and all arrow keys can be used to navigate the document.
 
