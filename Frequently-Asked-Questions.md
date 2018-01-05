@@ -106,8 +106,8 @@ PDF.js is mainly written for *reading* PDF files, not editing them. Because of t
 ### Navigation
 The <kbd>Home</kbd>, <kbd>End</kbd>, <kbd>Page up</kbd>, <kbd>Page down</kbd> and all arrow keys can be used to navigate the document. Moreover, the following navigation shortcuts exist:
 
-* **Next page:** <kbd>n</kbd>, <kbd>j</kbd>, <kbd>Space bar</kbd>, <kbd>Enter</kbd> or click in presentation mode
-* **previous page:** <kbd>p</kbd>, <kbd>k</kbd>, <kbd>Shift</kbd> + <kbd>Space bar</kbd>, <kbd>Shift</kbd> + <kbd>Enter</kbd> or <kbd>Shift</kbd> + click in presentation mode
+* **Next page:** <kbd>n</kbd>, <kbd>j</kbd>, <kbd>Space bar</kbd> (presentation mode only), <kbd>Enter</kbd> (presentation mode only) or left click (presentation mode only)
+* **Previous page:** <kbd>p</kbd>, <kbd>k</kbd>, <kbd>Shift</kbd> + <kbd>Space bar</kbd> (presentation mode only), <kbd>Shift</kbd> + <kbd>Enter</kbd> (presentation mode only) or <kbd>Shift</kbd> + left click (presentation mode only)
 
 ### Viewer controls
 User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change the zooming level, but keyboard shortcuts are also available:
