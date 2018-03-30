@@ -8,6 +8,7 @@
 + [Plone integration](https://github.com/collective/collective.pdfjs)
 
 ### Cool projects
++ [LaTeX Base](https://latexbase.com)
 + [Touch Reader with Storage](https://github.com/digitarald/pdf-reader.js) (@digitarald)
 + [Cubic VR](http://cjcliffe.github.com/CubicVR.js/cubicvr/samples/pdf/pdf_gallery.html) 3D PDFs (@humphd)
 + [Page flip effect - based on www.turnjs.com jQuery plugin](http://www.maxims6n.bget.ru/pdf_books/demo_21.html) (@MaximS)
