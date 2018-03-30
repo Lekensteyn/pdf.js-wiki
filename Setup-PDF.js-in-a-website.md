@@ -7,9 +7,7 @@ Add the dependencies to your project:
 
     npm install pdfjs-dist --save
 
-You can find a simple usage example at https://github.com/mozilla/pdf.js/blob/master/examples/node/getinfo.js.
-
-Depending on the APIs that you want to use, you might need to stuff some DOM APIs. Refer to https://github.com/mozilla/pdf.js/blob/master/examples/node/getinfo.js for a more complex example.
+You can find a usage example at https://github.com/mozilla/pdf.js/blob/master/examples/node/getinfo.js.
 
 #### With Webpack
 
