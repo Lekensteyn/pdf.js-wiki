@@ -7,16 +7,7 @@ Add the dependencies to your project:
 
     npm install pdfjs-dist --save
 
-Simple usage example:
-
-```
-require('pdfjs-dist');
-var fs = require('fs');
-var data = new Uint8Array(fs.readFileSync('helloworld.pdf'));
-PDFJS.getDocument(data).then(function (pdfDocument) {
-  console.log('Number of pages: ' + pdfDocument.numPages);
-});
-```
+You can find a simple usage example at https://github.com/mozilla/pdf.js/blob/master/examples/node/getinfo.js.
 
 Depending on the APIs that you want to use, you might need to stuff some DOM APIs. Refer to https://github.com/mozilla/pdf.js/blob/master/examples/node/getinfo.js for a more complex example.
 
