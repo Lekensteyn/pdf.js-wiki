@@ -31,33 +31,33 @@ Not by default, but it is possible.  PDF.js runs with the same permissions as an
 
 <a name="faq-support"></a>
 ## What browsers are supported?
-The objective is to support all HTML5 compliant browsers, but since feature support varies per browser/version our support for all PDF features varies as well. We include `compatibility.js` by default which has polyfills for missing features. Find the list of features needed for PDF.js to properly work and browser tests for those features at [[Required Browser Features]]. In general, the support is below:
+The objective is to support all HTML5 compliant browsers, but since feature support varies per browser/version our support for all PDF features varies as well. We include `compatibility.js` by default which has polyfills for missing features. Find the list of features needed for PDF.js to properly work and browser tests for those features at [[Required Browser Features]]. In general, the support is below. If no version is indicated, then the stable version is intended.
 
 <table>
   <tr><th>Browser</th><th>Supported</th><th>Automated testing</th><th>Notes</th></tr>
   <tr>
-    <td>Firefox (stable)</td>
+    <td>Firefox</td>
     <td>Yes</td>
     <td>Windows/Linux</td>
     <td></td>
   </tr>
   <tr>
-    <td>Chrome (stable)</td>
+    <td>Chrome</td>
     <td>Yes</td>
     <td>Windows/Linux</td>
     <td></td>
   </tr>
   <tr>
-    <td>Opera (stable)</td>
+    <td>Opera</td>
     <td>Yes</td>
     <td>None</td>
     <td></td>
   </tr>
   <tr>
-    <td>Android 5+</td>
+    <td>IE 11/Edge</td>
     <td>Mostly</td>
     <td>None</td>
-    <td>Some missing features/defects have been reported for desktop and mobile, e.g., for typed arrays and HTTP range requests, but no problems in general.</td>
+    <td>Some missing features/defects have been reported, but no problems in general.</td>
   </tr>
   <tr>
     <td>Safari 8+</td>
@@ -66,10 +66,10 @@ The objective is to support all HTML5 compliant browsers, but since feature supp
     <td>Some missing features/defects have been reported for desktop and mobile, e.g., for typed arrays and HTTP range requests, but no problems in general.</td>
   </tr>
   <tr>
-    <td>IE 11/Edge</td>
+    <td>Android 5+</td>
     <td>Mostly</td>
     <td>None</td>
-    <td>Some missing features/defects have been reported, but no problems in general.</td>
+    <td>Some missing features/defects have been reported for desktop and mobile, e.g., for typed arrays and HTTP range requests, but no problems in general.</td>
   </tr>
   <tr>
     <td>IE 10 and below</td>
