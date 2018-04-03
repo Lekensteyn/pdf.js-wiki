@@ -31,7 +31,7 @@ Not by default, but it is possible.  PDF.js runs with the same permissions as an
 
 <a name="faq-support"></a>
 ## What browsers are supported?
-The objective is to support all HTML5 compliant browsers, but since feature support varies per browser/version our support for all PDF features varies as well. We include `compatibility.js` by default which has polyfills for missing features. Find the list of features needed for PDF.js to properly work and browser tests for those features at [[Required Browser Features]]. In general, the support is below. If no version is indicated, then the stable version is intended.
+The objective is to support all HTML5 compliant browsers, but since feature support varies per browser/version our support for all PDF features varies as well. We include `compatibility.js` by default which has polyfills for missing features. Find the list of features needed for PDF.js to properly work and browser tests for those features at [[Required Browser Features]]. In general, the support is below. If no version is indicated, then the latest desktop/mobile versions are intended.
 
 <table>
   <tr><th>Browser</th><th>Supported</th><th>Automated testing</th><th>Notes</th></tr>
