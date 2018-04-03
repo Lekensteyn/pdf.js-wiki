@@ -54,34 +54,40 @@ The objective is to support all HTML5 compliant browsers, but since feature supp
     <td></td>
   </tr>
   <tr>
-    <td>Android</td>
-    <td>Limited</td>
+    <td>Android 5+</td>
+    <td>Mostly</td>
     <td>None</td>
-    <td>Android's own web browser version 4.0 or below lacks a number of features or has defects, e.g., in typed arrays or HTTP range requests.</td>
+    <td>Some missing features/defects have been reported for desktop and mobile, e.g., for typed arrays and HTTP range requests, but no problems in general.</td>
   </tr>
   <tr>
-    <td>Safari</td>
-    <td>Limited</td>
+    <td>Safari 8+</td>
+    <td>Mostly</td>
     <td>None</td>
-    <td>Safari (desktop and mobile) lacks a number of features or has defects, e.g., in typed arrays or HTTP range requests.</td>
+    <td>Some missing features/defects have been reported for desktop and mobile, e.g., for typed arrays and HTTP range requests, but no problems in general.</td>
   </tr>
   <tr>
-    <td>IE10/IE11/Edge</td>
-    <td>Limited</td>
+    <td>IE 11/Edge</td>
+    <td>Mostly</td>
     <td>None</td>
-    <td>IE10 or above are reported to have missing features and defects.</td>
+    <td>Some missing features/defects have been reported, but no problems in general.</td>
   </tr>
   <tr>
-    <td>IE9</td>
-    <td>Limited</td>
-    <td>None</td>
-    <td>IE9 lacks a number of features, most notably typed arrays which causes subpar performance.</td>
-  </tr>
-  <tr>
-    <td>IE8 or lower</td>
+    <td>IE 10 and below</td>
     <td>No</td>
     <td>None</td>
-    <td>IE8 and below are missing too many features to be supported.</td>
+    <td>Too many features are missing to be supported.</td>
+  </tr>
+  <tr>
+    <td>Safari 7 and below</td>
+    <td>No</td>
+    <td>None</td>
+    <td>Too many features are missing to be supported.</td>
+  </tr>
+  <tr>
+    <td>Android 4 and below</td>
+    <td>No</td>
+    <td>None</td>
+    <td>Too many features are missing to be supported.</td>
   </tr>
 </table>
 
