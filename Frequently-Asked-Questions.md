@@ -66,12 +66,6 @@ The objective is to support all HTML5 compliant browsers, but since feature supp
     <td>Some missing features/defects have been reported for desktop and mobile, e.g., for typed arrays and HTTP range requests, but no problems in general.</td>
   </tr>
   <tr>
-    <td>Android 5+</td>
-    <td>Mostly</td>
-    <td>None</td>
-    <td>Some missing features/defects have been reported for desktop and mobile, e.g., for typed arrays and HTTP range requests, but no problems in general.</td>
-  </tr>
-  <tr>
     <td>IE 10 and below</td>
     <td>No</td>
     <td>None</td>
