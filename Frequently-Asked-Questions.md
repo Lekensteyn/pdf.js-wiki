@@ -1,7 +1,7 @@
 * [Can I specify a different PDF in the default viewer?](#file)
 * [Can I load a PDF from another server (cross domain request)?](#faq-xhr)
-* [What browsers are supported?](#faq-support)
-* [What browsers have extensions (and where can I find install procedures)?](#faq-extensions)
+* [Which browsers are supported?](#faq-support)
+* [Which browsers have extensions (and where can I find install procedures)?](#faq-extensions)
 * [I know JavaScript and want to contribute to the project. How do I start?](#faq-contrib)
 * [Is it possible to add annotations to a PDF?](#faq-annotations)
 * [What are the PDF.js keyboard shortcuts?](#faq-shortcuts)
@@ -30,7 +30,7 @@ You can use raw binary data to open a PDF document: use Uint8Array instead of UR
 Not by default, but it is possible.  PDF.js runs with the same permissions as any other JavaScript code, which means it cannot do cross origin requests (see [Same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) and [an example](https://gist.github.com/3452072)).  There are some possible ways to get around this such as using [CORS](http://enable-cors.org/) (see also [unsafe headers issue](https://github.com/mozilla/pdf.js/issues/3150#issuecomment-17582371) and [Access-Control-Expose-Headers issue](https://github.com/mozilla/pdf.js/issues/4530)) or setting up a proxy on your server that will feed PDF.js the PDF file (example: https://github.com/mozilla/pdf.js/issues/1000#issuecomment-133756244). Please notice that generic/demo viewer blocks this functionality if deployed not on mozilla.github.io domain to avoid content spoofing (see https://github.com/mozilla/pdf.js/pull/6916).
 
 <a name="faq-support"></a>
-## What browsers are supported?
+## Which browsers are supported?
 The objective is to support all HTML5 compliant browsers, but since feature support varies per browser/version our support for all PDF features varies as well. We include `compatibility.js` by default which has polyfills for missing features. Find the list of features needed for PDF.js to properly work and browser tests for those features at [[Required Browser Features]]. In general, the support is below. If no version is indicated, then the latest desktop/mobile versions are intended.
 
 <table>
@@ -86,7 +86,7 @@ The objective is to support all HTML5 compliant browsers, but since feature supp
 </table>
 
 <a name="faq-extensions"></a>
-## What browsers have extensions (and where can I find install procedures)?
+## Which browsers have extensions (and where can I find install procedures)?
 The Chromium extension is maintained by a PDF.js contributor. To install the Chromium extension, please refer to the [README](https://github.com/mozilla/pdf.js/blob/master/README.md).
 
 The Firefox extension is not supported and marked as disabled for Firefox versions 35 and up. PDF.js is part of Firefox since version 19. The extension is mostly used by developers and for bringing a newer version of the PDF.js library to an older Firefox version. Users should uninstall the extension, revert the `pdfjs.disabled` configuration setting and set the `Options -> Applications` selection for PDF documents to the internal viewer to continue viewing PDF files with PDF.js in Firefox.
