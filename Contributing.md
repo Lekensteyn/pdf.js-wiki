@@ -21,7 +21,7 @@ Below is an overview of how to contribute code to the PDF.js project. The basic 
 
 If you develop on Windows, read [[Setting up pdf.js Development Environment for Windows]]. For font testing you will need [Python](http://www.python.org/download).
 
-_Before you make any changes to the code you will probably want jump down to the "Generating reference images" section to create the reference snapshot images so you can run the test framework and check for regressions._
+_Before you make any changes to the code you will probably want to jump down to the "Generating reference images" section to create the reference snapshot images so you can run the test framework and check for regressions._
  
 If you are familiar with GitHub and creating feature branches you can skip down to the "Run lint and testing" section.
 
