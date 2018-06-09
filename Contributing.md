@@ -93,7 +93,7 @@ The reference tests require you to generate original snapshots for comparison. T
 ```
 cp test/resources/browser_manifests/browser_manifest.json.example test/resources/browser_manifests/browser_manifest.json
 ```
-Then edit the manifest and make sure it points to the browser(s) you want to use for generating the reference images. Optionally, you can add `"headless": true` to run the tests without a browser window.
+Then edit the manifest and make sure it points to the browser(s) you want to use for generating the reference images. Optionally, you can add `"headless": true` to entries to run the tests without a browser window.
 
 Now we can generate the reference images:
 
