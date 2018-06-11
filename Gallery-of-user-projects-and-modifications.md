@@ -8,7 +8,7 @@
 + [Plone integration](https://github.com/collective/collective.pdfjs)
 
 ### Cool projects
-+ [Polar Bookshelf](https://github.com/burtonator/polar-bookshelf)
++ [Polar Bookshelf](https://github.com/burtonator/polar-bookshelf): incremental reading for PDF files
 + [LaTeX Base](https://latexbase.com)
 + [Touch Reader with Storage](https://github.com/digitarald/pdf-reader.js) (@digitarald)
 + [Cubic VR](http://cjcliffe.github.com/CubicVR.js/cubicvr/samples/pdf/pdf_gallery.html) 3D PDFs (@humphd)
