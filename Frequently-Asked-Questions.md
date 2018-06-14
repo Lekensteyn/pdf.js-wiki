@@ -19,9 +19,9 @@
 
 <a name="file"></a>
 ## Can I specify a different PDF in the default viewer?
-You can modify the `DEFAULT_URL` variable in the `web/viewer.js` file or you can append the `?file=` query string to the viewer URL, e.g. `http://mozilla.github.com/pdf.js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf`. In the latter case, the PDF path/URL must be encoded using `encodeURIComponent()`.
+You can modify the `defaultUrl` app option in the `web/app_options.js` file or you can append the `?file=` query string to the viewer URL, e.g. `http://mozilla.github.com/pdf.js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf`. In the latter case, the PDF path/URL must be encoded using `encodeURIComponent()`.
 
-The viewer can be started without any PDF loaded by setting the `DEFAULT_URL` variable to empty string or via using `?file=` parameter without any location specified. Use `PDFViewerApplication.open(file)` to load PDF later.
+The viewer can be started without any PDF loaded by setting the `defaultUrl` app option to an empty string or by using the `?file=` query string without any location specified. Use `PDFViewerApplication.open(file)` to load the PDF file later.
 
 You can use raw binary data to open a PDF document: use Uint8Array instead of URL in the `PDFViewerApplication.open` call. If you have base64 encoded data, please [decode](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) it first -- not all browsers have `atob` or data URI scheme support. (The base64 conversion operation uses more memory, so we recommend delivering raw PDF data as typed array in first place.)
 
