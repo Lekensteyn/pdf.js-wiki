@@ -60,10 +60,10 @@ The objective is to support all HTML5 compliant browsers, but since feature supp
     <td>Some missing features/defects have been reported, but no problems in general.</td>
   </tr>
   <tr>
-    <td>Safari 8+</td>
+    <td>Safari 9+</td>
     <td>Mostly</td>
     <td>None</td>
-    <td>Some missing features/defects have been reported for desktop and mobile, e.g., for typed arrays and HTTP range requests, but no problems in general.</td>
+    <td>Some missing features/defects have been reported, but no problems in general. For mobile only iOS 10 and higher are supported.</td>
   </tr>
   <tr>
     <td>IE 10 and below</td>
@@ -72,7 +72,7 @@ The objective is to support all HTML5 compliant browsers, but since feature supp
     <td>Too many features are missing to be supported.</td>
   </tr>
   <tr>
-    <td>Safari 7 and below</td>
+    <td>Safari 8 and below</td>
     <td>No</td>
     <td>None</td>
     <td>Too many features are missing to be supported.</td>
