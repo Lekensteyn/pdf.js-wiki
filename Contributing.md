@@ -112,6 +112,8 @@ If you wish to add a reference test for your patch, you can place the file (`foo
 node test/add_test.js test/pdfs/foo.pdf
 ```
 
+Note that this script only supports adding `eq` tests for all pages of the PDF file. If you need a different type or page range, you'll need to update the `test/test_manifest.json` file afterwards.
+
 **Running unit tests separately**
 
 Unit tests are run when `gulp test` is run, but they can also be run separately two different ways:
