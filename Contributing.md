@@ -100,10 +100,16 @@ Now we can generate the reference images:
 ```
 gulp makeref
 ```
-You can then run the test suite from the PDF.js root folder:
+You can then run the test suite from the PDF.js root folder after unstashing any changes:
 
 ```
 gulp test
+```
+
+If you wish to add a reference test for your patch, you can place the file (`foo.pdf` in this example) in the `test/pdfs` directory and run the following script from the PDF.js root folder to add it to the suite:
+
+```
+node test/add_test.js test/pdfs/foo.pdf
 ```
 
 **Running unit tests separately**
