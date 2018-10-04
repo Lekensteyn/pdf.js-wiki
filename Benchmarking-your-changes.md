@@ -6,9 +6,9 @@ When working on issues related to performance, it is important to provide a perf
     "id": "tracemonkey-eq",
     "file": "pdfs/tracemonkey.pdf",
     "md5": "9a192d8b1a7dc652a19835f6f08098bd",
-    "rounds": 20,
+    "rounds": 50,
     "lastPage": 5,
-    "type": "load"
+    "type": "eq"
   }
 ]
 ```
@@ -16,7 +16,7 @@ When working on issues related to performance, it is important to provide a perf
 Run the following commands to create a 'baseline' measurement (i.e., before you make your changes):
 
     $ git checkout master
-    $ gulp generic
+    $ SKIP_BABEL=true gulp generic
     $ cd test
     $ node test.js --browserManifestFile=resources/browser_manifests/browser_manifest.json \
         --statsFile=stats/results/baseline.json --statsDelay=5000 \
@@ -26,7 +26,7 @@ Then apply your changes and create a 'current' measurement (replace `<feature-br
 
     $ cd ..
     $ git checkout <feature-branch>
-    $ gulp generic
+    $ SKIP_BABEL=true gulp generic
     $ cd test
     $ node test.js --browserManifestFile=resources/browser_manifests/browser_manifest.json \
         --statsFile=stats/results/current.json --statsDelay=5000 \
