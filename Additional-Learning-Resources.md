@@ -1,3 +1,7 @@
+## Documentation
+
+You can find documentation about the core of PDF.js [here](https://github.com/MeiKatz/pdfjs-docs/blob/master/README.md) (contributed by user [MeiKatz](https://github.com/MeiKatz)).
+
 ## Publications
 
 You can read more about PDF.js here:
