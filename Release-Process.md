@@ -12,8 +12,8 @@ Update pdfjs.config:
 1. `git checkout upstream/master`
 1. Run `gulp publish` to generate the zip
 1. Create github release
-   2. add release notes
-   2. attach zip generated from above
-   2. mark as pre-release
+    1. add release notes
+    1. attach zip generated from above
+    1. mark as pre-release
 1. Remove pre-release flag from previous beta release
 1. Eat cake, cookie or any other treat
