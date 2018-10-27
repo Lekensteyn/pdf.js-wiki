@@ -16,6 +16,8 @@ Update the `pdfjs.config` file:
     1. Navigate to https://github.com/mozilla/pdf.js/releases/new
     1. Call the release and tag `v{version}` and insert the version from the name of the ZIP file.
     1. Attach the ZIP file from the step above and include release notes
+        1. Clone https://github.com/brendandahl/pdf.js.utils
+        2. Run `release.py`
     1. Label the existing release as stable
     1. Label the new release as pre-release
 1. Update `pdfjs.config` to bump both the stable and beta version numbers
