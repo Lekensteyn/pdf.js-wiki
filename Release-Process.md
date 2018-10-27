@@ -1,14 +1,15 @@
-Overview: Release a version every six weeks.  Ideally this should be one week before Firefox uplift dates, see https://wiki.mozilla.org/RapidRelease/Calendar
+The objective is to release a version every six weeks. Ideally this should be one week before Firefox uplift dates; see https://wiki.mozilla.org/RapidRelease/Calendar.
 
-### After an [api-(minor|major)] Pull Request Lands:
+### After an `api-(minor|major)` pull request is merged:
 
-Update pdfjs.config:
+Update the `pdfjs.config` file:
 
-1. Bump `versionPrefix` major/minor version number
-1. Set `baseVersion` to commit id of the merge commit 
+1. Bump the major/minor version number of the `versionPrefix`.
+1. Set `baseVersion` to the commit ID of the merged commit.
 
 ### Releasing a new version
 
+1. `git fetch upstream`
 1. `git checkout upstream/master`
 1. Run `gulp publish` to generate the zip
 1. Create github release
