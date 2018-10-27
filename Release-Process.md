@@ -5,7 +5,7 @@ The objective is to release a version every six weeks. Ideally this should be on
 Update the `pdfjs.config` file:
 
 1. Bump the major/minor version number of the `versionPrefix`.
-1. Set `baseVersion` to the commit ID of the merged commit.
+1. Set `baseVersion` to the commit ID of the merge commit.
 
 ### Releasing a new version
 
