@@ -11,10 +11,10 @@ Update the `pdfjs.config` file:
 
 1. `git fetch upstream`
 1. `git checkout upstream/master`
-1. Run `gulp publish` to generate the zip
-1. Create github release
-    1. add release notes
-    1. attach zip generated from above
-    1. mark as pre-release
-1. Remove pre-release flag from previous beta release
-1. Eat cake, cookie or any other treat
+1. Create the ZIP file: `gulp publish`
+1. Create the release on GitHub:
+    1. Attach the ZIP file from the step above and include release notes
+    1. Label the existing release as stable
+    1. Label the new release as pre-release
+1. Update `pdfjs.config` to bump both the stable and beta version numbers
+1. Eat cake, a cookie or any other treat
