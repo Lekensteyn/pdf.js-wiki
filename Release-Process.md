@@ -13,6 +13,8 @@ Update the `pdfjs.config` file:
 1. `git checkout upstream/master`
 1. Create the ZIP file: `gulp publish`
 1. Create the release on GitHub:
+    1. Navigate to https://github.com/mozilla/pdf.js/releases/new
+    1. Call the release and tag `v{version}` and insert the version from the name of the ZIP file.
     1. Attach the ZIP file from the step above and include release notes
     1. Label the existing release as stable
     1. Label the new release as pre-release
