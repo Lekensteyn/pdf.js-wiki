@@ -1,11 +1,10 @@
 ## Enabling
-As a safety precaution the debugging tools/parameters are disabled, and user shall enabled them for the generic viewer, the extension and the version of PDF.js bundled with Firefox.
+As a safety precaution the debugging tools/parameters are disabled, and the user should enable them for the generic viewer and the version of PDF.js bundled with Firefox.
 
-* Extension version: set/create a `extensions.uriloader@pdf.js.pdfBugEnabled` setting as a boolean `true` in 'about:config'
+* Generic viewer: execute `PDFViewerApplication.preferences.set('pdfBugEnabled', true);` in the JavaScript console.
 * Mozilla Central (Firefox) version: set/create a `pdfjs.pdfBugEnabled` setting as a boolean `true` in 'about:config'
-* Generic viewer: execute `PDFViewerApplication.preferences.set('pdfBugEnabled', true);` in the JavaScript console
 
-The debugging tools/parameters are always enabled for non-production code.
+The debugging tools/parameters are always enabled for non-production builds.
 
 ## URL Parameters
 PDF.js has several special URL parameters to alter how PDF.js works and to enable debugging tools. All of these parameters go into the hash section of the URL (after the # symbol) and follow a query string syntax (e.g. #param1=value1&param2=value2). Note: since all of these parameters are in the hash section, you have to refresh the page after adding them.
