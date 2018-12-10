@@ -25,7 +25,7 @@ We have a Linux and a Windows bot. The Linux bot runs Ubuntu 12.04.4 LTS with Xv
 - `fonts-ipafont-gothic`
 - `fonts-unfonts-core`
 
-The Linux bot uses Node.js 4.6.1 LTS and NPM 3.10.9. The Windows bot uses Node.js 6.9.4 LTS and NPM 3.10.10.
+The bots run Node.js 10.14.1 and Gulp 2.0.1 with Gulp CLI 3.9.1.
 
 Setup
 -----
