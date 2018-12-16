@@ -125,6 +125,7 @@ User interface buttons or <kbd>ctrl</kbd> + mouse wheel can be used to change th
 
 ### Outline sidebar
 
+- Use F4 to toggle the visibility of the sidebar.
 - After showing the sidebar, click on the "Show document outline" button (![Show document outline](https://mozilla.github.io/pdf.js/web/images/toolbarButton-viewOutline.png)) to show the document outline (if the PDF file has one).
 - Nested outline items can be expanded/collapsed by clicking on the triangles at the left of an item.
 - To expand/collapse all items under the selected item, press <kbd>Shift</kbd> while clicking on the triangle.
