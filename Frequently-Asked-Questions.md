@@ -13,6 +13,7 @@
 * [I have a really great idea. Where is the best place to record it?](#idea)
 * [I'm developing a custom solution based on PDF.js core library. Can you help me?](#custom)
 * [I want to render all 100 pages in a document at a high resolution. Is it a good idea?](#allthepages)
+* [There are two back-ends, canvas and SVG. Which one should I use?](#backends)
 * [PDF.js is fetching the entire PDF file from a server. Can it fetch only the required portions for rendering?](#range)
 * [What is a latest stable version of PDF.js?](#version)
 * [What types of PDF files are slow in PDF.js? Can I optimize a PDF file to make PDF.js faster?](#optimize)
@@ -186,6 +187,11 @@ We are glad to hear that and will try to help you, but first check the examples 
 Not really. You can count yourself: a letter page size is 816⨉1056px at 96DPI (and if you have a HiDPI display, multiply each dimension by `window.devicePixelRatio`, e.g., 2), so you will need a canvas that takes up 816⨉1056⨉4 = 3,446,784 bytes (don't forget to multiply that by e.g., 2⨉2 = 4 if it's a HiDPI display). This requires you to allocate 3.5Mb (or 14Mb) per page. You need a decent amount of memory to hold the 100 canvases, and it does not count the time that is spent on rendering them.
 
 The demo viewer creates, renders, and holds canvases only for visible pages to reduce the amount of used memory. Our recommendation is to create and render only visible pages.
+
+<a name="backends"></a>
+## There are two back-ends, canvas and SVG. Which one should I use?
+
+You should use the default, which is the canvas back-end, since it is stable and supported. The SVG back-end is experimental and is not feature complete. The advantage of the SVG back-end is rendering quality, but the disadvantage is that it's currently slower than the canvas back-end.
 
 <a name="range"></a>
 ## PDF.js is fetching the entire PDF file from a server. Can it fetch only the required portions for rendering?
