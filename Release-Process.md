@@ -7,8 +7,8 @@
     1. Attach the ZIP file from the step above and include release notes
         1. Clone https://github.com/brendandahl/pdf.js.utils
         2. Run `python2 release.py {last_pr_number}`, where `{last_pr_number}` is the last PR number (without hash) in the release notes of the existing release
+    1. Check the box for this release being a pre-release!
     1. Label the existing release as stable
-    1. Label the new release as pre-release
 1. Update `pdfjs.config` to bump both the stable and beta version numbers:
     1. Bump the major/minor version number of the `versionPrefix`
     1. Bump the stable/beta version number
