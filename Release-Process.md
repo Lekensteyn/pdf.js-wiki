@@ -1,14 +1,3 @@
-The objective is to release a version every six weeks. Ideally this should be one week before Firefox uplift dates; see https://wiki.mozilla.org/RapidRelease/Calendar.
-
-### After an `api-(minor|major)` pull request is merged:
-
-Update the `pdfjs.config` file:
-
-1. Bump the major/minor version number of the `versionPrefix`.
-1. Set `baseVersion` to the commit ID of the merge commit.
-
-### Releasing a new version
-
 1. `git fetch upstream`
 1. `git checkout upstream/master`
 1. Create the ZIP file: `gulp publish`
@@ -20,5 +9,8 @@ Update the `pdfjs.config` file:
         2. Run `python2 release.py {last_pr_number}`, where `{last_pr_number}` is the last PR number (without hash) in the release notes of the existing release
     1. Label the existing release as stable
     1. Label the new release as pre-release
-1. Update `pdfjs.config` to bump both the stable and beta version numbers
+1. Update `pdfjs.config` to bump both the stable and beta version numbers:
+    1. Bump the major/minor version number of the `versionPrefix`
+    1. Bump the stable/beta version number
+    1. Set `baseVersion` to the commit ID of the merge commit
 1. Eat cake, a cookie or any other treat
