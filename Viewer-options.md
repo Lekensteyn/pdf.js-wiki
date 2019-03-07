@@ -6,7 +6,7 @@ Example: https://mozilla.github.io/pdf.js/web/viewer.html#page=2
 * page: page number. Example: page=2
 * zoom: zoom level. Example: zoom=200 (accepted formats: `[zoom],[left offset],[top offset]`, `page-width`, `page-height`, `page-fit`, `auto`)
 * nameddest: go to a named destination
-* pagemode: either "thumbs" or "bookmarks".  Example: pagemode=thumbs
+* pagemode: sidebar state. Example: `pagemode=none` (accepted values: `none`, `thumbs`, `bookmarks`, `attachments`)
 
 ## Options after the ?
 Example: https://mozilla.github.io/pdf.js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf
